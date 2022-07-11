@@ -19,7 +19,7 @@
             width: 100%;
             overflow: hidden;
             resize: both;
-            min-height: 60px;
+            min-height: 100px;
             line-height: 20px;
         }
         .tdquestion{
@@ -33,6 +33,7 @@
         }
         table{
             width: 100%;
+            border-collapse: collapse;
         }
         th{
             font-family: Tahoma, sans-serif;
@@ -42,15 +43,17 @@
         }
         .currency{
             margin-left: 20px;
+            font: unset;
         }
         .currency2{
             margin-left: 60px;
+            font: unset;
         }
     </style>
 </head>
 <body>
-<h2>Market Research Survey</h2>
-<p>Please take a few moment to complete this satisfaction survey.</p><br>
+<h2 style="margin-bottom: 0px">Market Research Survey</h2>
+<p>Please take a few moment to complete this satisfaction survey.</p>
 <form method="get">
     <label>What is your age range?</label><br>
     <select style="width: 40%">
@@ -90,7 +93,7 @@
     <textarea class="textarea"></textarea><br>
     <label>Please rate your level of agreement with the following statements.</label><br>
     <table>
-        <tr>
+        <tr style="background-color: darkgray; font: unset;">
             <th></th>
             <th>Strongly Disagree</th>
             <th>Disagree</th>
@@ -104,7 +107,7 @@
             <td class="td"><input type="radio" name="td1" value="3"><br>3</td>
             <td class="td"><input type="radio" name="td1" value="4"><br>4</td>
         </tr>
-        <tr>
+        <tr style="background-color: darkgray">
             <td class="tdquestion">Our products are priced fairly.</td>
             <td class="td"><input type="radio" name="td2" value="1"><br>1</td>
             <td class="td"><input type="radio" name="td2" value="2"><br>2</td>
