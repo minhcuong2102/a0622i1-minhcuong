@@ -26,16 +26,19 @@
         }
         .th1{
             border-collapse: collapse;
-            border: solid white;
+            border: 0 solid white;
             width: 60px;
             height: 30px;
-            border: 2px;
             color: white;
             padding: 6px 3px;
         }
         .bang{
             text-align: center;
             font-weight: bold;
+            border-left: 0;
+            border-bottom: 0;
+            border-right: 0;
+            border-top: 0;
         }
         sub{
             color: black;
@@ -43,9 +46,14 @@
         }
         .thu{
             border-collapse: collapse;
-            padding: 6px 3px;
-            border: solid white;
+            padding: 10px 10px;
+            border: 0;
             font-weight: normal;
+        }
+        .day{
+            padding: 6px 3px;
+            width: 60px;
+            height: 30px;
         }
     </style>
 </head>
@@ -172,7 +180,7 @@
         <td>Fri</td>
         <td style="color: blue">Sat</td>
     </tr>
-    <tr>
+    <tr class="day">
         <td></td>
         <td></td>
         <td></td>
@@ -181,7 +189,7 @@
         <td>2<sub>14</sub></td>
         <td style="color: blue">3<sub>15</sub></td>
     </tr>
-    <tr>
+    <tr class="day">
         <td style="color: red">4<sub>16</sub></td>
         <td>5<sub>17</sub></td>
         <td>6<sub>18</sub></td>
@@ -190,7 +198,7 @@
         <td>9<sub>21</sub></td>
         <td style="color: blue">10<sub>22</sub></td>
     </tr>
-    <tr>
+    <tr class="day">
         <td style="color: red">11<sub>23</sub></td>
         <td>12<sub>24</sub></td>
         <td>13<sub>25</sub></td>
@@ -199,7 +207,7 @@
         <td>16<sub>28</sub></td>
         <td style="color: blue">17<sub>29</sub></td>
     </tr>
-    <tr>
+    <tr class="day">
         <td style="color: red">18<sub>1.9</sub></td>
         <td>19<sub>2</sub></td>
         <td>20<sub>3</sub></td>
@@ -208,7 +216,7 @@
         <td>23<sub>6</sub></td>
         <td style="color: blue">24<sub>7</sub></td>
     </tr>
-    <tr>
+    <tr class="day">
         <td style="color: red">25<sub>8</sub></td>
         <td>26<sub>9</sub></td>
         <td>27<sub>10</sub></td>
