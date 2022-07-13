@@ -63,15 +63,13 @@
         if(option1==="VND" && option2==="VND"){
             document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " VND";
         }
-        else{
-            if(option1==="VND" && option2==="USD")
+        else if(option1==="VND" && option2==="USD"){
                 document.getElementById("result").innerHTML = "Result: " + parseInt(amount)/23000 + " USD";
         }
-        if(option1==="USD" && option2==="USD"){
+        else if(option1==="USD" && option2==="USD"){
             document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " USD";
         }
-        else{
-            if(option1==="USD" && option2==="VND")
+        else if(option1==="USD" && option2==="VND"){
                 document.getElementById("result").innerHTML = "Result: " + parseInt(amount)*23000 + " VND";
         }
     }
