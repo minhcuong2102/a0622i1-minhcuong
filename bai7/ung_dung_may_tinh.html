@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ung_dung_may_tinh</title>
+</head>
+<body>
+<form>
+    <h2>Calculator</h2>
+    <input type="text" id="input1">
+    <input type="text" id="input2"><br><br>
+    <button type="button" id="add" onclick="addition();">Addition(+)</button>
+    <button type="button" id="subtract" onclick="subtraction();">Subtraction(-)</button>
+    <button type="button" id="multiply" onclick="multiplication();">Multiplication(*)</button>
+    <button type="button" id="divide" onclick="division();">Division(/)</button>
+    <p id="result">Result</p>
+</form>
+<script>
+    function addition() {
+        let x = document.getElementById("input1");
+        let a = x.value;
+        let y = document.getElementById("input2");
+        let b = y.value;
+        let ketqua = parseInt(a) + parseInt(b);
+        document.getElementById("result").innerHTML = "Result Addition: " + ketqua;
+    }
+    function subtraction() {
+        let x = document.getElementById("input1");
+        let a = x.value;
+        let y = document.getElementById("input2");
+        let b = y.value;
+        let ketqua = parseInt(a) - parseInt(b);
+        document.getElementById("result").innerHTML = "Result Subtraction: " + ketqua;
+    }
+    function multiplication() {
+        let x = document.getElementById("input1");
+        let a = x.value;
+        let y = document.getElementById("input2");
+        let b
+            = y.value;
+        let ketqua = parseInt(a) * parseInt(b);
+        document.getElementById("result").innerHTML = "Result Multiplication: " + ketqua;
+    }
+    function division() {
+        let x = document.getElementById("input1");
+        let a = x.value;
+        let y = document.getElementById("input2");
+        let b = y.value;
+        let ketqua = parseInt(a) / parseInt(b);
+        document.getElementById("result").innerHTML = "Result Division: " + ketqua;
+    }
+</script>
+</body>
+</html>

@@ -60,16 +60,16 @@
         let option1 = from.options[from.selectedIndex].text;
         let to = document.getElementById("toCurrency");
         let option2 = to.options[to.selectedIndex].text;
-        if(option1==="VND" && option2==="VND"){
+        if (option1==="VND" && option2==="VND"){
             document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " VND";
         }
-        else if(option1==="VND" && option2==="USD"){
+        else if (option1==="VND" && option2==="USD"){
                 document.getElementById("result").innerHTML = "Result: " + parseInt(amount)/23000 + " USD";
         }
-        else if(option1==="USD" && option2==="USD"){
+        else if (option1==="USD" && option2==="USD"){
             document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " USD";
         }
-        else if(option1==="USD" && option2==="VND"){
+        else if (option1==="USD" && option2==="VND"){
                 document.getElementById("result").innerHTML = "Result: " + parseInt(amount)*23000 + " VND";
         }
     }
