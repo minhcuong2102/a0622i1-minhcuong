@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen_doi_tien_te</title>
+    <style>
+        .h1{
+            margin-left: 50px;
+        }
+        .h2{
+            margin-left: 30%;
+        }
+        .h3{
+            margin-left: 10%;
+        }
+        .d1{
+            width: 100px;
+            margin-left: 375px;
+        }
+        .d2{
+            width: 100px;
+            margin-left: 10%;
+        }
+        .d3{
+            background-color: #9286ff;
+            color: white;
+            font-weight: bold;
+            margin-left: 5%;
+        }
+        .r1{
+            color: blue;
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<form method="get">
+    <label class="h1">Amount</label>
+    <label class="h2">From Currency</label>
+    <label class="h3">To Curency</label><br>
+    <input type="text" id="amount">
+    <select class="d1" id="fromCurrency">
+        <option>VND</option>
+        <option>USD</option>
+    </select>
+    <select class="d2" id="toCurrency">
+        <option>USD</option>
+        <option>VND</option>
+    </select>
+    <button type="button" onclick="convert();" class="d3">Convert</button><br>
+    <p class="r1" id="result">Result: </p>
+</form>
+<script>
+    function convert() {
+        let x = document.getElementById("amount");
+        let amount = x.value;
+        let from = document.getElementById("fromCurrency");
+        let option1 = from.options[from.selectedIndex].text;
+        let to = document.getElementById("toCurrency");
+        let option2 = to.options[to.selectedIndex].text;
+        if(option1==="VND" && option2==="VND"){
+            document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " VND";
+        }
+        else{
+            if(option1==="VND" && option2==="USD")
+                document.getElementById("result").innerHTML = "Result: " + parseInt(amount)/23000 + " USD";
+        }
+        if(option1==="USD" && option2==="USD"){
+            document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " USD";
+        }
+        else{
+            if(option1==="USD" && option2==="VND")
+                document.getElementById("result").innerHTML = "Result: " + parseInt(amount)*23000 + " VND";
+        }
+    }
+</script>
+</body>
+</html>
