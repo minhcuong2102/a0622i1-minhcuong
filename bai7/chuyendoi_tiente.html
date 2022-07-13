@@ -69,9 +69,8 @@
         else if (option1==="USD" && option2==="USD"){
             document.getElementById("result").innerHTML = "Result: " + parseInt(amount) + " USD";
         }
-        else if (option1==="USD" && option2==="VND"){
-                document.getElementById("result").innerHTML = "Result: " + parseInt(amount)*23000 + " VND";
-        }
+        else
+            document.getElementById("result").innerHTML = "Result: " + parseInt(amount)*23000 + " VND";
     }
 </script>
 </body>
