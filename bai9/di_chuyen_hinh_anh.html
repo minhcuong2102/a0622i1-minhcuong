@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>di_chuyen_hinh_anh</title>
+</head>
+<body>
+<form>
+    <img style="width: 100px;" id="image" src="https://i1-vnexpress.vnecdn.net/2022/07/14/1-1657767477.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=fGntTWbVtvZrGeRHPpFG7w"><br>
+    <p>Click button below to move the image to right</p>
+    <button type="button" id="button" onclick="moveRight();">Click Me!</button>
+</form>
+<script>
+        let image = document.getElementById("image");
+        function initial() {
+        let image = document.getElementById("image");
+        image.style.position = "relative";
+        image.style.left = "0px";
+    }
+    function moveRight() {
+        image.style.left = parseInt(image.style.left) + 100 + "px";
+    }
+    window.onload = initial;
+</script>
+</body>
+</html>
