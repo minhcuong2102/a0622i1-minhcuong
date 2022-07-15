@@ -54,8 +54,7 @@
 </form>
 <script>
     function convert() {
-        let x = document.getElementById("amount");
-        let amount = x.value;
+        let amount = document.getElementById("amount").value;
         let from = document.getElementById("fromCurrency");
         let option1 = from.options[from.selectedIndex].text;
         let to = document.getElementById("toCurrency");
