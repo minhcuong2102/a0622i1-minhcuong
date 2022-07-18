@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>do_you_love_me</title>
+    <style>
+        h1{
+            position: absolute;
+            left: 220px;
+            top: 175px;
+            color: white;
+        }
+        .yes{
+            position: absolute;
+            left: 240px;
+            top: 250px;
+            color: white;
+            background-color: gray;
+        }
+        .no{
+            position: absolute;
+            left: 330px;
+            top: 250px;
+            color: white;
+            background-color: gray;
+        }
+        body{
+            background-color: black;
+         }
+    </style>
+</head>
+<body>
+<h1>Do you love me?</h1>
+<button class="yes" type="button" onclick="alert('<3')" id="btnYes">YES</button>
+<button class="no" type="button" onmouseover="randomMove()" id="btnNo">NO</button>
+<script>
+    function randomMove() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        let yes = document.getElementById("btnYes");
+        document.getElementById('btnNo').style.left = x + 'px';
+        document.getElementById('btnNo').style.top = y + 'px';
+        yes.style.left = 300 + 'px';
+    }
+</script>
+</body>
+</html>
