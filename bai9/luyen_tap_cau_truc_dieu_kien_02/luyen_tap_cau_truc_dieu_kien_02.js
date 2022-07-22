@@ -54,7 +54,7 @@ function bai07() {
         alert("Đây không phải phương trình bậc 2!");
     }
     else{
-        let delta = b^2 - 4*a*c;
+        let delta = b*b - 4*a*c;
         if(delta < 0){
             alert("Phương trình vô nghiệm!");
         }
