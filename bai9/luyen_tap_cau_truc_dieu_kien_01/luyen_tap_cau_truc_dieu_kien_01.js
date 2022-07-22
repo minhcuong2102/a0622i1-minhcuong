@@ -21,13 +21,13 @@ function bai2() {
 function bai3() {
     let num1 = parseInt(prompt("Nhập số nguyên: "));
     if (num1 > 0){
-        alert(num1 + "lớn hơn 0!");
+        alert(num1 + " lớn hơn 0!");
     }
     else if (num1 < 0){
-        alert(num1 + "nhỏ hơn 0!");
+        alert(num1 + " nhỏ hơn 0!");
     }
     else {
-        alert(num1 + "bằng 0");
+        alert(num1 + " bằng 0");
     }
 }
 
@@ -69,7 +69,7 @@ function bai5() {
 
 function bai6() {
     let doanhso = parseInt(prompt("Nhập doanh số: "));
-    let hoahong = 0;
+    let hoahong;
     if (doanhso < 100000){
         hoahong = doanhso/100;
     }
@@ -93,8 +93,11 @@ function bai7() {
     if (thoigian <= 60){
         tongcong = bandau;
     }
-    else {
+    else if (60 < thoigian <= 1200){
         tongcong = bandau + moigiay*(thoigian - 60);
+    }
+    else {
+        tongcong = bandau + moigiay*1140 + moigiay/2*(thoigian - 1200);
     }
     alert("Tổng tiền cước là: " + tongcong);
 }
