@@ -23,8 +23,11 @@ function bai3() {
     if (num1 > 0){
         alert(num1 + "lớn hơn 0!");
     }
-    else {
+    else if (num1 < 0){
         alert(num1 + "nhỏ hơn 0!");
+    }
+    else {
+        alert(num1 + "bằng 0");
     }
 }
 
