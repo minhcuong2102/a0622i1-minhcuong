@@ -62,7 +62,9 @@ function bai07() {
             alert("Phương trình có nghiệm kép x = : " + -b/2*a);
         }
         else {
-            alert("Phương trình có 2 nghiệm phân biệt x1 = " + (-b + Math.sqrt(delta))/(2*a) + ", x2 = " + (-b - Math.sqrt(delta))/(2*a));
+            let x1 = (-b + Math.sqrt(delta))/(2*a),
+                x2 = (-b - Math.sqrt(delta))/(2*a);
+            alert("Phương trình có 2 nghiệm phân biệt x1 = " + x1.toFixed(3) + ", x2 = " + x2.toFixed(3));
         }
     }
 }
