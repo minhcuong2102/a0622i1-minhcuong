@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <title>may_tinh_don_gian</title>
     <style>
-        .res{
+        .result{
             width: 408px;
-            height: 30px;
+            height: 50px;
             text-align: right;
-            border: 0.5px solid black;
+            border: 1px solid black;
             color: blue;
-            font-size: large;
+            font-size: xx-large;
         }
         .button{
             color: blue;
@@ -19,12 +19,19 @@
             font-weight: bolder;
             font-size: xx-large;
         }
+        .calculator{
+            margin-left: 35%;
+            margin-top: 10%;
+        }
+        body{
+            background-color: grey;
+        }
     </style>
 </head>
 <body>
-<table>
+<table class="calculator">
     <tr>
-        <th colspan="4"><input class="res" type="text" id="result" disabled></th>
+        <th colspan="4"><input class="result" type="text" id="result" disabled></th>
     </tr>
     <tr>
         <td><input class="button" type="button" value="1" onclick="display('1')"></td>
@@ -60,8 +67,7 @@
     }
     function calculate() {
         let a = document.getElementById("result").value;
-        let x = eval(a);
-        document.getElementById("result").value = x;
+        document.getElementById("result").value = eval(a);
     }
 </script>
 </body>
