@@ -67,13 +67,13 @@ function bai5() {
 function bai6() {
     let tong = 0;
     let cnt = 0;
+    let i = 1;
     while (cnt < 30) {
-        for (let i = 0; i <= 30; i++) {
-            if (i % 7 === 0) {
-                tong += i;
-            }
+        if (i % 7 === 0) {
+            tong += i;
+            cnt++;
         }
-        cnt++;
+        i++;
     }
     alert(tong);
 }
