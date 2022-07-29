@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>su_dung_cac_ham_co_san_cua_mang</title>
+    <style>
+        button{
+            margin-left: 40%;
+            margin-top: 2%;
+            width: 150px;
+            height: 50px;
+            background-color: grey;
+            color: white;
+        }
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+<button onclick="bai1()">Bài 1</button><br>
+<button onclick="bai2()">Bài 2</button><br>
+<button onclick="bai3()">Bài 3</button><br>
+<script>
+    function bai1() {
+        let myColor = ["Red", "Green", "White", "Black"];
+        alert(myColor.join());
+    }
+
+    function bai2() {
+        let num = window.prompt("Nhập dãy số: ");
+        let str = num.toString();
+        let daySo = [str[0]];
+        for (let i = 1; i < str.length; i++){
+            if ((str[i-1] % 2 === 0) && (str[i] % 2 === 0)){
+                daySo.push('-', str[i]);
+            }else {
+                daySo.push(str[i]);
+            }
+        }
+        alert(daySo.join(''));
+    }
+
+    function bai3() {
+        let str = prompt("Nhập dòng chữ: ");
+        let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        let ketQua = [];
+
+        for(let i = 0; i < str.length; i++) {
+            if(UPPER.includes(str[i])) {
+                ketQua.push(str[i].toLowerCase());
+            } else if(LOWER.includes(str[i])) {
+                ketQua.push(str[i].toUpperCase());
+            }
+            else {
+                ketQua.push(str[i]);
+            }
+        }
+        alert(ketQua.join(''));
+    }
+</script>
+</body>
+</html>
