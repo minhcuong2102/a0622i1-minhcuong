@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu_dien</title>
+</head>
+<body>
+<h2>Từ điển Anh - Việt</h2>
+<label>Tiếng Anh: </label>
+<input type="text" id="eng" placeholder="Nhập từ tiếng Anh cần dịch">
+<label>Tiếng Việt: </label>
+<input type="text" id="vie" value="">
+<button id="add" onclick="add()">Thêm vào từ điển</button>
+<button id="translate" onclick="trans()">Dịch</button><br>
+<p id="result">Dịch: </p>
+<script>
+    let x = 0;
+    let eng = [];
+    let vie = [];
+    function add() {
+        eng[x] = document.getElementById("eng").value;
+        vie[x] = document.getElementById("vie").value;
+        x++;
+        document.getElementById("eng").value = "";
+        document.getElementById("vie").value = "";
+        console.log(eng, vie)
+    }
+
+    function trans() {
+        let a = document.getElementById("eng").value;
+        for (let i = 0; i < eng.length; i++){
+            if (a === eng[i]){
+                a += ": " + vie[i];
+            }
+        }
+        document.getElementById("result").innerText = a;
+    }
+</script>
+</body>
+</html>
