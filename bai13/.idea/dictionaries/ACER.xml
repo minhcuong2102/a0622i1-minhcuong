@@ -2,6 +2,11 @@
   <dictionary name="ACER">
     <words>
       <w>bình</w>
+      <w>chuoi</w>
+      <w>chuỗi</w>
+      <w>giống</w>
+      <w>hàng</w>
+      <w>khác</w>
       <w>không</w>
       <w>kích</w>
       <w>luyen</w>
@@ -10,6 +15,7 @@
       <w>nguyên</w>
       <w>ngược</w>
       <w>nhap</w>
+      <w>nhau</w>
       <w>nhất</w>
       <w>nhập</w>
       <w>phan</w>
@@ -17,6 +23,7 @@
       <w>thước</w>
       <w>trong</w>
       <w>trung</w>
+      <w>viết</w>
     </words>
   </dictionary>
 </component>
