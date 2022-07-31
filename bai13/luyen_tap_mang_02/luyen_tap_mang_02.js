@@ -65,25 +65,31 @@ function bai_04() {
 function bai_05() {
     let a = [];
     let b = [];
-    let soPhanTu = +prompt("Nhập số phần tử:");
-    for (let i = 0; i < soPhanTu; i++){
-        a.push(prompt("Nhập phần tử thứ " + (i+1)));
+    let soCot = +prompt("Nhập số cột:");
+    let soHang = prompt("Nhập số hàng:")
+    for (let i = 0; i < soCot; i++){
+        a[i] = [];
+        for (let j = 0; j < soHang; j++){
+            a[i][j] = prompt("Nhập phần tử: ");
+        }
     }
-    for (let i = 0; i < soPhanTu; i++){
-        b.push(prompt("Nhập phần tử thứ " + (i+1)));
+    for (let i = 0; i < soCot; i++){
+        b[i] = [];
+        for (let j = 0; j < soHang; j++){
+            b[i][j] = prompt("Nhập phần tử: ");
+        }
     }
 
-    alert("Mảng a: " + a);
-    alert("Mảng b: " + b);
+    console.log(a, b);
 
     let value1 = "";
     let value2 = "";
-    for(let i = 0;i < a.length;i++){
-        for(let j = 0;j < a[i].length;j++){
+    for(let i = 0; i < a.length;i++){
+        for(let j = 0; j < a[i].length;j++){
             value1 += a[i][j];
         }
     }
-    for(let i = 0;i < b.length; i++){
+    for(let i = 0; i < b.length; i++){
         for(let j = 0; j < b[i].length; j++){
             value2 += b[i][j];
         }
