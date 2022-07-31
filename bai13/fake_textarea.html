@@ -1,23 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>fake_textarea</title>
 </head>
 <body>
+<label for="fake">Type something!</label><br>
+<textarea id="fake" cols="40" rows="10" onkeydown="fakeTextArea()"></textarea>
 <script>
-    let a = [];
-    let b = prompt("Số cột:");
-    let c = prompt("Số hàng:")
-
-    for (let i = 0; i < b; i++){
-        a[i] = [];
-        for (let j = 0; j < c; j++){
-            a[i][j] = prompt("Nhập phần tử: ");
+    let arr = ["Đ", "â", "y", " ", "l", "à", " ", "f", "a", "k", "e", " ", "t", "e", "x", "t", "a", "r", "e", "a", "!" ];
+    let n = "";
+    function fakeTextArea() {
+        let t = document.getElementById("fake").value;
+        let j = t.length;
+        if (j > 0){
+            for (let i = 0; i < j; i++){
+                n += arr[i];
+                if (i === 21){
+                    document.getElementById("fake").value = "";
+                    n = "";
+                }
+            }
         }
-    }
-    console.log(a);
-    document.write(a.join(", "))
+        document.getElementById("fake").value = n;
+        n = "";
+        setTimeout("fakeTextArea()", 1);
+}
 </script>
 </body>
 </html>
