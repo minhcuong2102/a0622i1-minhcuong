@@ -9,14 +9,16 @@ function bai1() {
 
 function bai2() {
     let nhietDo = prompt("Nhập nhiệt độ: ");
-    while (nhietDo < 20 || nhietDo > 100){
+    do{
         if (nhietDo < 20){
             nhietDo = prompt("Tăng nhiệt độ!");
         }
-        if (nhietDo > 100){
+        else if (nhietDo > 100){
             nhietDo = prompt("Giảm nhiệt độ!");
         }
+    while (nhietDo < 20 || nhietDo > 100)
     }
+    alert("Nhiệt độ bình thường!");
 }
 
 function bai3() {
@@ -96,19 +98,21 @@ function bai7() {
 }
 
 function bai8() {
-    let khoangSo = Number(prompt("Nhập khoảng số muốn đoán: "));
+    alert("Hãy nhập khoảng số bạn muốn!");
+    let max = prompt("Nhập giới hạn trên: ");
+    let min = prompt("Nhập giới hạn dưới: ");
+    let soNgauNhien = Math.floor(Math.random() * (max - min) + min);
     let nhapSo = Number(prompt("Nhập số: "));
-    let soNgauNhien;
-    if(khoangSo){
-        soNgauNhien = Math.floor(Math.random() * khoangSo);
-        if(soNgauNhien === nhapSo){
-            alert("Bạn đã đoán đúng!");
+    console.log(soNgauNhien);
+
+    for(let i = 0; i < 3; i++){
+        if(nhapSo < soNgauNhien){
+            nhapSo = +prompt("Hãy đoán số lớn hơn số bạn vừa đoán!");
+        }else if(nhapSo > soNgauNhien){
+            guessNum = +prompt("Hãy đoán số lớn hơn số bạn vừa đoán!");
         }else {
-            while (soNgauNhien !== nhapSo){
-                alert("Bạn đã đoán sai, số chính xác là: " + soNgauNhien);
-                nhapSo = Number(prompt("Nhập số lại: "))
-            }
-            alert("Bạn đã đoán đúng!");
+            alert("Bạn đã đoán trúng!")
+            return;
         }
     }
 }
