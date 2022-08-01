@@ -17,13 +17,11 @@
         }
         return 1;
     }
-    let num = parseInt(prompt("Nhập số lượng các số nguyên tố cần in: "));
-    let cnt = 0;
+
     let n = 2;
-    while (cnt <= num){
+    while (n <= 10000){
         if (isPrime(n)){
             document.write(n + "<br>");
-            cnt++;
         }
         n++;
     }
