@@ -7,8 +7,7 @@ function bai2() {
         return ++n;
     }
     let num = Number(prompt("Nhập số: "));
-    let num1 = tangDonVi(num);
-    alert("Số mới là: " + num1);
+    alert("Số mới là: " + tangDonVi(num));
 }
 
 function bai3() {
