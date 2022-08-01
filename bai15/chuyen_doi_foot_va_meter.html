@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chuyen_doi_foot_va_meter</title>
+</head>
+<body>
+<form>
+    <h2>Chuyển đổi foot và meter</h2><br>
+    <label for="inputFoot">Foot: </label>
+    <input id="inputFoot" type="number" placeholder="Nhập số foot"
+           oninput="footToMeter(this.value)"
+           onchange="footToMeter(this.value)">
+    <label for="inputMeter">Mét: </label>
+    <input id="inputMeter" type="number" placeholder="Nhập số mét"
+           oninput="meterToFoot(this.value)"
+           onchange="meterToFoot(this.value)">
+</form>
+<script>
+    function footToMeter(valNum) {
+        valNum = parseFloat(valNum);
+        let meter = 0.305 * valNum;
+        document.getElementById("inputMeter").value = meter.toFixed(3);
+    }
+
+    function meterToFoot(valNum) {
+        valNum = parseFloat(valNum);
+        let foot = 1/0.305 * valNum;
+        document.getElementById("inputFoot").value = foot.toFixed(3);
+    }
+</script>
+</body>
+</html>
