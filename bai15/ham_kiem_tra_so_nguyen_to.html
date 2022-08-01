@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ham_kiem_tra_so_nguyen_to</title>
+</head>
+<body>
+<script>
+    function isPrime(n) {
+        if (n < 2){
+            return 0;
+        }
+        for (let i = 2; i <= Math.sqrt(n); i++){
+            if (n % i === 0){
+                return 0;
+            }
+        }
+        return 1;
+    }
+    let num = parseInt(prompt("Nhập số lượng các số nguyên tố cần in: "));
+    let cnt = 0;
+    let n = 2;
+    while (cnt <= num){
+        if (isPrime(n)){
+            document.write(n + "<br>");
+            cnt++;
+        }
+        n++;
+    }
+</script>
+</body>
+</html>
