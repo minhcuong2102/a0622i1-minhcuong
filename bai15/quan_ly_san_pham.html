@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quan_ly_san_pham</title>
+    <style>
+        table{
+            width: 50%;
+        }
+        button{
+            background-color: green;
+            width: 60px;
+            height: 40px;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <label for="input" style="font-weight: bold; font-size: x-large">Add New Product</label><br>
+    <input type="text" id="input" style="height: 35px; width: 30%" placeholder="New Product">
+    <button onclick="add()">Add</button><br><br>
+    <h2>Display All Product</h2>
+    <p style="font-weight: bold">Product Name<span id="soLuong" style="margin-left: 30%"></span></p>
+    <p id="table"></p>
+<script>
+    let matHang = [];
+    function display() {
+        let s = "<table>";
+        for (let i = 0; i < matHang.length; i++){
+            s += `<tr><td style="width: 50%">${matHang[i]}</td>
+                  <td style="width: 10%"><button onclick='edit(${i})'>Edit</button></td>
+                  <td><button onclick='xoa(${i})'>Delete</button></td></tr>`;
+        }
+        s += "</table>"
+        document.getElementById("soLuong").innerHTML = matHang.length + " product";
+        document.getElementById("table").innerHTML = s;
+        return s;
+    }
+    display();
+
+    function add() {
+        let newProduct = document.getElementById("input").value;
+        matHang.push(newProduct);
+        console.log(matHang);
+        document.getElementById("table").innerHTML = display();
+        document.getElementById("input").value = "";
+    }
+    
+    function edit(i) {
+        matHang[i] = prompt("Sửa tên sản phẩm: ");
+        display();
+    }
+    
+    function xoa(i) {
+        matHang.splice(i, 1);
+        display();
+    }
+</script>
+</body>
+</html>

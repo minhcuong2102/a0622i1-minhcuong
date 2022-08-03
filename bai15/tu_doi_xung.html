@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tu_doi_xung</title>
+</head>
+<body>
+<script>
+    function isPalindrome() {
+        let arr = [];
+        for (let i = 0; i < str.length; i++){
+            arr[i] = str.charAt(i);
+        }
+        let first = 0;
+        let last = arr.length - 1;
+        let cnt = 0;
+        while (first < last){
+            if (arr[first] !== arr[last]){
+                cnt++;
+            }
+            first++;
+            last--;
+        }
+        if (cnt === 0){
+            return alert("Đây là từ đối xứng!")
+        }else {
+            return alert("Đây không phải từ đối xứng!");
+        }
+    }
+    let str = prompt("Nhập một chuỗi: ");
+    isPalindrome();
+</script>
+</body>
+</html>
