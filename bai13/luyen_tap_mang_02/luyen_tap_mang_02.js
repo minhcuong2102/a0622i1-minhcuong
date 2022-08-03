@@ -65,27 +65,20 @@ function bai_04() {
 function bai_05() {
     let a = [];
     let b = [];
-    let soCot = +prompt("Nhập số cột:");
-    let soHang = prompt("Nhập số hàng:")
-    for (let i = 0; i < soCot; i++){
-        a[i] = [];
-        for (let j = 0; j < soHang; j++){
-            a[i][j] = prompt("Nhập phần tử: ");
-        }
+    let str1 = prompt("Nhập chuỗi thứ nhất: ");
+    let str2 = prompt("Nhập chuỗi thứ hai: ");
+    for (let i = 0; i < str1.length; i++){
+        a[i] = str1.charAt(i);
     }
-    for (let i = 0; i < soCot; i++){
-        b[i] = [];
-        for (let j = 0; j < soHang; j++){
-            b[i][j] = prompt("Nhập phần tử: ");
-        }
+    for (let i = 0; i < str2.length; i++){
+        b[i] = str2.charAt(i);
     }
-
     console.log(a, b);
 
     let value1 = "";
     let value2 = "";
     for(let i = 0; i < a.length;i++){
-        for(let j = 0; j < a[i].length;j++){
+        for(let j = 0; j < a[i].length; j++){
             value1 += a[i][j];
         }
     }
@@ -95,9 +88,9 @@ function bai_05() {
         }
     }
     if(value1 === value2){
-        alert("Hai mảng giống nhau!");
+        alert("Hai chuỗi giống nhau!");
     }else {
-        alert("Hai mảng khác nhau!");
+        alert("Hai chuỗi khác nhau!");
     }
 }
 
