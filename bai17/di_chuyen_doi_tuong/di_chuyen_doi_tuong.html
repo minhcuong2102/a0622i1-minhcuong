@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>di_chuyen_doi_tuong</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    function MovingObject(avatar, top, left, size) {
+        this.avatar = avatar;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+
+        this.getMovingObjectElement = function () {
+            return '<img width = "'+ this.size + '"' +
+                ' height = "'+ this.size + '"' +
+                ' src = "' + this.avatar +'"' +
+                ' style = "top: '+ this.top + 'px; left:'+ this.left +'px; position: absolute;" />';
+        }
+        this.moveRight = function(){
+            this.left += 20;
+            console.log('ok: ' + this.left);
+        }
+    }
+
+    let object1 = new MovingObject("nobita.png", 20, 30, 200);
+    function start() {
+        if (object1.left < window.innerWidth - object1.size){
+            object1.moveRight();
+        }
+        document.getElementById("game").innerHTML = object1.getMovingObjectElement();
+        setTimeout(start, 500);
+    }
+    start();
+</script>
+</body>
+</html>
