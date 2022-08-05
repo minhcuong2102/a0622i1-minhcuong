@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay_dung_lop_mo_ta_temperature</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(celcius) {
+            this.celcius = celcius;
+        }
+        getC = function() {
+            return this.celcius;
+        }
+        getF = function () {
+            return this.celcius * 1.8 + 32;
+        }
+        getK = function () {
+            return this.celcius + 273.15;
+        }
+        setC = function (celcius) {
+            celcius = parseFloat(prompt("Nhập độ C: "));
+            while (celcius < -273.15){
+                celcius = parseFloat(prompt("Nhập lại độ C: "))
+            }
+            this.celcius = celcius;
+        }
+    }
+    let temperature = new Temperature(25);
+    console.log("Nhiệt độ hiện tại là: " + temperature.getC() + " độ C.");
+    console.log("Độ F là: " + temperature.getF() + " độ.");
+    console.log("Độ K là: " + temperature.getK() + " độ.");
+
+    let temperature1 = new Temperature();
+    temperature1.setC();
+    alert("Nhiệt độ hiện tại là: " + temperature1.getC() + " độ C, tức bằng: " + temperature1.getF() + " độ F, " + temperature1.getK() + " độ K.");
+
+</script>
+</body>
+</html>
