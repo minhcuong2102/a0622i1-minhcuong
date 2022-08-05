@@ -11,7 +11,7 @@ function bai2() {
 }
 
 function bai3() {
-    function thamSo(a, b){
+    function timSoLon(a, b){
         a = Number(prompt("Nhập số a: "));
         b = Number(prompt("Nhập số b: "));
         if (a > b) {
@@ -20,7 +20,7 @@ function bai3() {
             return a + b;
         }
     }
-    console.log(thamSo());
+    console.log(timSoLon(a, b));
 }
 
 function bai4() {
@@ -37,7 +37,7 @@ function bai4() {
 }
 
 function bai5() {
-    function chomSao(ngoiSao){
+    function thuocChomSao(ngoiSao){
             if (arr1.includes(ngoiSao)){
                 let index = arr1.indexOf(ngoiSao)
                 alert("Ngôi sao " + ngoiSao + " thuộc chòm sao " + arr2[index]);
@@ -48,5 +48,5 @@ function bai5() {
     let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
     let arr2 = ["Ulsa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ulsa Major", "Leo"];
     let ngoiSao = prompt("Nhập tên ngôi sao: ");
-    chomSao(ngoiSao);
+    thuocChomSao(ngoiSao);
 }

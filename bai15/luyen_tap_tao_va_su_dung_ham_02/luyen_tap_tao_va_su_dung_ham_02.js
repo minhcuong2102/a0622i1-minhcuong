@@ -1,38 +1,38 @@
 function bai01() {
-    function binhPhuong() {
+    function tinhBinhPhuong() {
         let a = parseFloat(prompt("Nhập số: "));
         return alert("Bình phương của số " + a + " là: " + a * a);
     }
-    binhPhuong();
+    tinhBinhPhuong();
 }
 
 function bai02() {
-    function dienTich() {
+    function tinhDienTich() {
         return alert("Diện tích hình tròn là: " + (r * r * 3.14).toFixed(3));
     }
-    function chuVi() {
+    function tinhChuVi() {
         return alert("Chu vi hình tròn là: " + (r * 6.28).toFixed(3));
     }
     let r = prompt("Nhập bán kính: ");
-    dienTich();
-    chuVi();
+    tinhDienTich();
+    tinhChuVi();
 
 }
 
 function bai03() {
-    function giaiThua(n) {
+    function tinhGiaiThua(n) {
         if (n > 0){
-            return n * giaiThua(n-1);
+            return n * tinhGiaiThua(n-1);
         }else {
             return 1;
         }
     }
     let num = prompt("Nhập số cần tính giai thừa: ");
-    alert("Giá trị của " + num + "! là: " + giaiThua(num));
+    alert("Giá trị của " + num + "! là: " + tinhGiaiThua(num));
 }
 
 function bai04() {
-    function kiTuSo() {
+    function isNumber() {
         if (Number(a) == a){
             alert("Đây là kí tự số!");
         }else {
@@ -40,11 +40,11 @@ function bai04() {
         }
     }
     let a = prompt("Nhập một kí tự: ");
-    kiTuSo(a);
+    isNumber(a);
 }
 
 function bai05() {
-    function soNhoNhat(){
+    function findMin(){
         let min = a;
         if (b < min && b < c){
             min = b;
@@ -56,11 +56,11 @@ function bai05() {
     let a = prompt("Nhập số a: ");
     let b = prompt("Nhập số b: ");
     let c = prompt("Nhập số c: ");
-    soNhoNhat(a, b, c);
+    findMin(a, b, c);
 }
 
 function bai06() {
-    function soNguyenDuong() {
+    function isInteger() {
         if (n > 0){
             alert("Đây là số nguyên dương!");
         }else if (n === 0){
@@ -70,7 +70,7 @@ function bai06() {
         }
     }
     let n = Number(prompt("Nhập số nguyên: "));
-    soNguyenDuong();
+    isInterger();
 }
 
 function bai07() {
@@ -86,7 +86,7 @@ function bai07() {
 }
 
 function bai08() {
-    function daoNguoc() {
+    function reverse() {
         for (let i = 0; i < soPhanTu; i++){
             arr.push(prompt("Nhập phần tử thứ " + (i+1) + ":"));
         }
@@ -103,11 +103,11 @@ function bai08() {
     }
     let arr = [];
     let soPhanTu = prompt("Nhập số phần tử: ");
-    daoNguoc();
+    reverse();
 }
 
 function bai09() {
-    function trongMang() {
+    function inArray() {
         let cnt = 0;
         for (let i = 0; i < string.length; i++){
             arr[i] = string.charAt(i);
@@ -127,5 +127,5 @@ function bai09() {
     let arr = [];
     let string = prompt("Nhập chuỗi kí tự: ");
     let a = prompt("Nhập kí tự cần tìm: ");
-    trongMang();
+    inArray();
 }
