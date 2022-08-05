@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xay_dung_lop_mo_ta_hinh_chu_nhat</title>
+</head>
+<body>
+<canvas id="Canvas" width="1200px" height="675px" style="border:1px solid black"></canvas>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+        getWidth = function () {
+            return this.width;
+        }
+        getHeight = function () {
+            return this.height;
+        }
+        getDienTich = function () {
+            return this.width * this.height;
+        }
+        getChuVi = function () {
+            return (this.width + this.height) * 2;
+        }
+        setWidth = function (width) {
+            width = parseFloat(prompt("Nhập chiều dài: "));
+            this.width = width;
+        }
+        setHeight = function (height) {
+            height = parseFloat(prompt("Nhập chiều rộng: "));
+            this.height = height;
+        }
+    }
+
+    let rectangle = new Rectangle(6, 5);
+    console.log("Chiều dài: " + rectangle.getWidth() + ", chiều rộng: " + rectangle.getHeight());
+    console.log("Chu vi hình chữ nhật là: " + rectangle.getChuVi());
+    console.log("Diện tích hình chữ nhật là: " + rectangle.getDienTich());
+
+    let rectangle1 = new Rectangle();
+    rectangle1.setWidth();
+    rectangle1.setHeight();
+    alert("Chiều dài: " + rectangle1.getWidth() + ", chiều rộng: " + rectangle1.getHeight());
+    alert("Chu vi hình chữ nhật là: " + rectangle1.getChuVi());
+    alert("Diện tích hình chữ nhật là: " + rectangle1.getDienTich());
+
+    function draw() {
+        let ctx = document.getElementById("Canvas").getContext("2d");
+        ctx.fillStyle = "red";
+        ctx.fillRect(40, 40, rectangle1.getWidth(), rectangle1.getHeight());
+    }
+    draw();
+
+</script>
+</body>
+</html>
