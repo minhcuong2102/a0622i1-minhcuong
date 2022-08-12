@@ -20,17 +20,35 @@
                 ' style = "top: '+ this.top + 'px; left:'+ this.left +'px; position: absolute;" />';
         }
         this.moveRight = function(){
-            this.left += 20;
+            this.left += 50;
             console.log('ok: ' + this.left);
+        }
+        this.moveDown = function () {
+            this.top += 50;
+            console.log('ok: ' + this.top);
+        }
+        this.moveLeft = function () {
+            this.left -= 50;
+            console.log('ok: ' + this.left);
+        }
+        this.moveTop = function () {
+            this.top -= 50;
+            console.log('ok: ' + this.top);
         }
     }
 
-    let object1 = new MovingObject("nobita.png", 20, 30, 200);
+    let hero1 = new MovingObject("nobita.jpg", 20, 30, 200);
     function start() {
-        if (object1.left < window.innerWidth - object1.size){
-            object1.moveRight();
+        if (hero1.left < window.innerWidth - hero1.size && hero1.top === 20){
+            hero1.moveRight();
+        }else if(hero1.top < window.innerHeight - hero1.size && hero1.left > 30){
+            hero1.moveDown();
+        }else if(hero1.left > 30){
+            hero1.moveLeft();
+        }else if(hero1.top > 20){
+            hero1.moveTop();
         }
-        document.getElementById("game").innerHTML = object1.getMovingObjectElement();
+        document.getElementById("game").innerHTML = hero1.getMovingObjectElement();
         setTimeout(start, 500);
     }
     start();
