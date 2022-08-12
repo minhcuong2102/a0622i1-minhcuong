@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cong_tac_va_bong_den</title>
+</head>
+<body>
+<script>
+    class SwitchButton{
+        constructor() {
+            this.lamp = {};
+            this.status = false;
+        }
+        connectToLamp(ElectricLamp){
+            this.lamp = ElectricLamp;
+            this.status = true;
+        }
+        getStatus(){
+            if (this.status){
+                console.log(this.lamp.status);
+            }
+        }
+        switchOn(){
+            if (this.status){
+                this.lamp.turnOn();
+                this.getStatus();
+            }
+        }
+        switchOff(){
+            if (this.status){
+                this.lamp.turnOff();
+                this.getStatus();
+            }
+        }
+    }
+
+    class ElectricLamp{
+        constructor() {
+            this.status = false;
+        }
+        turnOn(){
+            if (this.status){
+                console.log("Đèn đang sáng, không cần bật nữa!");
+            }else {
+                console.log("Đèn đã được bật!");
+                this.status = true;
+            }
+        }
+        turnOff(){
+            if (this.status){
+                console.log("Đèn đã được tắt!");
+                this.status = false;
+            }else {
+                console.log("Đèn không sáng, không cần phải tắt!");
+            }
+        }
+    }
+
+    let switch1 = new SwitchButton();
+    let lamp1 = new ElectricLamp();
+    switch1.connectToLamp(lamp1);
+    switch1.switchOn();
+    switch1.switchOff();
+</script>
+</body>
+</html>
