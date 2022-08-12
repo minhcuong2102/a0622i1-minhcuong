@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>adam_eva</title>
+</head>
+<body>
+<script>
+    function Apple(weight) {
+        this.weight = weight;
+        this.getWeight = function () {
+            return this.weight;
+        }
+        this.decreseWeight = function () {
+            this.weight--;
+        }
+    }
+
+    function Human(name, gender, weight) {
+        this.name = name;
+        this.gender = gender;
+        this.weight = weight;
+        this.setGender = function (gender) {
+            gender = prompt("Nhập giới tính: ");
+            this.gender = gender;
+        }
+        this.isMale = function () {
+            if (this.gender === "male"){
+                console.log("Đây là đàn ông.");
+            }else {
+                console.log("Đây không phải đàn ông.");
+            }
+        }
+        this.getName = function () {
+            return this.name;
+        }
+        this.setName = function (name) {
+            name = prompt("Nhập tên: ");
+            this.name = name;
+        }
+        this.getWeight = function () {
+            return this.weight;
+        }
+        this.setWeight = function (weight) {
+            weight = parseFloat(prompt("Nhập cân nặng: "));
+            this.weight = weight;
+        }
+        this.getApple = function () {
+            return this.Apple.getWeight();
+        }
+        this.setApple = function (apple) {
+            this.Apple = apple;
+        }
+        this.say = function (string) {
+            console.log(string);
+        }
+        this.checkApple = function () {
+            return this.Apple.getWeight() > 0;
+        }
+        this.eat = function () {
+            this.Apple.decreseWeight();
+            this.weight++;
+        }
+    }
+    let apple = new Apple(10);
+    let adam = new Human();
+    adam.setName();
+    adam.setWeight();
+    adam.setGender();
+    adam.isMale();
+    adam.setApple(apple);
+    adam.say("Tôi là " + adam.getName() + "!");
+    while(adam.checkApple(apple)){
+        adam.eat(apple);
+        document.write("Cân nặng của Adam sau khi ăn 1 miếng táo: " + adam.getWeight() + ", cân nặng của quả táo hiện tại là: " + adam.getApple() +  "<br>");
+    }
+</script>
+</body>
+</html>
