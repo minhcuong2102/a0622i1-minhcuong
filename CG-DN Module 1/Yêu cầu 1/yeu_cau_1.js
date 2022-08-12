@@ -1,4 +1,4 @@
-function bai1() {
+function bai1_1() {
     let width = Number(prompt("Nhập chiều dài: "));
     let height = Number(prompt("Nhập chiều rộng: "));
     for (let i = 1; i <= height; i++) {
@@ -13,7 +13,7 @@ function bai1() {
     }
 }
 
-function bai2() {
+function bai1_2() {
     let chieuCao = Number(prompt("Nhập chiều cao: "));
     while (chieuCao < 0){
         alert(prompt("Nhập lại chiều cao!"));
@@ -30,7 +30,7 @@ function bai2() {
     }
 }
 
-function bai3() {
+function bai1_3() {
     let height1 = Number(prompt("Nhập chiều cao: "));
     while (height1 < 0){
         alert(prompt("Nhập lại chiều cao!"));
@@ -47,7 +47,7 @@ function bai3() {
     }
 }
 
-function bai4() {
+function bai1_4() {
     let height2 = Number(prompt("Nhập chiều cao: "));
     while (height2 < 0){
         alert(prompt("Nhập lại chiều cao!"));
