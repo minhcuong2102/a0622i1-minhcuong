@@ -97,39 +97,3 @@ function bai3_4() {
     }
     alert(hienThi(c).join(" "));
 }
-
-function bai3_5() {
-    let menu = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
-    let number = ["1", "2", "3", "4", "5", "6", "7"];
-    let price = [20000, 12000, 12000, 12000, 5000, 15000];
-    function displayMenu() {
-        let arr = menu.map(function(item) {
-            return `<li>${item}</li>`
-        });
-        document.getElementById("list").innerHTML = arr.join("");
-
-        let tableString = "<table>";
-        for (let i = 0; i < number.length; i++) {
-            tableString += `<td <button onclick="goiMon(${i})" style="width: 100px;height: 50px; text-align: center; background-color: greenyellow">${number[i]}</button></td>`
-        }
-        tableString += '</table>';
-        document.getElementById("bang").innerHTML = tableString;
-    }
-    displayMenu();
-
-    function goiMon(a) {
-        if(a != 6) {
-            document.getElementById("hienGia").innerHTML = `Giá của <b>${menu[a]}</b> là: ${price[a].toLocaleString()} VNĐ.`;
-            document.getElementById("thongTin").innerHTML = `Vui lòng nhập số lượng: <input id="soLuong" type="text"> <button type="button" onclick="tinhTien(${price[a]})">Nhập</button>`;
-        }else{
-            document.getElementById("hienGia").innerText = "Cảm ơn quý khách!";
-            document.getElementById("thongTin").innerText = "";
-        }
-    }
-
-    function tinhTien(giaTien) {
-        let soLuong = +document.getElementById("soLuong").value;
-        let tongTien = (giaTien * soLuong).toLocaleString();
-        document.getElementById("giatien").innerHTML = `Số tiền bạn phải trả là: ${tongTien}`;
-    }
-}

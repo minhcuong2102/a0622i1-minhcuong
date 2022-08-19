@@ -6,9 +6,14 @@
     <style>
         button{
             margin-left: 40%;
-            margin-top: 4%;
+            margin-top: 1%;
             height: 50px;
             width: 150px;
+        }
+        #bai_5{
+            margin-left: 0%;
+            height: 30px;
+            width: 100px;
         }
     </style>
 </head>
@@ -17,12 +22,47 @@
 <button onclick="bai3_2()">Bài 2</button><br>
 <button onclick="bai3_3()">Bài 3</button><br>
 <button onclick="bai3_4()">Bài 4</button><br>
-<button onclick="bai3_5()">Bài 5</button><br>
+<button id="bai_5">Bài 5:</button><br>
 <ol id="list"></ol>
 <p id="bang"></p>
 <p id="hienGia"></p>
 <form action="" id="thongTin"></form>
 <p id="giatien"></p>
 <script src="yeu_cau_3.js"></script>
+<script>
+    let menu = ["Cafe", "Cam vắt", "Nước ép cà rốt", "Nước ép cà chua", "Nước lọc", "Nước dừa"];
+    let number = ["1", "2", "3", "4", "5", "6", "7"];
+    let price = [20000, 12000, 12000, 12000, 5000, 15000];
+
+    function display(){
+        let arr = menu.map(function(item) {
+            return `<li>${item}</li>`
+        });
+        document.getElementById("list").innerHTML = arr.join("");
+
+        let tableString = "<table>";
+        for (let i = 0; i < number.length; i++) {
+            tableString += `<td <button onclick="goiMon(${i})" style="width: 100px;height: 50px; text-align: center; background-color: greenyellow">${number[i]}</button></td>`
+        }
+        tableString += '</table>';
+        document.getElementById("bang").innerHTML = tableString;
+        }
+
+    display();
+    function goiMon(a) {
+        if(a != 6) {
+            document.getElementById("hienGia").innerHTML = `Giá của <b>${menu[a]}</b> là: ${price[a].toLocaleString()} VNĐ.`;
+            document.getElementById("thongTin").innerHTML = `Vui lòng nhập số lượng: <input id="soLuong" type="text"> <button type="button" onclick="tinhTien(${price[a]})">Nhập</button>`;
+        }else{
+            document.getElementById("hienGia").innerText = "Cảm ơn quý khách!";
+            document.getElementById("thongTin").innerText = "";
+        }
+    }
+
+    function tinhTien(giaTien) {
+        let soLuong = +document.getElementById("soLuong").value;
+        let tongTien = (giaTien * soLuong).toLocaleString();
+        document.getElementById("giatien").innerHTML = `Số tiền bạn phải trả là: ${tongTien}`;}
+</script>
 </body>
 </html>
