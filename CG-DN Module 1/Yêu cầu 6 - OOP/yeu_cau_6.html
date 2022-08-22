@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yeu_cau_6</title>
+    <style>
+        input {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h3>XỔ SỐ KIẾN THIẾT</h3>
+<table id="display"></table>
+<button onclick="roll()" id="quaySo">Quay số</button>
+<br>
+<p id="result"></p>
+<script>
+    class Lottery {
+        constructor(daySo) {
+            this.daySo = daySo;
+        }
+
+        getLottery() {
+            return this.daySo;
+        }
+
+        setLottery(daySo) {
+            return this.daySo = daySo;
+        }
+    }
+
+    let lotterySystem = new Lottery([9, 19, 32, 40, 45, 51]);
+    console.log(lotterySystem.daySo);
+    let cnt = 0;
+    let lottery1 = new Lottery([0, 0, 0, 0, 0, 0]);
+
+    function roll() {
+        if (cnt % 2 === 0) {
+            let veSo = "<h4>Vé của bạn: </h4><tr>";
+            let select = Number(prompt("Ấn 1 hoặc 2 để tiếp tục:" +
+                "\n1) Chọn số." +
+                "\n2) Quay ngẫu nhiên."));
+
+            switch (select) {
+                case 1:
+                    for (let j = 1; j <= 6; j++) {
+                        veSo += `<td width="100px"><input type="number" min="0" max="99" height="50px" class="number${j}"></td>`;
+                    }
+                    veSo += "</tr>";
+                    document.getElementById("display").innerHTML = veSo;
+                    document.getElementById("quaySo").innerText = "Hoàn tất";
+                    break;
+                case 2:
+                    for (let j = 1; j <= 6; j++) {
+                        veSo += `<td width="100px"><input type="number" min="0" max="99" class="number${j}" value="${Math.floor(Math.random() * 100)}"></td>`;
+                    }
+                    veSo += "</tr>";
+                    document.getElementById("display").innerHTML = veSo;
+                    document.getElementById("quaySo").innerText = "Hoàn tất";
+            }
+            cnt++;
+        } else {
+            let arr1 = [];
+            for (let i = 0; i < 6; i++) {
+                arr1.push(Number(document.querySelector(`.number${i + 1}`).value));
+            }
+            lottery1 = new Lottery(arr1);
+            console.log(lottery1.getLottery());
+
+            display();
+            document.getElementById("quaySo").innerText = "Quay số";
+            cnt++;
+        }
+    }
+
+    function display() {
+        document.getElementById("result").innerText =
+            "Kết quả của hệ thống: " + lotterySystem.getLottery().join(", ") +
+            "\nVé số khách hàng đã mua: " + lottery1.getLottery().join(", ");
+        award();
+    }
+
+    function award() {
+        let soTrung = 0;
+        let arr1 = lottery1.daySo;
+        let arr2 = lotterySystem.daySo;
+        for (let i = arr1.length - 1; 0 <= i; i--) {
+            if (arr1[i] === arr2[i]) {
+                soTrung++;
+            }
+        }
+        console.log(soTrung);
+
+        switch (soTrung) {
+            case 6:
+                console.log("Chúc mừng bạn đã đoạt giải nhất!");
+                alert("Chúc mừng bạn đã đoạt giải nhất!");
+                break;
+
+            case 5:
+                console.log("Chúc mừng bạn đã đoạt giải nhì!");
+                alert("Chúc mừng bạn đã đoạt giải nhì!");
+                break;
+
+            case 3:
+                console.log("Chúc mừng bạn đã đoạt giải khuyến khích!");
+                alert("Chúc mừng bạn đã đoạt giải khuyến khích!");
+                break;
+
+            default:
+                console.log("Chúc bạn may mắn lần sau!");
+                alert("Chúc bạn may mắn lần sau!");
+                break;
+        }
+    }
+</script>
+</body>
+</html>
