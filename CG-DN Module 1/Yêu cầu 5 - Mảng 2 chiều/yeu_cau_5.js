@@ -69,16 +69,16 @@ function bai5_2() {
 function bai5_3() {
     let row = Number(prompt("Nhập số hàng: "));
     let column = Number(prompt("Nhập số cột: "));
-    let arr = new Array(row);
-    for (let i = 0; i < arr.length; i++) {
-        arr[i] = new Array(column);
+    let arr1 = new Array(row);
+    for (let i = 0; i < arr1.length; i++) {
+        arr1[i] = new Array(column);
     }
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            arr[i][j] = parseInt(prompt("Nhập phần tử " + i + "-" + j));
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr1[i].length; j++) {
+            arr1[i][j] = parseInt(prompt("Nhập phần tử " + i + "-" + j));
         }
     }
-    console.log(arr);
+    console.log(arr1);
 
     function findMax(arr) {
         let max = arr[0][0];
@@ -104,5 +104,5 @@ function bai5_3() {
         return min;
     }
 
-    alert("Số lớn nhất là: " + findMax(arr) + ", số nhỏ nhất là: " + findMin(arr));
+    alert("Số lớn nhất là: " + findMax(arr1) + ", số nhỏ nhất là: " + findMin(arr1));
 }
