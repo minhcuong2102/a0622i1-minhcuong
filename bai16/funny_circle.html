@@ -7,10 +7,13 @@
 <body>
 <canvas id="myCanvas" width="1200px" height="675px" style="border:1px solid #d3d3d3;"></canvas>
 <script>
-    function Circle(x, y, radius){
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
+    class Circle{
+        constructor(x, y, radius) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+        }
+
     }
 
     function getRandomHex(){

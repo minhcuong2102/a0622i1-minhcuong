@@ -6,16 +6,17 @@
 </head>
 <body>
 <script>
-    let Circle = function(radius) {
-
-        this.radius = radius;
-        this.getRadius = function() {
+    class Circle  {
+        constructor(radius) {
+            this.radius = radius;
+        }
+        getRadius = function() {
             return radius;
         }
-        this.getArea = function() {
+        getArea = function() {
             return Math.PI * radius * radius;
         }
-    };
+    }
     let circle = new Circle(2);
     let radius = circle.getRadius();
 
