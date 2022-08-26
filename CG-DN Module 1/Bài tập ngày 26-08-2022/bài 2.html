@@ -7,6 +7,44 @@
 <body>
 <script>
 
+    function checkString(str) {
+        let arr1 = [];
+        let flag = false;
+        let arr = str.split('');
+        let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let alphabet1 = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+        let alphabet2 = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < num.length; j++) {
+                if (arr[i] == num[j]) {
+                    flag = true;
+                    break;
+                }
+            }
+
+            for (let k = 0; k < alphabet1.length; k++) {
+                if (arr[i] == alphabet1[k]) {
+                    flag = true;
+                    break;
+                }
+            }
+            for (let h = 0; h < alphabet2.length; h++) {
+                if (arr[i] == alphabet2[h]) {
+                    flag = true;
+                    break;
+                }
+            }
+            if (!flag){
+                arr1.push(arr[i]);
+            }
+            flag = false;
+        }
+
+        return arr1;
+    }
+
+    let str = prompt("Nhập một chuỗi: ");
+    alert(checkString(str).join(", "));
 </script>
 </body>
 </html>
