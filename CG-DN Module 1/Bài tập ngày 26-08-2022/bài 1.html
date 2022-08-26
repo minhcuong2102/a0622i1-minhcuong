@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<script>
+    let arr1 = [];
+    let n = +prompt("Nhập số phần tử: ");
+    for (let i = 0; i < n; i++) {
+        arr1[i] = +prompt("Nhập phần tử thứ " + i);
+        while (arr1[i] <= 10 || arr1[i] >= 100){
+         arr1[i] = +prompt("Nhập lại phần tử thứ " + i);
+        }
+    }
+    console.log(arr1);
+    let arr2 = [];
+    for (let i = 0; i < arr1.length; i++) {
+        let hangChuc = arr1[i]/10;
+        let hangDonVi = arr1[i]%10;
+        if (hangChuc < hangDonVi){
+            arr2.push(arr1[i]);
+        }
+    }
+    alert("Các số có hàng đơn vị lớn hơn hàng chục là: " + arr2.join(", "));
+</script>
+</body>
+</html>
