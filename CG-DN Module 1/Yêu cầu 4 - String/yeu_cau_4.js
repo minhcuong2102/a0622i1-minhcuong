@@ -1,20 +1,9 @@
 function bai4_1() {
     function deleteSpace(str) {
         let arr1 = str.split(" ");
-        let cnt = 0;
         for (let i = 0; i < arr1.length; i++) {
-            if (arr1[i] === " ") {
-                for (let j = i; j < arr1.length; j++) {
-                    if (arr1[j] === " ") {
-                        cnt++;
-                    } else {
-                        break;
-                    }
-                }
-            }
-            if (cnt !== 0) {
-                arr1.splice(i, cnt);
-                cnt = 0;
+            if (arr1[i] === "") {
+                arr1.splice(i, 1);
             }
         }
         return arr1;
