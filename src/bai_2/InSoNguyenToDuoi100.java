@@ -1,6 +1,6 @@
 package bai_2;
 
-public class In20SoNguyenTo {
+public class InSoNguyenToDuoi100 {
     public static boolean isPrime(int n) {
         if (n < 2) {
             return false;
@@ -14,11 +14,10 @@ public class In20SoNguyenTo {
     }
 
     public static void main(String[] args) {
-        int cnt = 0, n = 2;
-        while (cnt < 20) {
-            if (isPrime(n)) {
+        int n = 2;
+        while (n < 100){
+            if (isPrime(n)){
                 System.out.println(n);
-                cnt++;
             }
             n++;
         }

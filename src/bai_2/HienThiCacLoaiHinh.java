@@ -13,9 +13,9 @@ public class HienThiCacLoaiHinh {
         switch (choice) {
             case 1:
                 int chieuDai, chieuRong;
-                System.out.println("Nhập chiều dài: ");
+                System.out.print("Nhập chiều dài: ");
                 chieuDai = scanner.nextInt();
-                System.out.println("Nhập chiều rộng: ");
+                System.out.print("Nhập chiều rộng: ");
                 chieuRong = scanner.nextInt();
                 for (int i = 0; i < chieuRong; i++) {
                     for (int j = 0; j < chieuDai; j++) {
@@ -28,7 +28,7 @@ public class HienThiCacLoaiHinh {
                 System.out.println("Chọn kiểu dáng hình tam giác: \n" +
                         "1. Top-left, 2. Top-right, 3. Bottom-left, 4. Bottom-right.");
                 int choice1 = scanner.nextInt();
-                System.out.println("Nhập chiều cao: ");
+                System.out.print("Nhập chiều cao: ");
                 int chieuCao = scanner.nextInt();
                 switch (choice1) {
                     case 1:
@@ -76,7 +76,7 @@ public class HienThiCacLoaiHinh {
                         break;
                 }
             case 3:
-                System.out.println("Nhập chiều cao: ");
+                System.out.print("Nhập chiều cao: ");
                 chieuCao = scanner.nextInt();
                 for (int i = 1; i <= chieuCao; i++) {
                     for (int j = chieuCao; j > i; j--) {
