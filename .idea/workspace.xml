@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_4/fan/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_4/fan/MainFan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_5/circle/Circle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_4/stop_watch/MainStopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_4/stop_watch/MainStopWatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_4/stop_watch/StopWatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_4/stop_watch/StopWatch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_4/stop_watch/MainStopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_4/stop_watch/MainStopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_4/stop_watch/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_4/stop_watch/StopWatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +41,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Application.MainFan">
+  <component name="RunManager" selected="Application.MainStopWatch">
     <configuration name="MainFan" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_4.fan.MainFan" />
       <module name="module_2" />
@@ -106,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainFan" />
         <item itemvalue="Application.MainStopWatch" />
+        <item itemvalue="Application.MainFan" />
         <item itemvalue="Application.MainQuadraticEquation" />
         <item itemvalue="Application.MainRectangle" />
         <item itemvalue="Application.TimPhanTuLonNhat" />
@@ -126,7 +129,7 @@
       <updated>1662721370339</updated>
       <workItem from="1662721378095" duration="6607000" />
       <workItem from="1662958650529" duration="2013000" />
-      <workItem from="1662978297516" duration="5574000" />
+      <workItem from="1662978297516" duration="7042000" />
     </task>
     <servers />
   </component>
@@ -141,22 +144,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="538" y="198" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1662721397786" />
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1662983314205">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1662986109971">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662983314205" />
-    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1662983314205">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662986109971" />
+    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1662986109971">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1662983314205" />
-    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1662983314205">
+    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1662986109971" />
+    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1662986109971">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1662983314205" />
-    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1662983314205">
+    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1662986109971" />
+    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1662986109971">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662983314205" />
+    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662986109971" />
     <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1662979443575">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
