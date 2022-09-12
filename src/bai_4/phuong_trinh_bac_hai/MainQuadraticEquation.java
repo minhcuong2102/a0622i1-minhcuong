@@ -1,4 +1,4 @@
-package bai_4.PhuongTrinhBacHai;
+package bai_4.phuong_trinh_bac_hai;
 
 import java.util.Scanner;
 
