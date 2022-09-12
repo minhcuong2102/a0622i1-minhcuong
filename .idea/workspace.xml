@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_3/TimPhanTuNhoNhat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_3/TimPhanTuLonNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_3/TimPhanTuLonNhat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4/PhuongTrinhBacHai/MainQuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4/PhuongTrinhBacHai/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4/thuc_hanh/MainRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_4/thuc_hanh/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_3/TimPhanTuLonNhat.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_3/TimPhanTuLonNhat.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_3/TimPhanTuNhoNhat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_3/TimPhanTuNhoNhat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +42,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Application.TimPhanTuLonNhat">
+  <component name="RunManager" selected="Application.MainQuadraticEquation">
     <configuration name="GopMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_3.GopMang" />
       <module name="module_2" />
@@ -51,12 +56,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InSoNguyenToDuoi100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_2.InSoNguyenToDuoi100" />
+    <configuration name="MainQuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_4.PhuongTrinhBacHai.MainQuadraticEquation" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_2.*" />
+          <option name="PATTERN" value="bai_4.PhuongTrinhBacHai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainRectangle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_4.thuc_hanh.MainRectangle" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_4.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,26 +108,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="XoaPhanTuMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_3.XoaPhanTuMang" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainQuadraticEquation" />
+        <item itemvalue="Application.MainRectangle" />
         <item itemvalue="Application.TimPhanTuLonNhat" />
         <item itemvalue="Application.GopMang" />
         <item itemvalue="Application.ThemPhanTuVaoMang" />
-        <item itemvalue="Application.XoaPhanTuMang" />
-        <item itemvalue="Application.InSoNguyenToDuoi100" />
       </list>
     </recent_temporary>
   </component>
@@ -124,7 +129,8 @@
       <option name="presentableId" value="Default" />
       <updated>1662721370339</updated>
       <workItem from="1662721378095" duration="6607000" />
-      <workItem from="1662958650529" duration="1644000" />
+      <workItem from="1662958650529" duration="2013000" />
+      <workItem from="1662978297516" duration="1546000" />
     </task>
     <servers />
   </component>
@@ -139,25 +145,25 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="538" y="198" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1662721397786" />
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1662960077720">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1662978902495">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662960077720" />
-    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1662960077720">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662978902495" />
+    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1662978902495">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1662960077720" />
-    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1662960077720">
+    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1662978902495" />
+    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1662978902495">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1662960077720" />
-    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1662960077720">
+    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1662978902495" />
+    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1662978902495">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662960077720" />
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1662959413701">
+    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662978902495" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1662979443575">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1662959413701" />
+    <state x="431" y="137" width="672" height="678" key="search.everywhere.popup/0.0.1536.816@0.0.1536.816" timestamp="1662979443575" />
   </component>
 </project>

@@ -14,7 +14,7 @@ public class TimPhanTuNhoNhat {
             arr[i] = sc.nextInt();
         }
         System.out.println("Mảng đã cho: " + Arrays.toString(arr));
-        
+
         int min = arr[0];
         for (int i = 0; i < num; i++) {
             if (arr[i] < min){
