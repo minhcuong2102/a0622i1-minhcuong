@@ -18,11 +18,12 @@ public class TimPhanTuLonNhat {
                 arr[i][j] = sc.nextInt();
             }
         }
+        System.out.println("Mảng đã cho: " + Arrays.toString(arr));
 
         int max = arr[0][0];
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                if (arr[i][j] > max){
+                if (arr[i][j] > max) {
                     max = arr[i][j];
                 }
             }
