@@ -13,11 +13,11 @@ public class Student {
         this.classes = classes;
     }
 
-    public String setName(String name){
-        return this.name = name;
+    public void setName(String name){
+        this.name = name;
     }
 
-    public String setClasses(String classes){
-        return this.classes = classes;
+    public void setClasses(String classes){
+        this.classes = classes;
     }
 }
