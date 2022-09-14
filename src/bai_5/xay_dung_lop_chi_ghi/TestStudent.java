@@ -7,8 +7,8 @@ public class TestStudent {
         Student student3 = new Student();
         student3.setName("Vũ");
         student3.setClasses("A06");
-        System.out.println(student1.name + " đang học lớp " + student1.classes);
-        System.out.println("Student 2 có tên là " + student2.name);
-        System.out.println("Học sinh " + student3.name + " học lớp " + student3.classes);
+        System.out.println(student1.getName() + " đang học lớp " + student1.getClasses());
+        System.out.println("Student 2 có tên là " + student2.getName());
+        System.out.println("Học sinh " + student3.getName() + " học lớp " + student3.getClasses());
     }
 }
