@@ -7,6 +7,10 @@ public class Point3D extends Point2D {
 
     }
 
+    public Point3D(float z) {
+        this.z = z;
+    }
+
     public Point3D(float x, float y, float z) {
         super(x, y);
         this.z = z;
@@ -24,11 +28,11 @@ public class Point3D extends Point2D {
         return new float[]{this.getX(), this.getY(), this.getZ()};
     }
 
-    public void setXYZ(){
+    public void setXYZ() {
 
     }
 
-    public String toString(){
+    public String toString() {
         return "Điểm này có toạ độ (" + super.getX() + ", " + super.getY() + ", " + this.getZ() + ").";
     }
 }

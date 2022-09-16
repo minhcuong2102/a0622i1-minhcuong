@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/TestPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_6/lop_point_va_moveable_point/MovablePoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_6/lop_point_va_moveable_point/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_6/lop_point_va_moveable_point/TestMove.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/Point3D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/Point3D.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Application.TestPoint">
+  <component name="RunManager" selected="Application.TestMove">
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_6.lop_circle_va_cylinder.Test1" />
       <module name="module_2" />
@@ -66,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_5.circle.TestCircle" />
+    <configuration name="TestMove" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_6.lop_point_va_moveable_point.TestMove" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_5.circle.*" />
+          <option name="PATTERN" value="bai_6.lop_point_va_moveable_point.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMove" />
         <item itemvalue="Application.TestPoint" />
         <item itemvalue="Application.Test1" />
         <item itemvalue="Application.TestStudent" />
         <item itemvalue="Application.TestCircle (1)" />
-        <item itemvalue="Application.TestCircle" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +131,7 @@
       <workItem from="1662978297516" duration="7575000" />
       <workItem from="1663152460286" duration="6806000" />
       <workItem from="1663287197442" duration="22000" />
-      <workItem from="1663324004139" duration="1957000" />
+      <workItem from="1663324004139" duration="3824000" />
     </task>
     <servers />
   </component>
@@ -149,22 +150,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1663156701924" />
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1663324724480">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1663326121302">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1663324724480" />
-    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1663324724480">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1663326121302" />
+    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1663326121302">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1663324724480" />
-    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1663324724479">
+    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1663326121302" />
+    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1663326121302">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1663324724479" />
-    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1663324724480">
+    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1663326121302" />
+    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1663326121302">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1663324724480" />
+    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1663326121302" />
     <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1662979443575">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
