@@ -1,4 +1,4 @@
-package bai_6.lop_point_va_moveable_point;
+package bai_6.bai_tap.lop_point_va_moveable_point;
 
 public class MovablePoint extends Point{
     public float xSpeed = 0.0f;

@@ -1,4 +1,4 @@
-package bai_6.lop_point2d_va_point3d;
+package bai_6.bai_tap.lop_point2d_va_point3d;
 
 public class Point3D extends Point2D {
     private float z = 0.0f;
