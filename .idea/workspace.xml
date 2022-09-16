@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_circle_va_cylinder/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_circle_va_cylinder/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_circle_va_cylinder/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_point2d_va_point3d/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_point2d_va_point3d/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_point2d_va_point3d/TestPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_point_va_moveable_point/MovablePoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_point_va_moveable_point/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_6/bai_tap/lop_point_va_moveable_point/TestMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_circle_va_cylinder/Circle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_circle_va_cylinder/Cylinder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_circle_va_cylinder/Test1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/Point2D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/Point3D.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point2d_va_point3d/TestPoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point_va_moveable_point/MovablePoint.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point_va_moveable_point/Point.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_6/lop_point_va_moveable_point/TestMove.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_6/thuc_hanh/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_6/thuc_hanh/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_6/thuc_hanh/ShapeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +129,7 @@
       <workItem from="1662978297516" duration="7575000" />
       <workItem from="1663152460286" duration="6806000" />
       <workItem from="1663287197442" duration="22000" />
-      <workItem from="1663324004139" duration="4454000" />
+      <workItem from="1663324004139" duration="4778000" />
     </task>
     <servers />
   </component>
