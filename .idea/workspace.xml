@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_resizable/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_resizable/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_resizable/ResizableTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_resizable/Resizeable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_resizable/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_resizable/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_colorable/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_colorable/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_colorable/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_colorable/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_colorable/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_7/bai_tap/interface_colorable/TestColorable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Circle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Rectangle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Shape.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Shape.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_6/thuc_hanh/cac_doi_tuong_hinh_hoc/Square.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +41,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.ResizableTest">
+  <component name="RunManager" selected="Application.TestColorable">
     <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_7.thuc_hanh.lop_animal_va_interface_edible.AbstractAndInterfaceTests" />
       <module name="module_2" />
@@ -99,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMove" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_6.lop_point_va_moveable_point.TestMove" />
+    <configuration name="TestColorable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_7.bai_tap.interface_colorable.TestColorable" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_6.lop_point_va_moveable_point.*" />
+          <option name="PATTERN" value="bai_7.bai_tap.interface_colorable.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestColorable" />
         <item itemvalue="Application.ResizableTest" />
         <item itemvalue="Application.CircleComparatorTest" />
         <item itemvalue="Application.ComparableCircleTest" />
         <item itemvalue="Application.AbstractAndInterfaceTests" />
-        <item itemvalue="Application.TestMove" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +135,9 @@
       <workItem from="1663152460286" duration="6806000" />
       <workItem from="1663287197442" duration="22000" />
       <workItem from="1663324004139" duration="7419000" />
-      <workItem from="1663331571265" duration="688000" />
+      <workItem from="1663331571265" duration="1322000" />
+      <workItem from="1663584149682" duration="46000" />
+      <workItem from="1663584223817" duration="297000" />
     </task>
     <servers />
   </component>
@@ -157,22 +156,30 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1663156701924" />
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1663331545261">
+    <state x="548" y="149" key="FileChooserDialogImpl" timestamp="1663584191281">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1663331545261" />
-    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1663331545261">
+    <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom" timestamp="1663332380516">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1663331545261" />
-    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1663331545261">
+    <state width="1342" height="185" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1663332380516" />
+    <state width="1342" height="185" key="GridCell.Tab.0.center" timestamp="1663332380516">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1663331545261" />
-    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1663331545261">
+    <state width="1342" height="185" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1663332380516" />
+    <state width="1342" height="185" key="GridCell.Tab.0.left" timestamp="1663332380516">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1663331545261" />
+    <state width="1342" height="185" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1663332380516" />
+    <state width="1342" height="185" key="GridCell.Tab.0.right" timestamp="1663332380516">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1342" height="185" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1663332380516" />
+    <state x="277" y="53" key="SettingsEditor" timestamp="1663584193909">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="277" y="53" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1663584193909" />
     <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1662979443575">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
