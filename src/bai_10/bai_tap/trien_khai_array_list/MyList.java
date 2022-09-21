@@ -70,7 +70,7 @@ public class MyList<E> {
             for (int i = index; i < size; i++) {
                 elements[i] = elements[i + 1];
             }
-            size -= 1;
+            size--;
             return true;
         }
         return false;
