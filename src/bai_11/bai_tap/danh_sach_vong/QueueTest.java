@@ -1,7 +1,5 @@
 package bai_11.bai_tap.danh_sach_vong;
 
-import java.util.*;
-
 public class QueueTest {
     public static void main(String[] args) {
         Queue queue1 = new Queue();
