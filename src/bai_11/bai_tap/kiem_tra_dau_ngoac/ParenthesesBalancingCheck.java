@@ -2,7 +2,7 @@ package bai_11.bai_tap.kiem_tra_dau_ngoac;
 
 import java.util.*;
 
-public class ParenthesesBalancingChcek {
+public class ParenthesesBalancingCheck {
     public static boolean Parentheses(String s) {
         Stack<Character> stack = new Stack<>();
         for (int i = 0; i < s.length(); i++) {

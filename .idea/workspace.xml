@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_11/bai_tap/kiem_tra_dau_ngoac/ParenthesesBalancingChcek.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_11/bai_tap/kiem_tra_dau_ngoac/ParenthesesBalancingChcek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_11/bai_tap/kiem_tra_dau_ngoac/ParenthesesBalancingCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.ParenthesesBalancingChcek">
+  <component name="RunManager" selected="Application.ParenthesesBalancingCheck">
     <configuration name="NumberSystemConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_11.bai_tap.chuyen_doi_tu_he_10_sang_he_2.NumberSystemConversion" />
       <module name="module_2" />
@@ -70,8 +70,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParenthesesBalancingChcek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_11.bai_tap.kiem_tra_dau_ngoac.ParenthesesBalancingChcek" />
+    <configuration name="ParenthesesBalancingCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_11.bai_tap.kiem_tra_dau_ngoac.ParenthesesBalancingCheck" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
@@ -111,7 +111,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ParenthesesBalancingChcek" />
+        <item itemvalue="Application.ParenthesesBalancingCheck" />
         <item itemvalue="Application.PalindromeCheck" />
         <item itemvalue="Application.NumberSystemConversion" />
         <item itemvalue="Application.StackClient" />
@@ -142,7 +142,8 @@
       <workItem from="1663756711455" duration="10113000" />
       <workItem from="1663929446048" duration="6663000" />
       <workItem from="1664188555428" duration="7365000" />
-      <workItem from="1664280175848" duration="1205000" />
+      <workItem from="1664280175848" duration="1830000" />
+      <workItem from="1664288855097" duration="1385000" />
     </task>
     <servers />
   </component>
@@ -165,22 +166,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="156" key="GridCell.Tab.0.bottom" timestamp="1664280889053">
+    <state width="1342" height="156" key="GridCell.Tab.0.bottom" timestamp="1664293294984">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1664280889053" />
-    <state width="1342" height="156" key="GridCell.Tab.0.center" timestamp="1664280889053">
+    <state width="1342" height="156" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1664293294984" />
+    <state width="1342" height="156" key="GridCell.Tab.0.center" timestamp="1664293294984">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1664280889053" />
-    <state width="1342" height="156" key="GridCell.Tab.0.left" timestamp="1664280889052">
+    <state width="1342" height="156" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1664293294984" />
+    <state width="1342" height="156" key="GridCell.Tab.0.left" timestamp="1664293294983">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1664280889052" />
-    <state width="1342" height="156" key="GridCell.Tab.0.right" timestamp="1664280889053">
+    <state width="1342" height="156" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1664293294983" />
+    <state width="1342" height="156" key="GridCell.Tab.0.right" timestamp="1664293294984">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1664280889053" />
+    <state width="1342" height="156" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1664293294984" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
