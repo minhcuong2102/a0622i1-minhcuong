@@ -1,4 +1,4 @@
-package bai_12.bai_tap.array_list_va_linked_list;
+package bai_12.bai_tap.array_list_va_linked_list.array_list;
 
 public class Product {
     private String name;
@@ -41,6 +41,6 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Tên sản phẩm: " + this.name + ", mã sản phầm: " + this.id + ", giá: " + this.price;
+        return "Tên sản phẩm: " + this.getName() + ", mã sản phầm: " + this.getId() + ", giá: " + this.getPrice();
     }
 }

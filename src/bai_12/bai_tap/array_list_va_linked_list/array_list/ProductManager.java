@@ -1,4 +1,4 @@
-package bai_12.bai_tap.array_list_va_linked_list;
+package bai_12.bai_tap.array_list_va_linked_list.array_list;
 
 import java.util.List;
 import java.util.Scanner;
@@ -9,9 +9,11 @@ public class ProductManager implements Validate {
 
     public void add(List<Product> productList) {
         System.out.print("Nhập id: ");
-        int id = sc.nextInt();
+        int id = Integer.parseInt(sc.nextLine());
+
         System.out.print("Nhập tên: ");
         String name = sc.nextLine();
+
         System.out.print("Nhập giá: ");
         int price = sc.nextInt();
 
@@ -40,9 +42,11 @@ public class ProductManager implements Validate {
         for (int j = 0; j < productList.size(); j++) {
             if (j == i) {
                 System.out.print("Nhập id: ");
-                int id = sc.nextInt();
+                int id = Integer.parseInt(sc.nextLine());
+
                 System.out.print("Nhập tên: ");
                 String name = sc.nextLine();
+
                 System.out.print("Nhập giá: ");
                 int price = sc.nextInt();
 

@@ -1,4 +1,4 @@
-package bai_12.bai_tap.array_list_va_linked_list;
+package bai_12.bai_tap.array_list_va_linked_list.array_list;
 
 import java.util.List;
 

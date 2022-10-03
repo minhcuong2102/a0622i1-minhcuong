@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/SortProductByPriceDecreasing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/SortProductByPriceIncreasing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Validate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/Validate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_12/bai_tap/array_list_va_linked_list/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_12/bai_tap/array_list_va_linked_list/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_12/bai_tap/array_list_va_linked_list/ProductManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_12/bai_tap/array_list_va_linked_list/Validate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/ProductManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Validate.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +54,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.comparable_va_comparator.Main" />
       <module name="module_2" />
@@ -68,6 +74,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bai_12.bai_tap.array_list_va_linked_list.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_12.bai_tap.array_list_va_linked_list.array_list.Main" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_12.bai_tap.array_list_va_linked_list.array_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,19 +120,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParenthesesBalancingCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_11.bai_tap.kiem_tra_dau_ngoac.ParenthesesBalancingCheck" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_11.bai_tap.kiem_tra_dau_ngoac.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.danh_sach_sinh_vien.TestMap" />
       <module name="module_2" />
@@ -129,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestMap" />
-        <item itemvalue="Application.ParenthesesBalancingCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +169,7 @@
       <workItem from="1664280175848" duration="1830000" />
       <workItem from="1664288855097" duration="1385000" />
       <workItem from="1664533753498" duration="11431000" />
-      <workItem from="1664793292406" duration="2826000" />
+      <workItem from="1664793292406" duration="5150000" />
     </task>
     <servers />
   </component>
@@ -186,22 +192,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="156" key="GridCell.Tab.0.bottom" timestamp="1664796044391">
+    <state width="1342" height="156" key="GridCell.Tab.0.bottom" timestamp="1664797905859">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1664796044391" />
-    <state width="1342" height="156" key="GridCell.Tab.0.center" timestamp="1664796044391">
+    <state width="1342" height="156" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1664797905859" />
+    <state width="1342" height="156" key="GridCell.Tab.0.center" timestamp="1664797905859">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1664796044391" />
-    <state width="1342" height="156" key="GridCell.Tab.0.left" timestamp="1664796044390">
+    <state width="1342" height="156" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1664797905859" />
+    <state width="1342" height="156" key="GridCell.Tab.0.left" timestamp="1664797905859">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1664796044390" />
-    <state width="1342" height="156" key="GridCell.Tab.0.right" timestamp="1664796044391">
+    <state width="1342" height="156" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1664797905859" />
+    <state width="1342" height="156" key="GridCell.Tab.0.right" timestamp="1664797905859">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1664796044391" />
+    <state width="1342" height="156" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1664797905859" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -218,6 +224,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1342" height="230" key="GridCell.Tab.1.right/0.0.1536.816@0.0.1536.816" timestamp="1664201146613" />
+    <state x="353" y="171" key="IDE.errors.dialog" timestamp="1664798094291">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="353" y="171" key="IDE.errors.dialog/0.0.1536.816@0.0.1536.816" timestamp="1664798094291" />
     <state x="277" y="53" key="SettingsEditor" timestamp="1663584193909">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
