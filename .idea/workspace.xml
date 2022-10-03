@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/danh_sach_sinh_vien/TestMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/hashmap_va_hashset/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/hashmap_va_hashset/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/ProductManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/SortProductByPriceDecreasing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/SortProductByPriceIncreasing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/Validate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +48,26 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.comparable_va_comparator.Main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bai_12.thuc_hanh.comparable_va_comparator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_12.bai_tap.array_list_va_linked_list.Main" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_12.bai_tap.array_list_va_linked_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PalindromeCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_11.bai_tap.kiem_tra_chuoi_palindrome.PalindromeCheck" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_12.bai_tap.array_list_va_linked_list.Main" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_11.bai_tap.kiem_tra_chuoi_palindrome.*" />
+          <option name="PATTERN" value="bai_12.bai_tap.array_list_va_linked_list.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestMap" />
         <item itemvalue="Application.ParenthesesBalancingCheck" />
-        <item itemvalue="Application.PalindromeCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -146,7 +162,8 @@
       <workItem from="1664188555428" duration="7365000" />
       <workItem from="1664280175848" duration="1830000" />
       <workItem from="1664288855097" duration="1385000" />
-      <workItem from="1664533753498" duration="2553000" />
+      <workItem from="1664533753498" duration="11431000" />
+      <workItem from="1664793292406" duration="2826000" />
     </task>
     <servers />
   </component>
@@ -161,30 +178,30 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="538" y="198" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1662721397786" />
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1663156701924">
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1664794239857">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1663156701924" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1664794239857" />
     <state x="548" y="149" key="FileChooserDialogImpl" timestamp="1663584191281">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="156" key="GridCell.Tab.0.bottom" timestamp="1664537727967">
+    <state width="1342" height="156" key="GridCell.Tab.0.bottom" timestamp="1664796044391">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1664537727967" />
-    <state width="1342" height="156" key="GridCell.Tab.0.center" timestamp="1664537727967">
+    <state width="1342" height="156" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1664796044391" />
+    <state width="1342" height="156" key="GridCell.Tab.0.center" timestamp="1664796044391">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1664537727967" />
-    <state width="1342" height="156" key="GridCell.Tab.0.left" timestamp="1664537727967">
+    <state width="1342" height="156" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1664796044391" />
+    <state width="1342" height="156" key="GridCell.Tab.0.left" timestamp="1664796044390">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1664537727967" />
-    <state width="1342" height="156" key="GridCell.Tab.0.right" timestamp="1664537727967">
+    <state width="1342" height="156" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1664796044390" />
+    <state width="1342" height="156" key="GridCell.Tab.0.right" timestamp="1664796044391">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="156" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1664537727967" />
+    <state width="1342" height="156" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1664796044391" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -213,6 +230,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="213" y="0" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1664535731781" />
+    <state x="481" y="181" key="refactoring.ChangeSignatureDialog" timestamp="1664793974655">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="481" y="181" key="refactoring.ChangeSignatureDialog/0.0.1536.816@0.0.1536.816" timestamp="1664793974655" />
     <state x="431" y="137" width="672" height="678" key="search.everywhere.popup" timestamp="1662979443575">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
