@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/linked_list/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/linked_list/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/linked_list/ProductManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/cai_dat_cay_nhi_phan/AbstractTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/cai_dat_cay_nhi_phan/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/cai_dat_cay_nhi_phan/TestBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/cai_dat_cay_nhi_phan/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/thuc_hanh/cai_dat_cay_nhi_phan/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/array_list_va_linked_list/array_list/ProductManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main (4)">
+  <component name="RunManager" selected="Application.TestBST">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.comparable_va_comparator.Main" />
       <module name="module_2" />
@@ -102,19 +101,6 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.hashmap_va_hashset.Main" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_12.thuc_hanh.hashmap_va_hashset.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.bai_tap.array_list_va_linked_list.Main" />
       <module name="module_2" />
       <extension name="coverage">
@@ -127,13 +113,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.cai_dat_cay_nhi_phan.TestBST" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_12.thuc_hanh.cai_dat_cay_nhi_phan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBST" />
         <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +163,7 @@
       <workItem from="1664288855097" duration="1385000" />
       <workItem from="1664533753498" duration="11431000" />
       <workItem from="1664793292406" duration="8103000" />
-      <workItem from="1664967616502" duration="4460000" />
+      <workItem from="1664967616502" duration="5276000" />
     </task>
     <servers />
   </component>
