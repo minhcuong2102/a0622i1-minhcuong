@@ -1,8 +1,6 @@
-package bai_12.bai_tap.array_list_va_linked_list.array_list;
+package bai_12.bai_tap.array_list_va_linked_list.linked_list;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     private static void showMenu() {
@@ -21,63 +19,62 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        Validate validate = new ProductManager();
+        LinkedList<Product> productList = new LinkedList<>();
+        ProductManager manager = new ProductManager();
         Scanner sc = new Scanner(System.in);
-        ArrayList<Product> productList = new ArrayList<>();
-        productList.add(new Product(1, "mathang1", 10000));
-        productList.add(new Product(2, "mathang2", 15000));
-        productList.add(new Product(3, "mathang3", 10000));
-        productList.add(new Product(4, "mathang4", 20000));
-        productList.add(new Product(5, "mathang5", 30000));
+        productList.add(new Product(1, "mathang1", 15000));
+        productList.add(new Product(2, "mathang2", 20000));
+        productList.add(new Product(3, "mathang3", 30000));
+        productList.add(new Product(4, "mathang4", 40000));
+        productList.add(new Product(5, "mathang5", 55000));
+
         int choice;
         int index;
-        do {
+        do{
             showMenu();
             System.out.print("Nhập lựa chọn: ");
             choice = sc.nextInt();
             switch (choice) {
                 case 1:
-                    validate.add(productList);
-                    validate.display(productList);
+                    manager.add(productList);
+                    manager.display(productList);
                     break;
 
                 case 2:
-                    validate.display(productList);
+                    manager.display(productList);
                     break;
 
                 case 3:
                     System.out.print("Nhập id: ");
                     index = sc.nextInt();
-                    validate.remove(productList, index);
-                    validate.display(productList);
+                    manager.delete(productList, index);
                     break;
 
                 case 4:
-                    System.out.print("Nhập id: ");
+                    System.out.print("Nhập id");
                     index = sc.nextInt();
-                    validate.edit(productList, index);
-                    validate.display(productList);
+                    manager.edit(productList, index);
                     break;
 
                 case 5:
-                    validate.sortProductByPriceDecreasing(productList);
-                    validate.display(productList);
+                    manager.sortProductByPriceDecreasing(productList);
+                    manager.display(productList);
                     break;
 
                 case 6:
-                    validate.sortProductByPriceIncreasing(productList);
-                    validate.display(productList);
+                    manager.sortProductByPriceIncreasing(productList);
+                    manager.display(productList);
                     break;
 
                 case 7:
                     System.out.print("Nhập tên: ");
                     String name = sc.nextLine();
-                    validate.search(productList, name);
+                    manager.search(productList, name);
                     break;
 
                 case 0:
                     break;
             }
-        } while (choice != 0);
+        }while (choice != 0);
     }
 }

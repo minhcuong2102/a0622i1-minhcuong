@@ -1,13 +1,13 @@
-package bai_12.bai_tap.array_list_va_linked_list.array_list;
+package bai_12.bai_tap.array_list_va_linked_list.linked_list;
 
-import java.util.List;
-import java.util.Scanner;
+import java.util.LinkedList;
 import java.util.Comparator;
+import java.util.Scanner;
 
-public class ProductManager implements Validate {
+public class ProductManager {
     Scanner sc = new Scanner(System.in);
 
-    public void add(List<Product> productList) {
+    public void add(LinkedList<Product> productList) {
         System.out.print("Nhập id: ");
         int id = Integer.parseInt(sc.nextLine());
 
@@ -15,32 +15,30 @@ public class ProductManager implements Validate {
         String name = sc.nextLine();
 
         System.out.print("Nhập giá: ");
-        int price = sc.nextInt();
+        int price = Integer.parseInt(sc.nextLine());
 
         Product product1 = new Product(id, name, price);
         productList.add(product1);
     }
 
-    public void display(List<Product> productList) {
+    public void display(LinkedList<Product> productList) {
         for (Product o : productList) {
             System.out.println(o);
         }
     }
 
-    @Override
-    public void remove(List<Product> productList, int i) {
+    public void delete(LinkedList<Product> productList, int index) {
         for (int j = 0; j < productList.size(); j++) {
-            if (j == i - 1) {
+            if (j == index - 1) {
                 productList.remove(j);
                 break;
             }
         }
     }
 
-    @Override
-    public void edit(List<Product> productList, int i) {
+    public void edit(LinkedList<Product> productList, int index) {
         for (int j = 0; j < productList.size(); j++) {
-            if (j == i - 1) {
+            if (j == index - 1) {
                 System.out.print("Nhập id: ");
                 int id = Integer.parseInt(sc.nextLine());
 
@@ -58,24 +56,12 @@ public class ProductManager implements Validate {
         }
     }
 
-    public void sortProductByPriceDecreasing(List<Product> productList) {
+    public void sortProductByPriceDecreasing(LinkedList<Product> productList) {
         productList.sort(new SortProductByPriceDecreasing());
     }
 
-    public void sortProductByPriceIncreasing(List<Product> productList) {
+    public void sortProductByPriceIncreasing(LinkedList<Product> productList) {
         productList.sort(new SortProductByPriceIncreasing());
-    }
-
-    public void search(List<Product> productList, String name) {
-        int cnt = 0;
-        name = sc.nextLine();
-        for (Product product : productList) {
-            if (product.getName().contains(name)) {
-                cnt++;
-                System.out.println(product);
-            }
-        }
-        if (cnt == 0) System.out.println("Không tìm thấy tên sản phẩm!");
     }
 
     public static class SortProductByPriceDecreasing implements Comparator<Product> {
@@ -94,5 +80,17 @@ public class ProductManager implements Validate {
             }
             return -1;
         }
+    }
+
+    public void search(LinkedList<Product> productList, String name) {
+        int cnt = 0;
+        name = sc.nextLine();
+        for (Product product : productList) {
+            if (product.getName().contains(name)) {
+                cnt++;
+                System.out.println(product);
+            }
+        }
+        if (cnt == 0) System.out.println("Không tìm thấy tên sản phẩm!");
     }
 }
