@@ -1,4 +1,4 @@
-package bai_12.thuc_hanh.cai_dat_cay_nhi_phan;
+package bai_12.bai_tap.bst_postorder;
 
 public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     protected TreeNode<E> root;
@@ -8,8 +8,7 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     }
 
     public BST(E[] objects) {
-        for (int i = 0; i < objects.length; i++)
-            insert(objects[i]);
+        for (E object : objects) insert(object);
     }
 
     public boolean insert(E e) {
@@ -45,13 +44,15 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
         return size;
     }
 
-    public void inorder() {
-        inorder(root);
+    public void postorder() {
+        postorder(root);
     }
-    protected void inorder(TreeNode<E> root) {
+
+    protected void postorder(TreeNode<E> root) {
         if (root == null) return;
-        inorder(root.left);
+        postorder(root.left);
+        postorder(root.right);
         System.out.println(root.element + " ");
-        inorder(root.right);
     }
 }
+

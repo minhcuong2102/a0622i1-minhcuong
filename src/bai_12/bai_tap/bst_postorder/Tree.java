@@ -1,7 +1,7 @@
-package bai_12.thuc_hanh.cai_dat_cay_nhi_phan;
+package bai_12.bai_tap.bst_postorder;
 
 public interface Tree<E> {
     boolean insert(E e);
-    void inorder();
+    void postorder();
     int getSize();
 }
