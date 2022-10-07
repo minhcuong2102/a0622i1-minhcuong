@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_xoa_trong_bst/AbstractTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_xoa_trong_bst/BST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_xoa_trong_bst/TestBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_xoa_trong_bst/Tree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_xoa_trong_bst/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_tim_kiem_trong_bst/AbstractTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_tim_kiem_trong_bst/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_tim_kiem_trong_bst/TestBST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_tim_kiem_trong_bst/Tree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_tim_kiem_trong_bst/TreeNode.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/bst_preorder/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/bst_preorder/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bai_12/bai_tap/bst_preorder/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_12/bai_tap/bst_preorder/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +44,16 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/bai_12/bai_tap/thao_tac_tim_kiem_trong_bst" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Codegym\module_2\src\bai_12\bai_tap\thao_tac_tim_kiem_trong_bst" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestBST">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.comparable_va_comparator.Main" />
       <module name="module_2" />
@@ -115,19 +119,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBST (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_12.thuc_hanh.cai_dat_cay_nhi_phan.TestBST" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_12.thuc_hanh.cai_dat_cay_nhi_phan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestBST (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_12.bai_tap.bst_preorder.TestBST" />
       <module name="module_2" />
@@ -154,13 +145,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestBST" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_12.bai_tap.thao_tac_tim_kiem_trong_bst.TestBST" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_12.bai_tap.thao_tac_tim_kiem_trong_bst.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestBST" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.TestBST (4)" />
         <item itemvalue="Application.TestBST (3)" />
         <item itemvalue="Application.TestBST (1)" />
-        <item itemvalue="Application.TestBST (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +196,7 @@
       <workItem from="1664533753498" duration="11431000" />
       <workItem from="1664793292406" duration="8103000" />
       <workItem from="1664967616502" duration="6528000" />
-      <workItem from="1665138970261" duration="5940000" />
+      <workItem from="1665138970261" duration="8408000" />
     </task>
     <servers />
   </component>
@@ -219,22 +223,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="155" key="GridCell.Tab.0.bottom" timestamp="1665144949832">
+    <state width="1342" height="155" key="GridCell.Tab.0.bottom" timestamp="1665147456576">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1665144949832" />
-    <state width="1342" height="155" key="GridCell.Tab.0.center" timestamp="1665144949832">
+    <state width="1342" height="155" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1665147456576" />
+    <state width="1342" height="155" key="GridCell.Tab.0.center" timestamp="1665147456576">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1665144949832" />
-    <state width="1342" height="155" key="GridCell.Tab.0.left" timestamp="1665144949832">
+    <state width="1342" height="155" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1665147456576" />
+    <state width="1342" height="155" key="GridCell.Tab.0.left" timestamp="1665147456576">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1665144949832" />
-    <state width="1342" height="155" key="GridCell.Tab.0.right" timestamp="1665144949832">
+    <state width="1342" height="155" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1665147456576" />
+    <state width="1342" height="155" key="GridCell.Tab.0.right" timestamp="1665147456576">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1665144949832" />
+    <state width="1342" height="155" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1665147456576" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
