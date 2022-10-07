@@ -1,4 +1,4 @@
-package bai_12.bai_tap.bst_preorder;
+package bai_12.bai_tap.thao_tac_xoa_trong_bst;
 
 public class BST<E extends Comparable<E>> extends AbstractTree<E> {
     protected TreeNode<E> root;
@@ -42,6 +42,41 @@ public class BST<E extends Comparable<E>> extends AbstractTree<E> {
 
     public int getSize() {
         return size;
+    }
+
+    public void delete(E element) {
+        root = delete(root, element);
+    }
+
+    protected TreeNode<E> delete(TreeNode<E> root, E element) {
+        if (root == null)
+            return root;
+
+        if (element.compareTo(root.element) < 0)
+            root.left = delete(root.left, element);
+
+        else if (element.compareTo(root.element) > 0)
+            root.right = delete(root.right, element);
+
+        else {
+            if (root.left == null)
+                return root.right;
+            else if (root.right == null)
+                return root.left;
+
+            root.element = minValue(root.right);
+            root.right = delete(root.right, element);
+        }
+        return root;
+    }
+
+    public E minValue(TreeNode<E> root) {
+        E minVal = root.element;
+        while (root.left != null) {
+            minVal = root.left.element;
+            root = root.left;
+        }
+        return minVal;
     }
 
     public void preorder() {
