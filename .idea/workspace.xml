@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/models/facility/Facility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/models/facility/House.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/models/facility/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/models/facility/Villa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/models/person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/BookingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/ContactService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/FacilityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/booking/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/contract/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/case_study/models/person/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +197,7 @@
       <workItem from="1664793292406" duration="8103000" />
       <workItem from="1664967616502" duration="6528000" />
       <workItem from="1665138970261" duration="12742000" />
-      <workItem from="1665232418678" duration="1441000" />
+      <workItem from="1665232418678" duration="3080000" />
     </task>
     <servers />
   </component>
@@ -220,10 +212,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="538" y="198" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1662721397786" />
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1665232689535">
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1665239737004">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1665232689535" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1665239737004" />
     <state x="535" y="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1664971136121">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
