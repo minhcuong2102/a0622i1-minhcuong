@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_14/thuc_hanh/cai_dat_bubble_sort/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_14/thuc_hanh/cai_dat_selection_sort/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_14/thuc_hanh/minh_hoa_bubble_sort/BubbleSortByStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/Impl/BookingServiceImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/Impl/ContractServiceImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/Impl/EmployeeServiceImplement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/case_study/services/Impl/FacilityServiceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_14/bai_tap/minh_hoa_insertion_sort/InsertionSortByStep.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/controllers/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/controllers/FuramaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/models/person/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/models/person/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/models/person/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/models/person/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/models/person/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/models/person/Person.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/ContactService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/services/Service.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/models/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/models/person/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/models/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/models/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/ContractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/EmployeeServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/EmployeeServiceImplement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_14/thuc_hanh/minh_hoa_bubble_sort/BubbleSortByStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_14/thuc_hanh/minh_hoa_bubble_sort/BubbleSortByStep.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,20 +54,7 @@
       <recent name="E:\Codegym\module_2\src\bai_12\bai_tap\thao_tac_tim_kiem_trong_bst" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BubbleSort">
-    <configuration name="AlgorithmComplexityTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_13.thuc_hanh.do_phuc_tap_cua_thuat_toan.AlgorithmComplexityTest" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_13.thuc_hanh.do_phuc_tap_cua_thuat_toan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.InsertionSort">
     <configuration name="BinarySearchRecursion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_13.bai_tap.tim_kiem_nhi_phan_de_quy.BinarySearchRecursion" />
       <module name="module_2" />
@@ -111,19 +81,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMaximumSubsequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_13.bai_tap.chuoi_tang_dan_dai_nhat.FindMaximumSubsequence" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_13.bai_tap.chuoi_tang_dan_dai_nhat.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
       <module name="module_2" />
@@ -137,13 +94,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_14.bai_tap.cai_dat_insertion_sort.InsertionSort" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_14.bai_tap.cai_dat_insertion_sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertionSortByStep" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_14.bai_tap.minh_hoa_insertion_sort.InsertionSortByStep" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_14.bai_tap.minh_hoa_insertion_sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertionSort" />
+        <item itemvalue="Application.InsertionSortByStep" />
         <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.FuramaController" />
         <item itemvalue="Application.BinarySearchRecursion" />
-        <item itemvalue="Application.AlgorithmComplexityTest" />
-        <item itemvalue="Application.FindMaximumSubsequence" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +162,7 @@
       <workItem from="1665232418678" duration="3167000" />
       <workItem from="1665328823556" duration="595000" />
       <workItem from="1665398481389" duration="7907000" />
-      <workItem from="1665570425357" duration="5614000" />
+      <workItem from="1665570425357" duration="6956000" />
     </task>
     <servers />
   </component>
@@ -214,22 +197,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="155" key="GridCell.Tab.0.bottom" timestamp="1665574586176">
+    <state width="1342" height="155" key="GridCell.Tab.0.bottom" timestamp="1665577369825">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1665574586176" />
-    <state width="1342" height="155" key="GridCell.Tab.0.center" timestamp="1665574586176">
+    <state width="1342" height="155" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1665577369825" />
+    <state width="1342" height="155" key="GridCell.Tab.0.center" timestamp="1665577369825">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1665574586176" />
-    <state width="1342" height="155" key="GridCell.Tab.0.left" timestamp="1665574586176">
+    <state width="1342" height="155" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1665577369825" />
+    <state width="1342" height="155" key="GridCell.Tab.0.left" timestamp="1665577369825">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1665574586176" />
-    <state width="1342" height="155" key="GridCell.Tab.0.right" timestamp="1665574586176">
+    <state width="1342" height="155" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1665577369825" />
+    <state width="1342" height="155" key="GridCell.Tab.0.right" timestamp="1665577369825">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1665574586176" />
+    <state width="1342" height="155" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1665577369825" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

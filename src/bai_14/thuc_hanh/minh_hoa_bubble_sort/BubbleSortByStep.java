@@ -13,8 +13,8 @@ public class BubbleSortByStep {
             list[i] = scanner.nextInt();
         }
         System.out.print("Your input list: ");
-        for (int i = 0; i < list.length; i++) {
-            System.out.print(list[i] + "\t");
+        for (int value : list) {
+            System.out.print(value + "\t");
         }
         System.out.println("\nBegin sort processing...");
         bubbleSortByStep(list);
