@@ -1,34 +1,21 @@
 package case_study.models.person;
 
-import java.util.Date;
-
 public class Employee extends Person {
-    private int employeeId;
     private String degree;
     private String position;
     private int salary;
 
-    public Employee(int employeeId, String degree, String position, int salary) {
-        this.employeeId = employeeId;
+//    public Employee(String degree, String position, int salary) {
+//        this.degree = degree;
+//        this.position = position;
+//        this.salary = salary;
+//    }
+
+    public Employee(int id, String name, String birthday, String gender, String phoneNum, String email, String degree, String position, int salary) {
+        super(id, name, birthday, gender, phoneNum, email);
         this.degree = degree;
         this.position = position;
         this.salary = salary;
-    }
-
-    public Employee(String name, Date birthday, String gender, int id, int phoneNum, String email, int employeeId, String degree, String position, int salary) {
-        super(name, birthday, gender, id, phoneNum, email);
-        this.employeeId = employeeId;
-        this.degree = degree;
-        this.position = position;
-        this.salary = salary;
-    }
-
-    public int getEmployeeId() {
-        return employeeId;
-    }
-
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
     }
 
     public String getDegree() {
@@ -53,5 +40,14 @@ public class Employee extends Person {
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" + super.toString() +
+                "degree='" + degree + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
+                '}';
     }
 }

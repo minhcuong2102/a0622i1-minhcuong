@@ -1,5 +1,9 @@
 package case_study.controllers;
 
+import case_study.models.person.Employee;
+import case_study.services.Impl.EmployeeServiceImplement;
+
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FuramaController {
@@ -22,7 +26,7 @@ public class FuramaController {
             luaChon = sc.nextInt();
             switch (luaChon) {
                 case 1:
-                    System.out.print("1.\tEmployee Management\n");
+                    System.out.print("\tEmployee Management\n");
                     employeeManage();
                     break;
 
@@ -57,26 +61,48 @@ public class FuramaController {
                         "1. Display list employees\n" +
                         "2. Add new employee\n" +
                         "3. Edit employee\n" +
+                        "4. Delete employee\n" +
                         "4. Return main menu"
         );
-        int choice;
+        EmployeeServiceImplement manager1 = new EmployeeServiceImplement();
+        int choice, id;
         System.out.print("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
                 System.out.println("1\tDisplay list employees\n");
+                manager1.display();
+                employeeManage();
                 break;
+
             case 2:
                 System.out.println("2\tAdd new employee\n");
+                manager1.addNew();
+                employeeManage();
                 break;
+
             case 3:
                 System.out.println("3\tEdit employee\n");
+                System.out.println("Nhập id của người cần sửa: ");
+                id = Integer.parseInt(sc.nextLine());
+                manager1.edit(id);
+                employeeManage();
                 break;
+
             case 4:
+                System.out.println("Nhập id của người cần sửa: ");
+                id = Integer.parseInt(sc.nextLine());
+                manager1.delete(id);
+                employeeManage();
+                break;
+
+            case 5:
                 displayMainMenu();
                 break;
+
             default:
-                System.out.println("Nhập số từ 1 - 4");
+                System.out.println("Nhập số từ 1 - 5");
+                employeeManage();
         }
     }
 
@@ -171,7 +197,7 @@ public class FuramaController {
                 "2.\tDisplay list customers get voucher\n" +
                 "3.\tReturn main menu\n");
         int choice;
-        System.out.println("Nhập chức năng : ");
+        System.out.println("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:

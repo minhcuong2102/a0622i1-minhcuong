@@ -1,31 +1,18 @@
 package case_study.models.person;
 
-import java.util.Date;
-
 public class Customer extends Person{
-    private int customerId;
     private String customerType;
     private String address;
 
-    public Customer(int customerId, String customerType, String address) {
-        this.customerId = customerId;
+    public Customer(String customerType, String address) {
         this.customerType = customerType;
         this.address = address;
     }
 
-    public Customer(String name, Date birthday, String gender, int id, int phoneNum, String email, int customerId, String customerType, String address) {
-        super(name, birthday, gender, id, phoneNum, email);
-        this.customerId = customerId;
+    public Customer(int id, String name, String birthday, String gender, String phoneNum, String email, String customerType, String address) {
+        super(id, name, birthday, gender, phoneNum, email);
         this.customerType = customerType;
         this.address = address;
-    }
-
-    public int getCustomerId() {
-        return customerId;
-    }
-
-    public void setCustomerId(int customerId) {
-        this.customerId = customerId;
     }
 
     public String getCustomerType() {
@@ -42,5 +29,13 @@ public class Customer extends Person{
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "customerType='" + customerType + '\'' +
+                ", address='" + address + '\'' +
+                '}';
     }
 }

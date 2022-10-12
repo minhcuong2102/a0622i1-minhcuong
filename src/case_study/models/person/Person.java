@@ -1,20 +1,18 @@
 package case_study.models.person;
 
-import java.util.Date;
-
 public abstract class Person {
     private String name;
-    private Date birthday;
+    private String birthday;
     private String gender;
     private int id;
-    private int phoneNum;
+    private String phoneNum;
     private String email;
 
     public Person(){
 
     }
 
-    public Person(String name, Date birthday, String gender, int id, int phoneNum, String email) {
+    public Person(int id, String name, String birthday, String gender, String phoneNum, String email) {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;
@@ -31,11 +29,11 @@ public abstract class Person {
         this.name = name;
     }
 
-    public Date getBirthday() {
+    public String getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
 
@@ -55,11 +53,11 @@ public abstract class Person {
         this.id = id;
     }
 
-    public int getPhoneNum() {
+    public String getPhoneNum() {
         return phoneNum;
     }
 
-    public void setPhoneNum(int phoneNum) {
+    public void setPhoneNum(String phoneNum) {
         this.phoneNum = phoneNum;
     }
 
@@ -69,5 +67,17 @@ public abstract class Person {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", birthday='" + birthday + '\'' +
+                ", gender='" + gender + '\'' +
+                ", id=" + id +
+                ", phoneNum=" + phoneNum +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
