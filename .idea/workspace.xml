@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/EmployeeServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/EmployeeServiceImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/Impl/EmployeeServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Impl/EmployeeServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/models/person/Employee.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,7 +158,7 @@
       <workItem from="1665232418678" duration="3167000" />
       <workItem from="1665328823556" duration="595000" />
       <workItem from="1665398481389" duration="7907000" />
-      <workItem from="1665570425357" duration="7875000" />
+      <workItem from="1665570425357" duration="8202000" />
     </task>
     <servers />
   </component>

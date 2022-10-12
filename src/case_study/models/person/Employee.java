@@ -5,11 +5,11 @@ public class Employee extends Person {
     private String position;
     private int salary;
 
-//    public Employee(String degree, String position, int salary) {
-//        this.degree = degree;
-//        this.position = position;
-//        this.salary = salary;
-//    }
+    public Employee(String degree, String position, int salary) {
+        this.degree = degree;
+        this.position = position;
+        this.salary = salary;
+    }
 
     public Employee(int id, String name, String birthday, String gender, String phoneNum, String email, String degree, String position, int salary) {
         super(id, name, birthday, gender, phoneNum, email);
