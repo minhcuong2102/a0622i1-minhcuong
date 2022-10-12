@@ -12,8 +12,9 @@ public class EmployeeServiceImplement implements EmployeeService {
     private static final ArrayList<Employee> employeeList = new ArrayList<>();
 
     @Override
+
     public void addNew() {
-        System.out.println("Nhập ID: ");
+        System.out.print("Nhập ID: ");
         int id = Integer.parseInt(sc.nextLine());
         System.out.print("Nhập tên nhân viên: ");
         String name = sc.nextLine();
@@ -74,9 +75,15 @@ public class EmployeeServiceImplement implements EmployeeService {
 
     @Override
     public void display() {
-        Employee employee1 = new Employee(1, "Lê Văn A", "28/03/1999", "Nam",
-                "0999999999", "abc@gmail.com", "Đại học", "Trưởng phòng", 15000000);
-        employeeList.add(employee1);
+//        Employee employee1 = new Employee(1, "Lê Văn A", "28/03/1999", "Nam",
+//                "0999999999", "abc@gmail.com", "Đại học", "Trưởng phòng", 15000000);
+//        Employee employee2 = new Employee(2, "Nguyễn Văn B", "28/03/1999", "Nam",
+//                "0888888888", "bac@gmail.com", "Đại học", "Trưởng phòng", 15000000);
+//        Employee employee3 = new Employee(3, "Trần Văn C", "28/03/1999", "Nam",
+//                "0777777777", "cab@gmail.com", "Đại học", "Trưởng phòng", 15000000);
+//        employeeList.add(employee1);
+//        employeeList.add(employee2);
+//        employeeList.add(employee3);
 
         for (int i = 0; i < 60; i++) {
             System.out.print("-");
@@ -90,8 +97,9 @@ public class EmployeeServiceImplement implements EmployeeService {
         System.out.println();
         for (Employee employee : employeeList) {
             System.out.printf("|%4s|%16s|%15s|%8s|%15s|%16s|%15s|%15s|%12s\n",
-                    employee.getId(), employee.getName(), employee.getBirthday(), employee.getGender(),
-                    employee.getPhoneNum(), employee.getEmail(), employee.getDegree(), employee.getPosition(), employee.getSalary());
+                    employee.getId(), employee.getName(), employee.getBirthday(),
+                    employee.getGender(), employee.getPhoneNum(), employee.getEmail(),
+                    employee.getDegree(), employee.getPosition(), employee.getSalary());
         }
     }
 
