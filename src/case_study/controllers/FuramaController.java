@@ -1,6 +1,7 @@
 package case_study.controllers;
 
 import case_study.models.person.Employee;
+import case_study.services.Impl.CustomerServiceImplement;
 import case_study.services.Impl.EmployeeServiceImplement;
 
 import java.util.ArrayList;
@@ -90,6 +91,7 @@ public class FuramaController {
                 break;
 
             case 4:
+                System.out.println("4\tDelete employee\n");
                 System.out.println("Nhập id của người cần sửa: ");
                 id = Integer.parseInt(sc.nextLine());
                 manager1.delete(id);
@@ -110,21 +112,42 @@ public class FuramaController {
         System.out.println("1.\tDisplay list customers\n" +
                 "2.\tAdd new customer\n" +
                 "3.\tEdit customer\n" +
-                "4.\tReturn main menu\n");
-        int choice;
+                "4.\tDelete customer" +
+                "5.\tReturn main menu\n");
+        CustomerServiceImplement manager2 = new CustomerServiceImplement();
+        int choice, id;
         System.out.println("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
                 System.out.println("1.\tDisplay list customers\n");
+                manager2.display();
+                customerManage();
                 break;
+
             case 2:
                 System.out.println("2.\tAdd new customer\n");
+                manager2.addNew();
+                customerManage();
                 break;
+
             case 3:
                 System.out.println("3.\tEdit customer\n");
+                System.out.print("Nhập id: ");
+                id = sc.nextInt();
+                manager2.edit(id);
+                customerManage();
                 break;
+
             case 4:
+                System.out.println("4.\tDelete customer");
+                System.out.print("Nhập id: ");
+                id = sc.nextInt();
+                manager2.delete(id);
+                customerManage();
+                break;
+
+            case 5:
                 displayMainMenu();
                 break;
             default:
@@ -144,15 +167,19 @@ public class FuramaController {
             case 1:
                 System.out.println("1\tDisplay list facility\n");
                 break;
+
             case 2:
                 System.out.println("2\tAdd new facility\n");
                 break;
+
             case 3:
                 System.out.println("3\tDisplay list facility maintenance\n");
                 break;
+
             case 4:
                 displayMainMenu();
                 break;
+
             default:
                 System.out.println("Nhập số tư 1 - 4");
         }
