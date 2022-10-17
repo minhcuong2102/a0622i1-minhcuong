@@ -63,7 +63,7 @@ public class FuramaController {
                         "2. Add new employee\n" +
                         "3. Edit employee\n" +
                         "4. Delete employee\n" +
-                        "4. Return main menu"
+                        "5. Return main menu"
         );
         EmployeeServiceImplement manager1 = new EmployeeServiceImplement();
         int choice, id;
@@ -85,7 +85,7 @@ public class FuramaController {
             case 3:
                 System.out.println("3\tEdit employee\n");
                 System.out.println("Nhập id của người cần sửa: ");
-                id = Integer.parseInt(sc.nextLine());
+                id = sc.nextInt();
                 manager1.edit(id);
                 employeeManage();
                 break;
@@ -93,7 +93,7 @@ public class FuramaController {
             case 4:
                 System.out.println("4\tDelete employee\n");
                 System.out.println("Nhập id của người cần sửa: ");
-                id = Integer.parseInt(sc.nextLine());
+                id = sc.nextInt();
                 manager1.delete(id);
                 employeeManage();
                 break;
