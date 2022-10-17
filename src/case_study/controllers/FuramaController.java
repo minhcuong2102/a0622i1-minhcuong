@@ -1,10 +1,8 @@
 package case_study.controllers;
 
-import case_study.models.person.Employee;
 import case_study.services.Impl.CustomerServiceImplement;
 import case_study.services.Impl.EmployeeServiceImplement;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FuramaController {
@@ -84,7 +82,7 @@ public class FuramaController {
 
             case 3:
                 System.out.println("3\tEdit employee\n");
-                System.out.println("Nhập id của người cần sửa: ");
+                System.out.print("Nhập id của người cần sửa: ");
                 id = sc.nextInt();
                 manager1.edit(id);
                 employeeManage();
@@ -92,7 +90,7 @@ public class FuramaController {
 
             case 4:
                 System.out.println("4\tDelete employee\n");
-                System.out.println("Nhập id của người cần sửa: ");
+                System.out.print("Nhập id của người cần xoá: ");
                 id = sc.nextInt();
                 manager1.delete(id);
                 employeeManage();
@@ -114,9 +112,10 @@ public class FuramaController {
                 "3.\tEdit customer\n" +
                 "4.\tDelete customer" +
                 "5.\tReturn main menu\n");
+
         CustomerServiceImplement manager2 = new CustomerServiceImplement();
         int choice, id;
-        System.out.println("Nhập chức năng: ");
+        System.out.print("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
@@ -150,8 +149,9 @@ public class FuramaController {
             case 5:
                 displayMainMenu();
                 break;
+
             default:
-                System.out.println("Nhập số tư 1 - 4");
+                System.out.println("Nhập số tư 1 - 5");
         }
     }
 
@@ -161,7 +161,7 @@ public class FuramaController {
                 "3\tDisplay list facility maintenance\n" +
                 "4\tReturn main menu\n");
         int choice;
-        System.out.println("Nhập chức năng: ");
+        System.out.print("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
@@ -193,7 +193,7 @@ public class FuramaController {
                 "5.\tEdit contracts\n" +
                 "6.\tReturn main menu\n");
         int choice;
-        System.out.println("Nhập chức năng : ");
+        System.out.print("Nhập chức năng : ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
@@ -224,7 +224,7 @@ public class FuramaController {
                 "2.\tDisplay list customers get voucher\n" +
                 "3.\tReturn main menu\n");
         int choice;
-        System.out.println("Nhập chức năng: ");
+        System.out.print("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
