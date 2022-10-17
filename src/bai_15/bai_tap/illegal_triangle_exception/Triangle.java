@@ -27,7 +27,7 @@ public class Triangle {
             }
         }
         catch (Exception exception){
-            System.out.println("Sai định dạng tam giác!");
+            System.err.println("Sai định dạng tam giác!");
         }
     }
 }

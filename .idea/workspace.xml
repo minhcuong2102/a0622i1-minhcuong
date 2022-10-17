@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_15/bai_tap/illegal_triangle_exception/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_15/thuc_hanh/array_index_out_of_bounds_exception/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_15/thuc_hanh/array_index_out_of_bounds_exception/ArrayIndexOutOfBoundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_15/thuc_hanh/number_format_exception/CalculationExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_15/thuc_hanh/number_format_exception/IllegalTriangleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_15/thuc_hanh/number_format_exception/TriangleEdgesCheck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/bai_tap/copy_file_text/CopyFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/bai_tap/copy_file_text/destination.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/bai_tap/copy_file_text/source.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/thuc_hanh/tim_so_lon_nhat_va_in_ra_file/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/thuc_hanh/tim_so_lon_nhat_va_in_ra_file/numbers.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/thuc_hanh/tim_so_lon_nhat_va_in_ra_file/result.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/thuc_hanh/tinh_tong_cac_so_trong_file/ReadFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_16/thuc_hanh/tinh_tong_cac_so_trong_file/numbers.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/controllers/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/controllers/FuramaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/CustomerServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/CustomerServiceImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/EmployeeServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/EmployeeServiceImplement.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/Impl/CustomerServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Impl/CustomerServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_15/bai_tap/illegal_triangle_exception/Triangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_15/bai_tap/illegal_triangle_exception/Triangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bai_15/bai_tap/illegal_triangle_exception/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bai_15/bai_tap/illegal_triangle_exception/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,20 +60,7 @@
       <recent name="E:\Codegym\module_2\src\bai_12\bai_tap\thao_tac_tim_kiem_trong_bst" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Triangle">
-    <configuration name="ArrayIndexOutOfBoundsException" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_15.thuc_hanh.array_index_out_of_bounds_exception.ArrayIndexOutOfBoundsException" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_15.thuc_hanh.array_index_out_of_bounds_exception.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ReadAndWriteFile">
     <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_15.thuc_hanh.number_format_exception.CalculationExample" />
       <module name="module_2" />
@@ -88,12 +74,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FuramaController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="case_study.controllers.FuramaController" />
+    <configuration name="CopyFileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_16.bai_tap.copy_file_text.CopyFileExample" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="case_study.controllers.*" />
+          <option name="PATTERN" value="bai_16.bai_tap.copy_file_text.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +87,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InsertionSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_14.bai_tap.cai_dat_insertion_sort.InsertionSort" />
+    <configuration name="ReadAndWriteFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_16.thuc_hanh.tim_so_lon_nhat_va_in_ra_file.ReadAndWriteFile" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_14.bai_tap.cai_dat_insertion_sort.*" />
+          <option name="PATTERN" value="bai_16.thuc_hanh.tim_so_lon_nhat_va_in_ra_file.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_16.thuc_hanh.tinh_tong_cac_so_trong_file.ReadFileExample" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_16.thuc_hanh.tinh_tong_cac_so_trong_file.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReadAndWriteFile" />
+        <item itemvalue="Application.ReadFileExample" />
+        <item itemvalue="Application.CopyFileExample" />
         <item itemvalue="Application.Triangle" />
         <item itemvalue="Application.CalculationExample" />
-        <item itemvalue="Application.ArrayIndexOutOfBoundsException" />
-        <item itemvalue="Application.FuramaController" />
-        <item itemvalue="Application.InsertionSort" />
       </list>
     </recent_temporary>
   </component>
@@ -172,7 +171,7 @@
       <workItem from="1665570425357" duration="9312000" />
       <workItem from="1665841836816" duration="2757000" />
       <workItem from="1665919516600" duration="2107000" />
-      <workItem from="1666002693907" duration="2709000" />
+      <workItem from="1666002693907" duration="7094000" />
     </task>
     <servers />
   </component>
@@ -207,22 +206,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="155" key="GridCell.Tab.0.bottom" timestamp="1666004251350">
+    <state width="1342" height="155" key="GridCell.Tab.0.bottom" timestamp="1666009748220">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1666004251350" />
-    <state width="1342" height="155" key="GridCell.Tab.0.center" timestamp="1666004251350">
+    <state width="1342" height="155" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1666009748220" />
+    <state width="1342" height="155" key="GridCell.Tab.0.center" timestamp="1666009748220">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1666004251350" />
-    <state width="1342" height="155" key="GridCell.Tab.0.left" timestamp="1666004251350">
+    <state width="1342" height="155" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1666009748220" />
+    <state width="1342" height="155" key="GridCell.Tab.0.left" timestamp="1666009748220">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1666004251350" />
-    <state width="1342" height="155" key="GridCell.Tab.0.right" timestamp="1666004251350">
+    <state width="1342" height="155" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1666009748220" />
+    <state width="1342" height="155" key="GridCell.Tab.0.right" timestamp="1666009748220">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="155" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1666004251350" />
+    <state width="1342" height="155" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1666009748220" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
