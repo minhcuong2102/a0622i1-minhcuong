@@ -34,7 +34,7 @@ public class ReadCsv {
     public static List<String> parseCsvLine(String csvLine) {
         List<String> result = new ArrayList<>();
         if (csvLine != null) {
-            String[] splitData = csvLine.split(",");
+            String[] splitData = csvLine.split(";");
             for (int i = 0; i < splitData.length; i++) {
                 result.add(splitData[i]);
             }
@@ -43,6 +43,7 @@ public class ReadCsv {
     }
 
     private static void printCountry(List<String> country) {
+//        System.out.println(country.get(1));
         System.out.println(
                 "Country [id= "
                         + country.get(0)
