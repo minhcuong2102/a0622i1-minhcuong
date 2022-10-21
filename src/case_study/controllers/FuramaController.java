@@ -2,6 +2,7 @@ package case_study.controllers;
 
 import case_study.services.Impl.CustomerServiceImplement;
 import case_study.services.Impl.EmployeeServiceImplement;
+import case_study.services.Impl.FacilityServiceImplement;
 
 import java.util.Scanner;
 
@@ -160,20 +161,53 @@ public class FuramaController {
                 "2\tAdd new facility\n" +
                 "3\tDisplay list facility maintenance\n" +
                 "4\tReturn main menu\n");
+
+        FacilityServiceImplement manager3 = new FacilityServiceImplement();
+
         int choice;
         System.out.print("Nhập chức năng: ");
         choice = sc.nextInt();
         switch (choice){
             case 1:
                 System.out.println("1\tDisplay list facility\n");
+                manager3.display();
+                facilityManage();
                 break;
 
             case 2:
                 System.out.println("2\tAdd new facility\n");
+                System.out.print("Chọn cơ sở cần thêm: " +
+                        "1. Villa\t2. House\t3. Room\t4. Thoát");
+                int choice1 = sc.nextInt();
+                switch (choice1){
+                    case 1:
+                        System.out.println("THÊM VILLA");
+                        manager3.addNewVilla();
+                        facilityManage();
+                        break;
+
+                    case 2:
+                        System.out.println("THÊM NHÀ");
+                        manager3.addNewHouse();
+                        facilityManage();
+                        break;
+
+                    case 3:
+                        System.out.println("THÊM PHÒNG");
+                        manager3.addNewRoom();
+                        facilityManage();
+                        break;
+
+                    case 4:
+                        facilityManage();
+                        break;
+                }
                 break;
 
             case 3:
                 System.out.println("3\tDisplay list facility maintenance\n");
+                manager3.displayFacilitiesNeedMaintainance();
+                facilityManage();
                 break;
 
             case 4:

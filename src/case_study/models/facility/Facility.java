@@ -1,19 +1,17 @@
 package case_study.models.facility;
 
-import java.util.*;
-
 public abstract class Facility {
     private String serviceName;
     private double usingArea;
     private int rentCost;
     private int personCap;
-    private Date rentType;
+    private String rentType;
 
     public Facility(){
 
     }
 
-    public Facility(String serviceName, double usingArea, int rentCost, int personCap, Date rentType) {
+    public Facility(String serviceName, double usingArea, int rentCost, int personCap, String rentType) {
         this.serviceName = serviceName;
         this.usingArea = usingArea;
         this.rentCost = rentCost;
@@ -53,11 +51,11 @@ public abstract class Facility {
         this.personCap = personCap;
     }
 
-    public Date getRentType() {
+    public String getRentType() {
         return rentType;
     }
 
-    public void setRentType(Date rentType) {
+    public void setRentType(String rentType) {
         this.rentType = rentType;
     }
 }

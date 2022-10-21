@@ -1,7 +1,5 @@
 package case_study.models.facility;
 
-import java.util.Date;
-
 public class Villa extends Facility{
     private String roomStandard;
     private double poolArea;
@@ -13,7 +11,8 @@ public class Villa extends Facility{
         this.floor = floor;
     }
 
-    public Villa(String serviceName, double usingArea, int rentCost, int personCap, Date rentType, String roomStandard, double poolArea, int floor) {
+    public Villa(String serviceName, double usingArea, int rentCost, int personCap,
+                 String rentType, String roomStandard, double poolArea, int floor) {
         super(serviceName, usingArea, rentCost, personCap, rentType);
         this.roomStandard = roomStandard;
         this.poolArea = poolArea;

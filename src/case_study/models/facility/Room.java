@@ -1,7 +1,5 @@
 package case_study.models.facility;
 
-import java.util.Date;
-
 public class Room extends Facility{
     private String freeService;
 
@@ -9,7 +7,7 @@ public class Room extends Facility{
         this.freeService = freeService;
     }
 
-    public Room(String serviceName, double usingArea, int rentCost, int personCap, Date rentType, String freeService) {
+    public Room(String serviceName, double usingArea, int rentCost, int personCap, String rentType, String freeService) {
         super(serviceName, usingArea, rentCost, personCap, rentType);
         this.freeService = freeService;
     }
