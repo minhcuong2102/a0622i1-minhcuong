@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/bai_19/bai_tap/validate_ten_lop_hoc/ClassNameExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_19/bai_tap/validate_ten_lop_hoc/ClassNameExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_19/thuc_hanh/crawl_bai_hat/CrawlSongExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_19/thuc_hanh/validate_account/AccountExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_19/thuc_hanh/validate_account/AccountExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_19/thuc_hanh/validate_email/EmailExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_19/thuc_hanh/validate_email/EmailExampleTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/Impl/FacilityServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Impl/FacilityServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/bai_17/bai_tap/copy_file_nhi_phan/destination.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/bai_17/bai_tap/copy_file_nhi_phan/destination.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/FacilityServiceImplement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/case_study/services/Impl/FacilityServiceImplement.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +59,33 @@
       <recent name="E:\Codegym\module_2\src\bai_12\bai_tap\thao_tac_tim_kiem_trong_bst" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CopyBinaryFile">
+  <component name="RunManager" selected="Application.ClassNameExampleTest">
+    <configuration name="AccountExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_19.thuc_hanh.validate_account.AccountExampleTest" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_19.thuc_hanh.validate_account.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassNameExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_19.bai_tap.validate_ten_lop_hoc.ClassNameExampleTest" />
+      <module name="module_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_19.bai_tap.validate_ten_lop_hoc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CopyBinaryFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bai_17.bai_tap.copy_file_nhi_phan.CopyBinaryFile" />
       <module name="module_2" />
@@ -65,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CopyFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_17.thuc_hanh.copy_cac_file_co_dung_luong_lon.CopyFile" />
+    <configuration name="CrawlSongExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_19.thuc_hanh.crawl_bai_hat.CrawlSongExample" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_17.thuc_hanh.copy_cac_file_co_dung_luong_lon.*" />
+          <option name="PATTERN" value="bai_19.thuc_hanh.crawl_bai_hat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,38 +112,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_17.bai_tap.quan_ly_san_pham.Main" />
+    <configuration name="EmailExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_19.thuc_hanh.validate_email.EmailExampleTest" />
       <module name="module_2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="bai_17.bai_tap.quan_ly_san_pham.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadCsv" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_16.bai_tap.doc_file_csv.ReadCsv" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_16.bai_tap.doc_file_csv.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReadStudent" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="bai_17.thuc_hanh.doc_va_ghi_danh_sach_sinh_vien_ra_file_nhi_phan.ReadStudent" />
-      <module name="module_2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="bai_17.thuc_hanh.doc_va_ghi_danh_sach_sinh_vien_ra_file_nhi_phan.*" />
+          <option name="PATTERN" value="bai_19.thuc_hanh.validate_email.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +127,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClassNameExampleTest" />
+        <item itemvalue="Application.CrawlSongExample" />
+        <item itemvalue="Application.AccountExampleTest" />
+        <item itemvalue="Application.EmailExampleTest" />
         <item itemvalue="Application.CopyBinaryFile" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.ReadStudent" />
-        <item itemvalue="Application.CopyFile" />
-        <item itemvalue="Application.ReadCsv" />
       </list>
     </recent_temporary>
   </component>
@@ -165,7 +173,7 @@
       <workItem from="1666002693907" duration="8093000" />
       <workItem from="1666176765426" duration="9402000" />
       <workItem from="1666348912834" duration="7034000" />
-      <workItem from="1666607907911" duration="326000" />
+      <workItem from="1666607907911" duration="2484000" />
     </task>
     <servers />
   </component>
@@ -200,22 +208,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1342" height="175" key="GridCell.Tab.0.bottom" timestamp="1666361651188">
+    <state width="1342" height="175" key="GridCell.Tab.0.bottom" timestamp="1666609624277">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="175" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1666361651188" />
-    <state width="1342" height="175" key="GridCell.Tab.0.center" timestamp="1666361651188">
+    <state width="1342" height="175" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1666609624277" />
+    <state width="1342" height="175" key="GridCell.Tab.0.center" timestamp="1666609624277">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="175" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1666361651188" />
-    <state width="1342" height="175" key="GridCell.Tab.0.left" timestamp="1666361651188">
+    <state width="1342" height="175" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1666609624277" />
+    <state width="1342" height="175" key="GridCell.Tab.0.left" timestamp="1666609624277">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="175" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1666361651188" />
-    <state width="1342" height="175" key="GridCell.Tab.0.right" timestamp="1666361651188">
+    <state width="1342" height="175" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1666609624277" />
+    <state width="1342" height="175" key="GridCell.Tab.0.right" timestamp="1666609624277">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1342" height="175" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1666361651188" />
+    <state width="1342" height="175" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1666609624277" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
