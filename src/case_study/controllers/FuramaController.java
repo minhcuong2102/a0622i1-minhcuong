@@ -10,7 +10,7 @@ public class FuramaController {
     public static Scanner sc = new Scanner(System.in);
 
     public static void displayMainMenu() {
-        int luaChon;
+        int luaChon = 0;
         do {
             System.out.println(
                         "-------------------------------\n" +
@@ -23,7 +23,11 @@ public class FuramaController {
                         "-------------------------------"
             );
             System.out.print("Lựa chọn: ");
-            luaChon = sc.nextInt();
+            try {
+                luaChon = Integer.parseInt(sc.nextLine());
+            }catch (NumberFormatException e){
+                System.out.println("Nhập sai định dạng!");
+            }
             switch (luaChon) {
                 case 1:
                     System.out.print("\tEmployee Management\n");
@@ -65,9 +69,13 @@ public class FuramaController {
                         "5. Return main menu"
         );
         EmployeeServiceImplement manager1 = new EmployeeServiceImplement();
-        int choice, id;
+        int choice = 0, id = 0;
         System.out.print("Nhập chức năng: ");
-        choice = sc.nextInt();
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+        }catch (NumberFormatException e){
+            System.out.println("Nhập sai định dạng!");
+        }
         switch (choice){
             case 1:
                 System.out.println("1\tDisplay list employees\n");
@@ -84,7 +92,11 @@ public class FuramaController {
             case 3:
                 System.out.println("3\tEdit employee\n");
                 System.out.print("Nhập id của người cần sửa: ");
-                id = sc.nextInt();
+                try {
+                    id = sc.nextInt();
+                }catch (NumberFormatException e){
+                    System.out.println("Nhập sai định dạng!");
+                }
                 manager1.edit(id);
                 employeeManage();
                 break;
@@ -92,7 +104,11 @@ public class FuramaController {
             case 4:
                 System.out.println("4\tDelete employee\n");
                 System.out.print("Nhập id của người cần xoá: ");
-                id = sc.nextInt();
+                try {
+                    id = sc.nextInt();
+                }catch (NumberFormatException e){
+                    System.out.println("Nhập sai định dạng!");
+                }
                 manager1.delete(id);
                 employeeManage();
                 break;
@@ -115,9 +131,13 @@ public class FuramaController {
                 "5.\tReturn main menu\n");
 
         CustomerServiceImplement manager2 = new CustomerServiceImplement();
-        int choice, id;
+        int choice = 0, id = 0;
         System.out.print("Nhập chức năng: ");
-        choice = sc.nextInt();
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+        }catch (NumberFormatException e){
+            System.out.println("Nhập sai định dạng!");
+        }
         switch (choice){
             case 1:
                 System.out.println("1.\tDisplay list customers\n");
@@ -134,7 +154,11 @@ public class FuramaController {
             case 3:
                 System.out.println("3.\tEdit customer\n");
                 System.out.print("Nhập id: ");
-                id = sc.nextInt();
+                try {
+                    id = sc.nextInt();
+                }catch (NumberFormatException e){
+                    System.out.println("Nhập sai định dạng!");
+                }
                 manager2.edit(id);
                 customerManage();
                 break;
@@ -164,9 +188,13 @@ public class FuramaController {
 
         FacilityServiceImplement manager3 = new FacilityServiceImplement();
 
-        int choice;
+        int choice = 0;
         System.out.print("Nhập chức năng: ");
-        choice = sc.nextInt();
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+        }catch (NumberFormatException e){
+            System.out.println("Nhập sai định dạng!");
+        }
         switch (choice){
             case 1:
                 System.out.println("1\tDisplay list facility\n");
@@ -175,10 +203,15 @@ public class FuramaController {
                 break;
 
             case 2:
+                int choice1 = 0;
                 System.out.println("2\tAdd new facility\n");
                 System.out.print("Chọn cơ sở cần thêm: " +
                         "1. Villa\t2. House\t3. Room\t4. Thoát");
-                int choice1 = sc.nextInt();
+                try {
+                    choice1 = sc.nextInt();
+                }catch (NumberFormatException e){
+                    System.out.println("Nhập sai định dạng!");
+                }
                 switch (choice1){
                     case 1:
                         System.out.println("THÊM VILLA");
@@ -226,10 +259,13 @@ public class FuramaController {
                 "4.\tDisplay list contracts\n" +
                 "5.\tEdit contracts\n" +
                 "6.\tReturn main menu\n");
-        int choice;
-        System.out.print("Nhập chức năng : ");
-        choice = sc.nextInt();
-        switch (choice){
+        int choice = 0;
+        System.out.print("Nhập chức năng: ");
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+        }catch (NumberFormatException e){
+            System.out.println("Nhập sai định dạng!");
+        }        switch (choice){
             case 1:
                 System.out.println("1.\tAdd new booking\n");
                 break;
@@ -257,10 +293,13 @@ public class FuramaController {
         System.out.println("1.\tDisplay list customers use service\n" +
                 "2.\tDisplay list customers get voucher\n" +
                 "3.\tReturn main menu\n");
-        int choice;
+        int choice = 0;
         System.out.print("Nhập chức năng: ");
-        choice = sc.nextInt();
-        switch (choice){
+        try {
+            choice = Integer.parseInt(sc.nextLine());
+        }catch (NumberFormatException e){
+            System.out.println("Nhập sai định dạng!");
+        }        switch (choice){
             case 1:
                 System.out.println("1.\tDisplay list customers use service\n");
                 break;

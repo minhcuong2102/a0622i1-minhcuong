@@ -10,7 +10,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class FacilityServiceImplement implements FacilityService {
-    private static final FacilityServiceImplement manager3 = new FacilityServiceImplement();
     private static final Map<House, Integer> houseMap = new LinkedHashMap<>();
     private static final Map<Villa, Integer> villaMap = new LinkedHashMap<>();
     private static final Map<Room, Integer> roomMap = new LinkedHashMap<>();
