@@ -1,14 +1,14 @@
-package bai_19.thuc_hanh.validate_email;
+package bai_19.bai_tap.validate_so_dien_thoai;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EmailExample {
+public class PhoneNumberExample {
     private static Pattern pattern;
 
-    private static final String EMAIL_REGEX = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
+    private static final String EMAIL_REGEX = "^[(]*[0-9]{2}+[)]-[(]+[0-9]{10}+[)]$";
 
-    public EmailExample() {
+    public PhoneNumberExample() {
         pattern = Pattern.compile(EMAIL_REGEX);
     }
 
