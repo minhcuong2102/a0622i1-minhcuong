@@ -79,7 +79,34 @@ public class FacilityServiceImplement implements FacilityService {
 
     @Override
     public void displayFacilitiesNeedMaintainance() {
+        System.out.println("-----------VILLA LIST------------");
+        for (int i = 0; i < 60; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+        for (Map.Entry<Villa, Integer> element : villaMap.entrySet()) {
+            System.out.println("Villa " + element.getKey() + " số lần đã thuê: " + element.getValue());
+        }
+        System.out.println();
 
+        System.out.println("-----------HOUSE LIST------------");
+        for (int i = 0; i < 60; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+        for (Map.Entry<House, Integer> element : houseMap.entrySet()) {
+            System.out.println("House " + element.getKey() + " số lần đã thuê: " + element.getValue());
+        }
+        System.out.println();
+
+        System.out.println("-----------ROOM LIST------------");
+        for (int i = 0; i < 60; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+        for (Map.Entry<Room, Integer> element : roomMap.entrySet()) {
+            System.out.println("Room " + element.getKey() + " số lần đã thuê: " + element.getValue());
+        }
     }
 
     @Override
