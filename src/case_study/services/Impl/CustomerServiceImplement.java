@@ -12,8 +12,13 @@ public class CustomerServiceImplement implements CustomerService {
     private static final LinkedList<Customer> customerList = new LinkedList<>();
 
     public void addNew(){
+        int id = 0;
         System.out.print("Nhập ID: ");
-        int id = Integer.parseInt(sc.nextLine());
+        try {
+            id = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập tên khách hàng: ");
         String name = sc.nextLine();
         System.out.print("Nhập sinh nhật: ");

@@ -14,8 +14,14 @@ public class EmployeeServiceImplement implements EmployeeService {
     @Override
 
     public void addNew() {
+        int id = 0;
+        int salary = 0;
         System.out.print("Nhập ID: ");
-        int id = Integer.parseInt(sc.nextLine());
+        try {
+            id = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập tên nhân viên: ");
         String name = sc.nextLine();
         System.out.print("Nhập sinh nhật: ");
@@ -31,7 +37,11 @@ public class EmployeeServiceImplement implements EmployeeService {
         System.out.print("Nhập vị trí: ");
         String position = sc.nextLine();
         System.out.print("Nhập lương: ");
-        int salary = Integer.parseInt(sc.nextLine());
+        try {
+            salary = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.println("Sai định dạng!");
+        }
 
         Employee employee = new Employee(id, name, birthday, gender, phoneNum, email, degree, position, salary);
         employeeList.add(employee);
@@ -42,6 +52,7 @@ public class EmployeeServiceImplement implements EmployeeService {
     public void edit(int id) {
         for (int i = 0; i < employeeList.size(); i++) {
             if (id == i - 1){
+                int salary = 0;
                 System.out.print("Nhập tên nhân viên: ");
                 String name = sc.nextLine();
                 System.out.print("Nhập sinh nhật: ");
@@ -57,7 +68,11 @@ public class EmployeeServiceImplement implements EmployeeService {
                 System.out.print("Nhập vị trí: ");
                 String position = sc.nextLine();
                 System.out.print("Nhập lương: ");
-                int salary = Integer.parseInt(sc.nextLine());
+                try {
+                    salary = Integer.parseInt(sc.nextLine());
+                } catch (NumberFormatException e){
+                    System.out.println("Sai định dạng!");
+                }
 
                 employeeList.get(i).setName(name);
                 employeeList.get(i).setBirthday(birthday);

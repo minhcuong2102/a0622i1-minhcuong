@@ -110,22 +110,48 @@ public class FacilityServiceImplement implements FacilityService {
 
     @Override
     public void addNewVilla() {
+        double usingArea = 0;
+        int rentCost = 0;
+        int personCap = 0;
+        double poolArea = 0;
+        int floor = 0;
         System.out.print("Nhập dịch vụ: ");
         String serviceName = sc.nextLine();
         System.out.print("Nhập diện tích: ");
-        double usingArea = Double.parseDouble(sc.nextLine());
+        try {
+            usingArea = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập giá thuê: ");
-        int rentCost = Integer.parseInt(sc.nextLine());
+        try {
+            rentCost = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập giới hạn người: ");
-        int personCap = Integer.parseInt(sc.nextLine());
+        try {
+            personCap = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập loại thuê: ");
         String rentType = sc.nextLine();
         System.out.print("Nhập tiêu chuẩn phòng: ");
         String roomStandard = sc.nextLine();
         System.out.print("Nhập diện tích hồ bơi: ");
-        double poolArea = Double.parseDouble(sc.nextLine());
+        try {
+            poolArea = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập số tầng: ");
-        int floor = Integer.parseInt(sc.nextLine());
+        try {
+            floor = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
+
 
         Villa villa = new Villa(serviceName, usingArea, rentCost, personCap, rentType, roomStandard, poolArea, floor);
         villaMap.put(villa, 0);
@@ -133,14 +159,29 @@ public class FacilityServiceImplement implements FacilityService {
 
     @Override
     public void addNewRoom() {
+        double usingArea = 0;
+        int rentCost = 0;
+        int personCap = 0;
         System.out.print("Nhập dịch vụ: ");
         String serviceName = sc.nextLine();
         System.out.print("Nhập diện tích: ");
-        double usingArea = Double.parseDouble(sc.nextLine());
+        try {
+            usingArea = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập giá thuê: ");
-        int rentCost = Integer.parseInt(sc.nextLine());
+        try {
+            rentCost = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập giới hạn người: ");
-        int personCap = Integer.parseInt(sc.nextLine());
+        try {
+            personCap = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập loại thuê: ");
         String rentType = sc.nextLine();
         System.out.println("Nhập tên dịch vụ miễn phí: ");
@@ -152,20 +193,40 @@ public class FacilityServiceImplement implements FacilityService {
 
     @Override
     public void addNewHouse() {
+        double usingArea = 0;
+        int rentCost = 0;
+        int personCap = 0;
+        double poolArea = 0;
         System.out.print("Nhập dịch vụ: ");
         String serviceName = sc.nextLine();
         System.out.print("Nhập diện tích: ");
-        double usingArea = Double.parseDouble(sc.nextLine());
+        try {
+            usingArea = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập giá thuê: ");
-        int rentCost = Integer.parseInt(sc.nextLine());
+        try {
+            rentCost = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập giới hạn người: ");
-        int personCap = Integer.parseInt(sc.nextLine());
+        try {
+            personCap = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập loại thuê: ");
         String rentType = sc.nextLine();
         System.out.print("Nhập tiêu chuẩn phòng: ");
         String roomStandard = sc.nextLine();
         System.out.print("Nhập diện tích hồ bơi: ");
-        double poolArea = Double.parseDouble(sc.nextLine());
+        try {
+            poolArea = Double.parseDouble(sc.nextLine());
+        } catch (NumberFormatException e) {
+            System.out.println("Sai định dạng!");
+        }
 
         House house = new House(serviceName, usingArea, rentCost, personCap, rentType, roomStandard, poolArea);
         houseMap.put(house, 0);
