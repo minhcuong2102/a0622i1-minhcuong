@@ -12,7 +12,7 @@ public abstract class Person {
 
     }
 
-    public Person(int id, String name, String birthday, String gender, String phoneNum, String email) {
+    public Person(String name, String birthday, String gender, int id, String phoneNum, String email) {
         this.name = name;
         this.birthday = birthday;
         this.gender = gender;

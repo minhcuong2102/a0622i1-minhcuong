@@ -34,7 +34,7 @@ public class CustomerServiceImplement implements CustomerService {
         System.out.print("Nhập địa chỉ: ");
         String address = sc.nextLine();
 
-        Customer customer = new Customer(id, name, birthday, gender, phoneNum, email, customerType, address);
+        Customer customer = new Customer(name, birthday, gender, id, phoneNum, email, customerType, address);
         customerList.add(customer);
     }
 
@@ -57,9 +57,9 @@ public class CustomerServiceImplement implements CustomerService {
         }
     }
 
-    public void edit(int id){
+    public void edit(int index){
         for (int i = 0; i < customerList.size(); i++) {
-            if (id == i - 1){
+            if (index == i - 1){
                 System.out.print("Nhập tên nhân viên: ");
                 String name = sc.nextLine();
                 System.out.print("Nhập sinh nhật: ");
@@ -85,7 +85,7 @@ public class CustomerServiceImplement implements CustomerService {
                 break;
             }
         }
-        manager2.display();
+//        manager2.display();
     }
 
     public void delete(int id){
@@ -95,6 +95,6 @@ public class CustomerServiceImplement implements CustomerService {
                 break;
             }
         }
-        manager2.display();
+//        manager2.display();
     }
 }

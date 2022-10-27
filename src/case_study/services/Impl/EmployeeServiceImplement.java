@@ -2,32 +2,34 @@ package case_study.services.Impl;
 
 import case_study.models.person.Employee;
 import case_study.services.EmployeeService;
+import case_study.utils.ReadAndWrite;
 
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class EmployeeServiceImplement implements EmployeeService {
     private static final EmployeeServiceImplement manager1 = new EmployeeServiceImplement();
     private static final Scanner sc = new Scanner(System.in);
-    private static final ArrayList<Employee> employeeList = new ArrayList<>();
+    private static ArrayList<Employee> employeeList = new ArrayList<>();
 
     @Override
 
     public void addNew() {
         int id = 0;
         int salary = 0;
-        System.out.print("Nhập ID: ");
-        try {
-            id = Integer.parseInt(sc.nextLine());
-        } catch (NumberFormatException e){
-            System.out.println("Sai định dạng!");
-        }
         System.out.print("Nhập tên nhân viên: ");
         String name = sc.nextLine();
         System.out.print("Nhập sinh nhật: ");
         String birthday = sc.nextLine();
         System.out.print("Nhập giới tính: ");
         String gender = sc.nextLine();
+        System.out.print("Nhập số CMND: ");
+        try {
+            id = Integer.parseInt(sc.nextLine());
+        } catch (NumberFormatException e){
+            System.out.println("Sai định dạng!");
+        }
         System.out.print("Nhập số điện thoại: ");
         String phoneNum = sc.nextLine();
         System.out.print("Nhập email: ");
@@ -43,15 +45,16 @@ public class EmployeeServiceImplement implements EmployeeService {
             System.out.println("Sai định dạng!");
         }
 
-        Employee employee = new Employee(id, name, birthday, gender, phoneNum, email, degree, position, salary);
+        Employee employee = new Employee(name, birthday, gender, id, phoneNum, email, degree, position, salary);
         employeeList.add(employee);
-        manager1.display();
+        ReadAndWrite.writeEmployee(employeeList, "E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
+//        manager1.display();
     }
 
     @Override
-    public void edit(int id) {
+    public void edit(int index) {
         for (int i = 0; i < employeeList.size(); i++) {
-            if (id == i - 1){
+            if (index == i - 1){
                 int salary = 0;
                 System.out.print("Nhập tên nhân viên: ");
                 String name = sc.nextLine();
@@ -104,17 +107,18 @@ public class EmployeeServiceImplement implements EmployeeService {
             System.out.print("-");
         }
         System.out.println();
-        System.out.printf("|%4s|%16s|%15s|%8s|%15s|%16s|%15s|%15s|%12s\n",
-                "ID", "Name", "Birthday", "Gender", "Phone", "Email", "Degree", "Position", "Salary");
+        System.out.printf("|%4s|%16s|%12s|%8s|%12s|%15s|%20s|%15s|%15s|%12s\n",
+                "STT", "Name", "Birthday", "Gender", "CMND", "Phone", "Email", "Degree", "Position", "Salary");
         for (int i = 0; i < 60; i++) {
             System.out.print("-");
         }
         System.out.println();
-        for (Employee employee : employeeList) {
-            System.out.printf("|%4s|%16s|%15s|%8s|%15s|%16s|%15s|%15s|%12s\n",
-                    employee.getId(), employee.getName(), employee.getBirthday(),
-                    employee.getGender(), employee.getPhoneNum(), employee.getEmail(),
-                    employee.getDegree(), employee.getPosition(), employee.getSalary());
+        employeeList = ReadAndWrite.readEmployee("E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
+        for (int i = 0; i < Objects.requireNonNull(employeeList).size(); i++) {
+            System.out.printf("|%4s|%16s|%12s|%8s|%12s|%15s|%20s|%15s|%15s|%12s\n",
+                    i + 1,  employeeList.get(i).getName(), employeeList.get(i).getBirthday(), employeeList.get(i).getGender(),
+                    employeeList.get(i).getId(), employeeList.get(i).getPhoneNum(), employeeList.get(i).getEmail(),
+                    employeeList.get(i).getDegree(), employeeList.get(i).getPosition(), employeeList.get(i).getSalary());
         }
     }
 
