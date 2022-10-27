@@ -48,7 +48,7 @@ public class EmployeeServiceImplement implements EmployeeService {
         Employee employee = new Employee(name, birthday, gender, id, phoneNum, email, degree, position, salary);
         employeeList.add(employee);
         ReadAndWrite.writeEmployee(employeeList, "E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
-//        manager1.display();
+        manager1.display();
     }
 
     @Override

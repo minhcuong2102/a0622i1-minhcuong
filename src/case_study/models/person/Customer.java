@@ -35,7 +35,7 @@ public class Customer extends Person{
     @Override
     public String toString() {
         return this.getName() + "," + this.getBirthday() + "," + this.getGender() + "," +
-                this.getPhoneNum() + "," + this.getEmail() + "," + this.getCustomerType() + "," +
-                this.getAddress();
+                this.getId() + "," + this.getPhoneNum() + "," + this.getEmail() + "," +
+                this.getCustomerType() + "," + this.getAddress();
     }
 }

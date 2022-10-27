@@ -85,7 +85,7 @@ public class CustomerServiceImplement implements CustomerService {
                 break;
             }
         }
-//        manager2.display();
+        manager2.display();
     }
 
     public void delete(int id){
@@ -95,6 +95,6 @@ public class CustomerServiceImplement implements CustomerService {
                 break;
             }
         }
-//        manager2.display();
+        manager2.display();
     }
 }
