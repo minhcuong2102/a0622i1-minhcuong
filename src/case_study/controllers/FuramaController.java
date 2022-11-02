@@ -13,19 +13,19 @@ public class FuramaController {
         int luaChon = 0;
         do {
             System.out.println(
-                        "-------------------------------\n" +
+                    "-------------------------------\n" +
                             "1. Employee Management\n" +
                             "2. Customer Management\n" +
                             "3. Facility Management\n" +
                             "4. Booking Management\n" +
                             "5. Promotion Management\n" +
                             "6. Exit\n" +
-                        "-------------------------------"
+                            "-------------------------------"
             );
             System.out.print("Lựa chọn: ");
             try {
                 luaChon = Integer.parseInt(sc.nextLine());
-            }catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Nhập sai định dạng!");
             }
             switch (luaChon) {
@@ -62,7 +62,7 @@ public class FuramaController {
 
     public static void employeeManage() {
         System.out.println(
-                        "1. Display list employees\n" +
+                "1. Display list employees\n" +
                         "2. Add new employee\n" +
                         "3. Edit employee\n" +
                         "4. Delete employee\n" +
@@ -73,10 +73,10 @@ public class FuramaController {
         System.out.print("Nhập chức năng: ");
         try {
             choice = Integer.parseInt(sc.nextLine());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Nhập sai định dạng!");
         }
-        switch (choice){
+        switch (choice) {
             case 1:
                 System.out.println("1\tDisplay list employees\n");
                 manager1.display();
@@ -111,7 +111,7 @@ public class FuramaController {
         }
     }
 
-    public static void customerManage(){
+    public static void customerManage() {
         System.out.println("1.\tDisplay list customers\n" +
                 "2.\tAdd new customer\n" +
                 "3.\tEdit customer\n" +
@@ -119,14 +119,14 @@ public class FuramaController {
                 "5.\tReturn main menu\n");
 
         CustomerServiceImplement manager2 = new CustomerServiceImplement();
-        int choice = 0, id = 0;
+        int choice = 0;
         System.out.print("Nhập chức năng: ");
         try {
             choice = Integer.parseInt(sc.nextLine());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Nhập sai định dạng!");
         }
-        switch (choice){
+        switch (choice) {
             case 1:
                 System.out.println("1.\tDisplay list customers\n");
                 manager2.display();
@@ -160,7 +160,7 @@ public class FuramaController {
         }
     }
 
-    public static void facilityManage(){
+    public static void facilityManage() {
         System.out.println("1\tDisplay list facility\n" +
                 "2\tAdd new facility\n" +
                 "3\tDisplay list facility maintenance\n" +
@@ -172,10 +172,10 @@ public class FuramaController {
         System.out.print("Nhập chức năng: ");
         try {
             choice = Integer.parseInt(sc.nextLine());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Nhập sai định dạng!");
         }
-        switch (choice){
+        switch (choice) {
             case 1:
                 System.out.println("1\tDisplay list facility\n");
                 manager3.display();
@@ -189,10 +189,10 @@ public class FuramaController {
                         "1. Villa\t2. House\t3. Room\t4. Thoát");
                 try {
                     choice1 = sc.nextInt();
-                }catch (NumberFormatException e){
+                } catch (NumberFormatException e) {
                     System.out.println("Nhập sai định dạng!");
                 }
-                switch (choice1){
+                switch (choice1) {
                     case 1:
                         System.out.println("THÊM VILLA");
                         manager3.addNewVilla();
@@ -232,7 +232,7 @@ public class FuramaController {
         }
     }
 
-    public static void bookingManage(){
+    public static void bookingManage() {
         System.out.println("1.\tAdd new booking\n" +
                 "2.\tDisplay list booking\n" +
                 "3.\tCreate new constracts\n" +
@@ -243,9 +243,10 @@ public class FuramaController {
         System.out.print("Nhập chức năng: ");
         try {
             choice = Integer.parseInt(sc.nextLine());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Nhập sai định dạng!");
-        }        switch (choice){
+        }
+        switch (choice) {
             case 1:
                 System.out.println("1.\tAdd new booking\n");
                 break;
@@ -269,7 +270,7 @@ public class FuramaController {
         }
     }
 
-    public static void promotionManage(){
+    public static void promotionManage() {
         System.out.println("1.\tDisplay list customers use service\n" +
                 "2.\tDisplay list customers get voucher\n" +
                 "3.\tReturn main menu\n");
@@ -277,9 +278,10 @@ public class FuramaController {
         System.out.print("Nhập chức năng: ");
         try {
             choice = Integer.parseInt(sc.nextLine());
-        }catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             System.out.println("Nhập sai định dạng!");
-        }        switch (choice){
+        }
+        switch (choice) {
             case 1:
                 System.out.println("1.\tDisplay list customers use service\n");
                 break;

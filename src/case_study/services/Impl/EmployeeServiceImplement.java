@@ -20,7 +20,7 @@ public class EmployeeServiceImplement implements EmployeeService {
     public void addNew() {
         int id = 0;
         int salary = 0;
-        int sex = 1;
+        int sex = 0;
         String gender = "";
         String degree = "";
         int bangCap = 0;
@@ -31,16 +31,17 @@ public class EmployeeServiceImplement implements EmployeeService {
         String name = sc.nextLine();
         System.out.print("Nhập sinh nhật: ");
         String birthday = sc.nextLine();
+
         do {
             System.out.print("0. Nam\t\t1. Nữ" + "\nNhập giới tính: ");
             try {
                 sex = Integer.parseInt(sc.nextLine());
-            }catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Sai định dạng!");
             }
-            if (sex == 0){
+            if (sex == 0) {
                 gender = "Nam";
-            }else if (sex == 1){
+            } else if (sex == 1) {
                 gender = "Nữ";
             }
         } while (sex < 0 || sex > 1);
@@ -55,14 +56,15 @@ public class EmployeeServiceImplement implements EmployeeService {
         String phoneNum = sc.nextLine();
         System.out.print("Nhập email: ");
         String email = sc.nextLine();
+
         do {
             System.out.print("Nhập bằng cấp: ");
             try {
                 bangCap = Integer.parseInt(sc.nextLine());
-            } catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Không đúng định dạng!");
             }
-            switch (bangCap){
+            switch (bangCap) {
                 case 1:
                     degree = "Trung cấp";
                     break;
@@ -86,15 +88,16 @@ public class EmployeeServiceImplement implements EmployeeService {
             }
         } while (bangCap < 1 || bangCap > 4);
 
-
         do {
-            System.out.print("Nhập vị trí: ");
+            System.out.print("Các vị trí:\n" +
+                    "1. Lễ tân\t2. Phục vụ\t3. Chuyên viên\t4. Giám sát\t5. Quản lý\t6. Giám đốc\n" +
+                    "Nhập lựa chọn: ");
             try {
                 viTri = Integer.parseInt(sc.nextLine());
-            } catch (NumberFormatException e){
+            } catch (NumberFormatException e) {
                 System.out.println("Không đúng định dạng!");
             }
-            switch (viTri){
+            switch (viTri) {
                 case 1:
                     position = "Lễ tân";
                     break;
@@ -143,6 +146,11 @@ public class EmployeeServiceImplement implements EmployeeService {
     public void edit() {
         String name;
         int sex = 0;
+        String gender = "";
+        int bangCap = 0;
+        String degree = "";
+        int viTri = 0;
+        String position = "";
         System.out.print("Nhập tên của người cần sửa: ");
         name = sc.nextLine();
         for (int i = 0; i < employeeList.size(); i++) {
@@ -152,18 +160,20 @@ public class EmployeeServiceImplement implements EmployeeService {
                 name = sc.nextLine();
                 System.out.print("Nhập sinh nhật: ");
                 String birthday = sc.nextLine();
-                System.out.print("0. Nam\t\t1. Nữ" + "\nNhập giới tính: ");
-                String gender = "";
-                try {
-                    sex = Integer.parseInt(sc.nextLine());
-                }catch (NumberFormatException e){
-                    System.out.println("Sai định dạng!");
-                }
-                if (sex == 0){
-                    gender = "Nam";
-                }else if (sex == 1){
-                    gender = "Nữ";
-                }
+
+                do {
+                    System.out.print("0. Nam\t\t1. Nữ" + "\nNhập giới tính: ");
+                    try {
+                        sex = Integer.parseInt(sc.nextLine());
+                    } catch (NumberFormatException e) {
+                        System.out.println("Sai định dạng!");
+                    }
+                    if (sex == 0) {
+                        gender = "Nam";
+                    } else if (sex == 1) {
+                        gender = "Nữ";
+                    }
+                } while (sex < 0 || sex > 1);
                 System.out.print("Nhập CMND: ");
                 try {
                     id = Integer.parseInt(sc.nextLine());
@@ -174,10 +184,78 @@ public class EmployeeServiceImplement implements EmployeeService {
                 String phoneNum = sc.nextLine();
                 System.out.print("Nhập email: ");
                 String email = sc.nextLine();
-                System.out.print("Nhập bằng cấp: ");
-                String degree = sc.nextLine();
-                System.out.print("Nhập vị trí: ");
-                String position = sc.nextLine();
+                do {
+                    System.out.print("Nhập bằng cấp: ");
+                    try {
+                        bangCap = Integer.parseInt(sc.nextLine());
+                    } catch (NumberFormatException e) {
+                        System.out.println("Không đúng định dạng!");
+                    }
+                    switch (bangCap) {
+                        case 1:
+                            degree = "Trung cấp";
+                            break;
+
+                        case 2:
+                            degree = "Cao đẳng";
+                            break;
+
+                        case 3:
+                            degree = "Đại học";
+                            break;
+
+                        case 4:
+                            degree = "Sau đại học";
+                            break;
+
+                        default:
+                            System.out.println("Nhập số từ 1 - 4!");
+                            manager1.addNew();
+                            break;
+                    }
+                } while (bangCap < 1 || bangCap > 4);
+
+                do {
+                    System.out.print("Các vị trí:\n" +
+                            "1. Lễ tân\t2. Phục vụ\t3. Chuyên viên\t4. Giám sát\t5. Quản lý\t6. Giám đốc\n" +
+                            "Nhập lựa chọn: ");
+                    try {
+                        viTri = Integer.parseInt(sc.nextLine());
+                    } catch (NumberFormatException e) {
+                        System.out.println("Không đúng định dạng!");
+                    }
+                    switch (viTri) {
+                        case 1:
+                            position = "Lễ tân";
+                            break;
+
+                        case 2:
+                            position = "Phục vụ";
+                            break;
+
+                        case 3:
+                            position = "Chuyên viên";
+                            break;
+
+                        case 4:
+                            position = "Giám sát";
+                            break;
+
+                        case 5:
+                            position = "Quản lý";
+                            break;
+
+                        case 6:
+                            position = "Giám đốc";
+                            break;
+
+                        default:
+                            System.out.println("Nhập số từ 1 - 6!");
+                            manager1.addNew();
+                            break;
+                    }
+                } while (viTri < 1 || viTri > 6);
+
                 System.out.print("Nhập lương: ");
                 try {
                     salary = Integer.parseInt(sc.nextLine());
@@ -186,10 +264,10 @@ public class EmployeeServiceImplement implements EmployeeService {
                 }
 
                 Employee employee = new Employee(name, birthday, gender, id, phoneNum, email, degree, position, salary);
-                ReadAndWrite.writeEmployee(employeeList,"E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
+                ReadAndWrite.writeEmployee(employeeList, "E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
                 employeeList.set(i, employee);
-                ReadAndWrite.writeEmployee(employeeList,"E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
-                System.out.println("Sửa thông tin người dùng thành công!");
+                ReadAndWrite.writeEmployee(employeeList, "E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
+                System.out.println("Sửa thông tin nhân viên thành công!");
                 employeeManage();
             }
         }
@@ -231,7 +309,7 @@ public class EmployeeServiceImplement implements EmployeeService {
             if (name.equals(employeeList.get(j).getName())) {
                 ReadAndWrite.readEmployee("E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
                 employeeList.remove(j);
-                ReadAndWrite.writeEmployee(employeeList,"E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
+                ReadAndWrite.writeEmployee(employeeList, "E:\\Codegym\\module_2\\src\\case_study\\data\\employee.csv");
                 break;
             }
         }

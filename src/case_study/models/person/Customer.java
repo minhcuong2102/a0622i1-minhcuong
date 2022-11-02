@@ -1,6 +1,6 @@
 package case_study.models.person;
 
-public class Customer extends Person{
+public class Customer extends Person {
     private String customerType;
     private String address;
 

@@ -82,8 +82,8 @@ public class ReadAndWrite {
         }
     }
 
-    public static Map<Villa,Integer> readVilla(String diaChi) {
-        Map<Villa,Integer> villaMap = new LinkedHashMap<>();
+    public static Map<Villa, Integer> readVilla(String diaChi) {
+        Map<Villa, Integer> villaMap = new LinkedHashMap<>();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(diaChi))) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -91,10 +91,10 @@ public class ReadAndWrite {
                     continue;
                 }
                 String[] lineArr = line.split(",");
-                Villa newVilla = new Villa(lineArr[0],Double.parseDouble(lineArr[1]),
-                        Integer.parseInt(lineArr[2]),Integer.parseInt(lineArr[3]),
-                        lineArr[4],lineArr[5],Double.parseDouble(lineArr[6]),Integer.parseInt(lineArr[7]));
-                villaMap.put(newVilla,Integer.parseInt(lineArr[8]));
+                Villa newVilla = new Villa(lineArr[0], Double.parseDouble(lineArr[1]),
+                        Integer.parseInt(lineArr[2]), Integer.parseInt(lineArr[3]),
+                        lineArr[4], lineArr[5], Double.parseDouble(lineArr[6]), Integer.parseInt(lineArr[7]));
+                villaMap.put(newVilla, Integer.parseInt(lineArr[8]));
             }
             return villaMap;
         } catch (IOException e) {
@@ -116,8 +116,8 @@ public class ReadAndWrite {
         }
     }
 
-    public static Map<House,Integer> readFileHouse(String diaChi) {
-        Map<House,Integer> houseMap = new LinkedHashMap<>();
+    public static Map<House, Integer> readFileHouse(String diaChi) {
+        Map<House, Integer> houseMap = new LinkedHashMap<>();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(diaChi))) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -125,10 +125,10 @@ public class ReadAndWrite {
                     continue;
                 }
                 String[] lineArr = line.split(",");
-                House newHouse = new House(lineArr[0],Double.parseDouble(lineArr[1]),
-                        Integer.parseInt(lineArr[2]),Integer.parseInt(lineArr[3]),
-                        lineArr[4],lineArr[5],Integer.parseInt(lineArr[6]));
-                houseMap.put(newHouse,Integer.parseInt(lineArr[7]));
+                House newHouse = new House(lineArr[0], Double.parseDouble(lineArr[1]),
+                        Integer.parseInt(lineArr[2]), Integer.parseInt(lineArr[3]),
+                        lineArr[4], lineArr[5], Integer.parseInt(lineArr[6]));
+                houseMap.put(newHouse, Integer.parseInt(lineArr[7]));
             }
             return houseMap;
         } catch (IOException e) {
@@ -140,7 +140,7 @@ public class ReadAndWrite {
     public static void writeRoom(Map<Room, Integer> roomMap, String diaChi) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(diaChi))) {
             Set<Map.Entry<Room, Integer>> rooms = roomMap.entrySet();
-            for (Map.Entry<Room , Integer> room : rooms) {
+            for (Map.Entry<Room, Integer> room : rooms) {
                 bufferedWriter.write(room.getKey().toString());
                 bufferedWriter.write(room.getValue().toString());
                 bufferedWriter.newLine();
@@ -150,8 +150,8 @@ public class ReadAndWrite {
         }
     }
 
-    public static Map<Room,Integer> readRoom(String diaChi) {
-        Map<Room,Integer> roomMap = new LinkedHashMap<>();
+    public static Map<Room, Integer> readRoom(String diaChi) {
+        Map<Room, Integer> roomMap = new LinkedHashMap<>();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(diaChi))) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
@@ -160,10 +160,10 @@ public class ReadAndWrite {
                 }
                 String[] lineArr = line.split(",");
 
-                Room newRoom = new Room(lineArr[0],Double.parseDouble(lineArr[1]),
-                        Integer.parseInt(lineArr[2]),Integer.parseInt(lineArr[3]),
-                        lineArr[4],lineArr[5]);
-                roomMap.put(newRoom,Integer.parseInt(lineArr[6]));
+                Room newRoom = new Room(lineArr[0], Double.parseDouble(lineArr[1]),
+                        Integer.parseInt(lineArr[2]), Integer.parseInt(lineArr[3]),
+                        lineArr[4], lineArr[5]);
+                roomMap.put(newRoom, Integer.parseInt(lineArr[6]));
             }
             return roomMap;
         } catch (IOException e) {

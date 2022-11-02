@@ -7,7 +7,7 @@ public abstract class Facility {
     private int personCap;
     private String rentType;
 
-    public Facility(){
+    public Facility() {
 
     }
 
