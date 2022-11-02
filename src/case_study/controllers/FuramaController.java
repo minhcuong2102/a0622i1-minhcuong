@@ -13,7 +13,7 @@ public class FuramaController {
         int luaChon = 0;
         do {
             System.out.println(
-                    "-------------------------------\n" +
+                    "---------------MAIN MENU-------------\n" +
                             "1. Employee Management\n" +
                             "2. Customer Management\n" +
                             "3. Facility Management\n" +
@@ -30,27 +30,27 @@ public class FuramaController {
             }
             switch (luaChon) {
                 case 1:
-                    System.out.print("\tEmployee Management\n");
+                    System.out.print("---------Employee Management----------\n");
                     employeeManage();
                     break;
 
                 case 2:
-                    System.out.println("2.\tCustomer Management");
+                    System.out.println("----------Customer Management----------\n");
                     customerManage();
                     break;
 
                 case 3:
-                    System.out.println("3.\tFacility Management");
+                    System.out.println("-----------Facility Management-----------\n");
                     facilityManage();
                     break;
 
                 case 4:
-                    System.out.println("4.\tBooking Management");
+                    System.out.println("-----------Booking Management-----------\n");
                     bookingManage();
                     break;
 
                 case 5:
-                    System.out.println("5.\tPromotion Management");
+                    System.out.println("------------tPromotion Management-----------\n");
                     promotionManage();
                     break;
 
@@ -62,11 +62,11 @@ public class FuramaController {
 
     public static void employeeManage() {
         System.out.println(
-                "1. Display list employees\n" +
-                        "2. Add new employee\n" +
-                        "3. Edit employee\n" +
-                        "4. Delete employee\n" +
-                        "5. Return main menu"
+                "1. Display employee list\n" +
+                        "2. Add a new employee\n" +
+                        "3. Edit a employee\n" +
+                        "4. Delete a employee\n" +
+                        "5. Return main menu\n"
         );
         EmployeeServiceImplement manager1 = new EmployeeServiceImplement();
         int choice = 0;
@@ -78,7 +78,7 @@ public class FuramaController {
         }
         switch (choice) {
             case 1:
-                System.out.println("--------Display list employees--------\n");
+                System.out.println("---------Display list employees--------\n");
                 manager1.display();
                 employeeManage();
                 break;
@@ -96,7 +96,7 @@ public class FuramaController {
                 break;
 
             case 4:
-                System.out.println("-----------tDelete employee-----------\n");
+                System.out.println("-----------Delete employee----------\n");
                 manager1.delete();
                 employeeManage();
                 break;
@@ -112,10 +112,10 @@ public class FuramaController {
     }
 
     public static void customerManage() {
-        System.out.println("1.\tDisplay list customers\n" +
-                "2.\tAdd new customer\n" +
-                "3.\tEdit customer\n" +
-                "4.\tDelete customer\n" +
+        System.out.println("1.\tDisplay customer list\n" +
+                "2.\tAdd a new customer\n" +
+                "3.\tEdit a customer\n" +
+                "4.\tDelete a customer\n" +
                 "5.\tReturn main menu\n");
 
         CustomerServiceImplement manager2 = new CustomerServiceImplement();
