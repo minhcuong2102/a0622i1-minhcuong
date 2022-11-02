@@ -1,6 +1,8 @@
 package case_study.models.facility;
 
-public class House extends Facility{
+import java.io.Serializable;
+
+public class House extends Facility implements Serializable {
     private String roomStandard;
     private double poolArea;
 
@@ -13,9 +15,9 @@ public class House extends Facility{
         this.poolArea = poolArea;
     }
 
-    public House(String serviceName, double usingArea, int rentCost, int personCap,
+    public House(int id, String serviceName, double usingArea, int rentCost, int personCap,
                  String rentType, String roomStandard, double poolArea) {
-        super(serviceName, usingArea, rentCost, personCap, rentType);
+        super(id, serviceName, usingArea, rentCost, personCap, rentType);
         this.roomStandard = roomStandard;
         this.poolArea = poolArea;
     }
@@ -34,5 +36,11 @@ public class House extends Facility{
 
     public void setPoolArea(double poolArea) {
         this.poolArea = poolArea;
+    }
+
+    public String toString() {
+        return this.getId() + "," + this.getServiceName() + "," + this.getUsingArea() + "," +
+                this.getRentCost() + "," + this.getPersonCap() + "," + this.getRentType() + "," +
+                this.getRoomStandard() + "," + this.getPoolArea();
     }
 }

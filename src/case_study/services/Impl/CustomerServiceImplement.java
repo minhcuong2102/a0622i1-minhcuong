@@ -97,6 +97,7 @@ public class CustomerServiceImplement implements CustomerService {
 
         Customer customer = new Customer(name, birthday, gender, id, phoneNum, email, customerType, address);
         customerList.add(customer);
+        ReadAndWrite.writeCustomer(customerList,"E:\\Codegym\\module_2\\src\\case_study\\data\\customer.csv");
     }
 
     public void display() {

@@ -30,27 +30,27 @@ public class FuramaController {
             }
             switch (luaChon) {
                 case 1:
-                    System.out.print("---------Employee Management----------\n");
+                    System.out.print("---------Employee Management----------");
                     employeeManage();
                     break;
 
                 case 2:
-                    System.out.println("----------Customer Management----------\n");
+                    System.out.println("----------Customer Management----------");
                     customerManage();
                     break;
 
                 case 3:
-                    System.out.println("-----------Facility Management-----------\n");
+                    System.out.println("-----------Facility Management-----------");
                     facilityManage();
                     break;
 
                 case 4:
-                    System.out.println("-----------Booking Management-----------\n");
+                    System.out.println("-----------Booking Management-----------");
                     bookingManage();
                     break;
 
                 case 5:
-                    System.out.println("------------tPromotion Management-----------\n");
+                    System.out.println("------------tPromotion Management-----------");
                     promotionManage();
                     break;
 
@@ -78,25 +78,25 @@ public class FuramaController {
         }
         switch (choice) {
             case 1:
-                System.out.println("---------Display list employees--------\n");
+                System.out.println("---------Display list employees--------");
                 manager1.display();
                 employeeManage();
                 break;
 
             case 2:
-                System.out.println("----------Add new employee----------\n");
+                System.out.println("----------Add new employee----------");
                 manager1.addNew();
                 employeeManage();
                 break;
 
             case 3:
-                System.out.println("-----------Edit employee----------\n");
+                System.out.println("-----------Edit employee----------");
                 manager1.edit();
                 employeeManage();
                 break;
 
             case 4:
-                System.out.println("-----------Delete employee----------\n");
+                System.out.println("-----------Delete employee----------");
                 manager1.delete();
                 employeeManage();
                 break;
@@ -108,6 +108,7 @@ public class FuramaController {
             default:
                 System.out.println("Nhập số từ 1 - 5");
                 employeeManage();
+                break;
         }
     }
 
@@ -128,25 +129,25 @@ public class FuramaController {
         }
         switch (choice) {
             case 1:
-                System.out.println("----------Display list customers-----------\n");
+                System.out.println("----------Display list customers-----------");
                 manager2.display();
                 customerManage();
                 break;
 
             case 2:
-                System.out.println("----------Add new customer-----------\n");
+                System.out.println("----------Add new customer-----------");
                 manager2.addNew();
                 customerManage();
                 break;
 
             case 3:
-                System.out.println("-----------Edit customer-----------\n");
+                System.out.println("-----------Edit customer-----------");
                 manager2.edit();
                 customerManage();
                 break;
 
             case 4:
-                System.out.println("------------Delete customer----------\n");
+                System.out.println("------------Delete customer----------");
                 manager2.delete();
                 customerManage();
                 break;
@@ -157,6 +158,8 @@ public class FuramaController {
 
             default:
                 System.out.println("Nhập số tư 1 - 5");
+                customerManage();
+                break;
         }
     }
 
@@ -177,49 +180,19 @@ public class FuramaController {
         }
         switch (choice) {
             case 1:
-                System.out.println("-----------Display list facility-----------\n");
+                System.out.println("-----------Display list facility-----------");
                 manager3.display();
                 facilityManage();
                 break;
 
             case 2:
-                int choice1 = 0;
-                System.out.println("-----------Add new facility------------\n");
-                System.out.print("Chọn cơ sở cần thêm: " +
-                        "1. Villa\t2. House\t3. Room\t4. Thoát\n" +
-                        "Nhập lựa chọn: ");
-                try {
-                    choice1 = sc.nextInt();
-                } catch (NumberFormatException e) {
-                    System.out.println("Nhập sai định dạng!");
-                }
-                switch (choice1) {
-                    case 1:
-                        System.out.println("THÊM VILLA\n");
-                        manager3.addNewVilla();
-                        facilityManage();
-                        break;
-
-                    case 2:
-                        System.out.println("THÊM NHÀ\n");
-                        manager3.addNewHouse();
-                        facilityManage();
-                        break;
-
-                    case 3:
-                        System.out.println("THÊM PHÒNG\n");
-                        manager3.addNewRoom();
-                        facilityManage();
-                        break;
-
-                    case 4:
-                        facilityManage();
-                        break;
-                }
+                System.out.println("-----------Add new facility------------");
+                manager3.add();
+                facilityManage();
                 break;
 
             case 3:
-                System.out.println("------------Display list facility maintenance----------\n");
+                System.out.println("------------Display list facility maintenance----------");
                 manager3.displayFacilitiesNeedMaintainance();
                 facilityManage();
                 break;
@@ -249,19 +222,19 @@ public class FuramaController {
         }
         switch (choice) {
             case 1:
-                System.out.println("----------Add new booking----------\n");
+                System.out.println("----------Add new booking----------");
                 break;
             case 2:
-                System.out.println("----------Display list booking----------\n");
+                System.out.println("----------Display list booking----------");
                 break;
             case 3:
-                System.out.println("----------Create new constracts----------\n");
+                System.out.println("----------Create new constracts----------");
                 break;
             case 4:
-                System.out.println("-----------Display list contracts-----------\n");
+                System.out.println("-----------Display list contracts-----------");
                 break;
             case 5:
-                System.out.println("-----------Edit contracts------------\n");
+                System.out.println("-----------Edit contracts------------");
                 break;
             case 6:
                 displayMainMenu();
@@ -284,10 +257,10 @@ public class FuramaController {
         }
         switch (choice) {
             case 1:
-                System.out.println("---------Display list customers use service---------\n");
+                System.out.println("---------Display list customers use service---------");
                 break;
             case 2:
-                System.out.println("-----------Display list customers get voucher-----------\n");
+                System.out.println("-----------Display list customers get voucher-----------");
                 break;
             case 3:
                 displayMainMenu();
