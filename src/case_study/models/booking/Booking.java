@@ -1,14 +1,16 @@
 package case_study.models.booking;
 
+import java.util.Date;
+
 public class Booking {
     private int bookingId;
-    private String dayBegin;
-    private String dayEnd;
+    private Date dayBegin;
+    private Date dayEnd;
     private int customerId;
     private String serviceName;
     private String serviceType;
 
-    public Booking(int bookingId, String dayBegin, String dayEnd, int customerId, String serviceName, String serviceType) {
+    public Booking(int bookingId, Date dayBegin, Date dayEnd, int customerId, String serviceName, String serviceType) {
         this.bookingId = bookingId;
         this.dayBegin = dayBegin;
         this.dayEnd = dayEnd;
@@ -25,19 +27,19 @@ public class Booking {
         this.bookingId = bookingId;
     }
 
-    public String getDayBegin() {
+    public Date getDayBegin() {
         return dayBegin;
     }
 
-    public void setDayBegin(String dayBegin) {
+    public void setDayBegin(Date dayBegin) {
         this.dayBegin = dayBegin;
     }
 
-    public String getDayEnd() {
+    public Date getDayEnd() {
         return dayEnd;
     }
 
-    public void setDayEnd(String dayEnd) {
+    public void setDayEnd(Date dayEnd) {
         this.dayEnd = dayEnd;
     }
 

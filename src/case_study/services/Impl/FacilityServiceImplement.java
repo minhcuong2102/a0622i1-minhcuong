@@ -30,7 +30,6 @@ public class FacilityServiceImplement implements FacilityService {
     private static final String REGEX_VILLA_ID = "^(SVVL)-\\d{4}$";
     private static final String REGEX_HOUSE_ID = "^(SVHO)-\\d{4}$";
     private static final String REGEX_ROOM_ID = "^(SVRO)-\\d{4}$";
-//    private static final String REGEX_DATE_OF_BIRTH = "^(SVRO)-\\d{4}$";
     private static int villaCount = 0;
     private static int houseCount = 0;
     private static int roomCount = 0;

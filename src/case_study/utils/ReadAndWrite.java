@@ -1,12 +1,17 @@
 package case_study.utils;
 
+import case_study.models.booking.Booking;
 import case_study.models.person.*;
 import case_study.models.facility.*;
 
 import java.io.*;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ReadAndWrite {
+    private static SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+
     public static void writeCustomer(LinkedList<Customer> customerList, String diaChi) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(diaChi))) {
             for (Customer customer : customerList) {
@@ -193,34 +198,36 @@ public class ReadAndWrite {
         return 0;
     }
 
-//    public static void writeBooking(TreeSet<Booking> bookingList, String diaChi) {
-//        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(diaChi))) {
-//            for (Booking booking : bookingList) {
-//                bufferedWriter.write(booking.toString());
-//                bufferedWriter.newLine();
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//    public static TreeSet<Booking> readBooking(String fileAddress) {
-//        TreeSet<Booking> bookingList = new TreeSet<>();
-//        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(fileAddress))) {
-//            String line = null;
-//            while ((line = bufferedReader.readLine()) != null) {
-//                if (line.trim().equals("")) {
-//                    continue;
-//                }
-//                String[] lineArr = line.split(",");
-//                bookingList.add(new Booking(lineArr[0],df.parse(lineArr[1]),df.parse(lineArr[2]),lineArr[3],lineArr[4],lineArr[5]));
-//            }
-//            return bookingList;
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (ParseException e) {
-//            throw new RuntimeException(e);
-//        }
-//        return null;
-//    }
+    public static void writeBooking(TreeSet<Booking> bookingList, String diaChi) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(diaChi))) {
+            for (Booking booking : bookingList) {
+                bufferedWriter.write(booking.toString());
+                bufferedWriter.newLine();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static TreeSet<Booking> readBooking(String fileAddress) {
+
+        TreeSet<Booking> bookingList = new TreeSet<>();
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader(fileAddress))) {
+            String line = null;
+            while ((line = bufferedReader.readLine()) != null) {
+                if (line.trim().equals("")) {
+                    continue;
+                }
+                String[] lineArr = line.split(",");
+                bookingList.add(new Booking(Integer.parseInt(lineArr[0]), df.parse(lineArr[1]),
+                        df.parse(lineArr[2]),Integer.parseInt(lineArr[3]),lineArr[4],lineArr[5]));
+            }
+            return bookingList;
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
 }
