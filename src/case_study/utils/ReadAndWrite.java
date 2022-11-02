@@ -18,8 +18,8 @@ public class ReadAndWrite {
         }
     }
 
-    public static List<Customer> readCustomer(String diaChi) {
-        List<Customer> customerList = new LinkedList<>();
+    public static LinkedList<Customer> readCustomer(String diaChi) {
+        LinkedList<Customer> customerList = new LinkedList<>();
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(diaChi))) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {

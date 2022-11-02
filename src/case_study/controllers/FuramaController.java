@@ -69,7 +69,7 @@ public class FuramaController {
                         "5. Return main menu"
         );
         EmployeeServiceImplement manager1 = new EmployeeServiceImplement();
-        int choice = 0, id = 0;
+        int choice = 0;
         System.out.print("Nhập chức năng: ");
         try {
             choice = Integer.parseInt(sc.nextLine());
@@ -91,25 +91,13 @@ public class FuramaController {
 
             case 3:
                 System.out.println("3\tEdit employee\n");
-                System.out.print("Nhập id của người cần sửa: ");
-                try {
-                    id = sc.nextInt();
-                }catch (NumberFormatException e){
-                    System.out.println("Nhập sai định dạng!");
-                }
-                manager1.edit(id);
+                manager1.edit();
                 employeeManage();
                 break;
 
             case 4:
                 System.out.println("4\tDelete employee\n");
-                System.out.print("Nhập id của người cần xoá: ");
-                try {
-                    id = sc.nextInt();
-                }catch (NumberFormatException e){
-                    System.out.println("Nhập sai định dạng!");
-                }
-                manager1.delete(id);
+                manager1.delete();
                 employeeManage();
                 break;
 
@@ -153,21 +141,13 @@ public class FuramaController {
 
             case 3:
                 System.out.println("3.\tEdit customer\n");
-                System.out.print("Nhập id: ");
-                try {
-                    id = sc.nextInt();
-                }catch (NumberFormatException e){
-                    System.out.println("Nhập sai định dạng!");
-                }
-                manager2.edit(id);
+                manager2.edit();
                 customerManage();
                 break;
 
             case 4:
                 System.out.println("4.\tDelete customer");
-                System.out.print("Nhập id: ");
-                id = sc.nextInt();
-                manager2.delete(id);
+                manager2.delete();
                 customerManage();
                 break;
 
