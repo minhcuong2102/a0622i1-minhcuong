@@ -2,13 +2,16 @@ package case_study.services.Impl;
 
 import case_study.models.booking.Booking;
 import case_study.models.contract.Contract;
+import case_study.services.BookingService;
+import case_study.services.ContractService;
 import case_study.utils.ReadAndWrite;
 import case_study.utils.RegexData;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public class BookingServiceImplement {
+public class BookingServiceImplement implements BookingService, ContractService {
     static Scanner sc = new Scanner(System.in);
     public static TreeSet<Booking> bookingList = new TreeSet<>();
     private static Queue<Contract> contractList = new ArrayDeque<>();
@@ -16,7 +19,7 @@ public class BookingServiceImplement {
     private static final String REGEX_DATE = "^\\d{2}/\\d{2}/\\d{4}$";
     private static final String REGEX_SERVICE_NAME = "^[A-Z]\\w+$";
 
-    public void add() throws Exception{
+    public void addNew() throws ParseException{
         int bookingId = 0;
         int customerId = 0;
 
@@ -52,6 +55,21 @@ public class BookingServiceImplement {
     }
 
     public void display(){
+
+    }
+
+    @Override
+    public void addNewContracts() {
+
+    }
+
+    @Override
+    public void displayContract() {
+
+    }
+
+    @Override
+    public void editContract() {
 
     }
 }

@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/models/booking/Booking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/models/booking/Booking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/controllers/FuramaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/services/BookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/BookingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/services/ContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/ContractService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/case_study/services/Impl/BookingServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Impl/BookingServiceImplement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/case_study/services/Impl/FacilityServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Impl/FacilityServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/services/Impl/CustomerServiceImplement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Impl/CustomerServiceImplement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/case_study/services/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/services/Service.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/case_study/utils/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/case_study/utils/ReadAndWrite.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -172,7 +175,9 @@
       <workItem from="1666781298286" duration="9559000" />
       <workItem from="1666843971687" duration="900000" />
       <workItem from="1667213049613" duration="6254000" />
-      <workItem from="1667385570159" duration="12753000" />
+      <workItem from="1667385570159" duration="12829000" />
+      <workItem from="1667441663018" duration="1839000" />
+      <workItem from="1667465446713" duration="714000" />
     </task>
     <servers />
   </component>
@@ -187,10 +192,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="538" y="198" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.816@0.0.1536.816" timestamp="1662721397786" />
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1667391645382">
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1667442182647">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1667391645382" />
+    <state x="574" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.816@0.0.1536.816" timestamp="1667442182647" />
     <state x="535" y="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1664971136121">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -207,22 +212,22 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1663584191281" />
-    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1667388802912">
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom" timestamp="1667398587048">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1667388802912" />
-    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1667388802912">
+    <state width="1493" height="304" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1667398587048" />
+    <state width="1493" height="304" key="GridCell.Tab.0.center" timestamp="1667398587048">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1667388802912" />
-    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1667388802911">
+    <state width="1493" height="304" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1667398587048" />
+    <state width="1493" height="304" key="GridCell.Tab.0.left" timestamp="1667398587048">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1667388802911" />
-    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1667388802912">
+    <state width="1493" height="304" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1667398587048" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right" timestamp="1667398587048">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1667388802912" />
+    <state width="1493" height="304" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1667398587048" />
     <state width="1342" height="230" key="GridCell.Tab.1.bottom" timestamp="1664201146613">
       <screen x="0" y="0" width="1536" height="816" />
     </state>

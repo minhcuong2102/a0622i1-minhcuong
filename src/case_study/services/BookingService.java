@@ -1,4 +1,8 @@
 package case_study.services;
 
-public interface BookingService extends Service{
+import java.text.ParseException;
+
+public interface BookingService{
+    void addNew() throws ParseException;
+    void display();
 }

@@ -10,7 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class ReadAndWrite {
-    private static SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
+    private static final SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 
     public static void writeCustomer(LinkedList<Customer> customerList, String diaChi) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(diaChi))) {
@@ -31,10 +31,10 @@ public class ReadAndWrite {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
-                customerList.add(new Customer(lineArr[0], lineArr[1],
-                        lineArr[2], Integer.parseInt(lineArr[3]), lineArr[4], lineArr[5],
-                        lineArr[6], lineArr[7]));
+                String[] atribute = line.split(",");
+                customerList.add(new Customer(atribute[0], atribute[1],
+                        atribute[2], Integer.parseInt(atribute[3]), atribute[4], atribute[5],
+                        atribute[6], atribute[7]));
             }
             return customerList;
         } catch (IOException e) {
@@ -62,10 +62,10 @@ public class ReadAndWrite {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
-                employeeArrayList.add(new Employee(lineArr[0], lineArr[1], lineArr[2],
-                        Integer.parseInt(lineArr[3]), lineArr[4], lineArr[5],
-                        lineArr[6], lineArr[7], Integer.parseInt(lineArr[8])));
+                String[] atribute = line.split(",");
+                employeeArrayList.add(new Employee(atribute[0], atribute[1], atribute[2],
+                        Integer.parseInt(atribute[3]), atribute[4], atribute[5],
+                        atribute[6], atribute[7], Integer.parseInt(atribute[8])));
             }
             return employeeArrayList;
         } catch (IOException e) {
@@ -95,11 +95,11 @@ public class ReadAndWrite {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
-                Villa newVilla = new Villa(Integer.parseInt(lineArr[0]), lineArr[1], Double.parseDouble(lineArr[2]),
-                        Integer.parseInt(lineArr[3]), Integer.parseInt(lineArr[4]),
-                        lineArr[5], lineArr[6], Double.parseDouble(lineArr[7]), Integer.parseInt(lineArr[8]));
-                villaMap.put(newVilla, Integer.parseInt(lineArr[9]));
+                String[] atribute = line.split(",");
+                Villa newVilla = new Villa(Integer.parseInt(atribute[0]), atribute[1], Double.parseDouble(atribute[2]),
+                        Integer.parseInt(atribute[3]), Integer.parseInt(atribute[4]),
+                        atribute[5], atribute[6], Double.parseDouble(atribute[7]), Integer.parseInt(atribute[8]));
+                villaMap.put(newVilla, Integer.parseInt(atribute[9]));
             }
             return villaMap;
         } catch (IOException e) {
@@ -129,11 +129,11 @@ public class ReadAndWrite {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
-                House newHouse = new House(Integer.parseInt(lineArr[0]), lineArr[1], Double.parseDouble(lineArr[2]),
-                        Integer.parseInt(lineArr[3]), Integer.parseInt(lineArr[4]),
-                        lineArr[5], lineArr[6], Integer.parseInt(lineArr[7]));
-                houseMap.put(newHouse, Integer.parseInt(lineArr[8]));
+                String[] atribute = line.split(",");
+                House newHouse = new House(Integer.parseInt(atribute[0]), atribute[1], Double.parseDouble(atribute[2]),
+                        Integer.parseInt(atribute[3]), Integer.parseInt(atribute[4]),
+                        atribute[5], atribute[6], Integer.parseInt(atribute[7]));
+                houseMap.put(newHouse, Integer.parseInt(atribute[8]));
             }
             return houseMap;
         } catch (IOException e) {
@@ -163,12 +163,12 @@ public class ReadAndWrite {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
+                String[] atribute = line.split(",");
 
-                Room newRoom = new Room(Integer.parseInt(lineArr[0]), lineArr[1], Double.parseDouble(lineArr[2]),
-                        Integer.parseInt(lineArr[3]), Integer.parseInt(lineArr[4]),
-                        lineArr[5], lineArr[6]);
-                roomMap.put(newRoom, Integer.parseInt(lineArr[7]));
+                Room newRoom = new Room(Integer.parseInt(atribute[0]), atribute[1], Double.parseDouble(atribute[2]),
+                        Integer.parseInt(atribute[3]), Integer.parseInt(atribute[4]),
+                        atribute[5], atribute[6]);
+                roomMap.put(newRoom, Integer.parseInt(atribute[7]));
             }
             return roomMap;
         } catch (IOException e) {
@@ -184,8 +184,8 @@ public class ReadAndWrite {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
-                for (String element : lineArr) {
+                String[] atribute = line.split(",");
+                for (String element : atribute) {
                     if (element.equals(service)) {
                         count++;
                     }
@@ -210,17 +210,16 @@ public class ReadAndWrite {
     }
 
     public static TreeSet<Booking> readBooking(String fileAddress) {
-
         TreeSet<Booking> bookingList = new TreeSet<>();
         try(BufferedReader bufferedReader = new BufferedReader(new FileReader(fileAddress))) {
-            String line = null;
+            String line;
             while ((line = bufferedReader.readLine()) != null) {
                 if (line.trim().equals("")) {
                     continue;
                 }
-                String[] lineArr = line.split(",");
-                bookingList.add(new Booking(Integer.parseInt(lineArr[0]), df.parse(lineArr[1]),
-                        df.parse(lineArr[2]),Integer.parseInt(lineArr[3]),lineArr[4],lineArr[5]));
+                String[] atribute = line.split(",");
+                bookingList.add(new Booking(Integer.parseInt(atribute[0]), dateFormat.parse(atribute[1]),
+                        dateFormat.parse(atribute[2]),Integer.parseInt(atribute[3]),atribute[4],atribute[5]));
             }
             return bookingList;
         } catch (IOException e) {

@@ -1,5 +1,6 @@
 package case_study.controllers;
 
+import case_study.services.Impl.BookingServiceImplement;
 import case_study.services.Impl.CustomerServiceImplement;
 import case_study.services.Impl.EmployeeServiceImplement;
 import case_study.services.Impl.FacilityServiceImplement;
@@ -46,7 +47,11 @@ public class FuramaController {
 
                 case 4:
                     System.out.println("-----------Booking Management-----------");
-                    bookingManage();
+                    try {
+                        bookingManage();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     break;
 
                 case 5:
@@ -206,7 +211,8 @@ public class FuramaController {
         }
     }
 
-    public static void bookingManage() {
+    public static void bookingManage() throws Exception {
+        BookingServiceImplement manager4 = new BookingServiceImplement();
         System.out.println("1.\tAdd new booking\n" +
                 "2.\tDisplay list booking\n" +
                 "3.\tCreate new constracts\n" +
@@ -223,24 +229,31 @@ public class FuramaController {
         switch (choice) {
             case 1:
                 System.out.println("----------Add new booking----------");
+                manager4.addNew();
                 break;
             case 2:
                 System.out.println("----------Display list booking----------");
+                manager4.display();
                 break;
             case 3:
                 System.out.println("----------Create new constracts----------");
+                manager4.addNewContracts();
                 break;
             case 4:
                 System.out.println("-----------Display list contracts-----------");
+                manager4.displayContract();
                 break;
             case 5:
                 System.out.println("-----------Edit contracts------------");
+                manager4.editContract();
                 break;
             case 6:
                 displayMainMenu();
                 break;
             default:
                 System.out.println("Nhập số tư 1 - 6");
+                bookingManage();
+                break;
         }
     }
 

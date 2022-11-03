@@ -1,7 +1,7 @@
 package case_study.services;
 
 public interface Service {
-    void addNew();
+    void addNew() throws Exception;
 
     void edit();
 
