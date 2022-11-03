@@ -141,19 +141,19 @@ public class FacilityServiceImplement implements FacilityService {
     }
     private String inputArea(String name) {
         System.out.println("Nhập " + name + ": ");
-        return RegexData.regexStr(sc.nextLine(),REGEX_AREA,
+        return RegexData.regexStr(sc.nextLine(), REGEX_AREA,
                 "Sai định dạng, diện tích phải là số thực lớn hơn 30 mét vuông.\n" +
                         "Vui lòng nhập lại:");
     }
     private String inputCost() {
         System.out.println("Vui lòng nhập chi phí thuê: ");
-        return RegexData.regexStr(sc.nextLine(),REGEX_COST,
+        return RegexData.regexStr(sc.nextLine(), REGEX_COST,
                 "Sai định dạng, chi phí thuê phải là số dương.\n" +
                         "Vui lòng nhập lại:");
     }
     private String inputFloor() {
         System.out.println("Vui lòng nhập số tầng: ");
-        return RegexData.regexStr(sc.nextLine(),REGEX_FLOOR,
+        return RegexData.regexStr(sc.nextLine(), REGEX_FLOOR,
                 "Sai định dạng, diện tích phải là số thực lớn hơn 30 mét vuông.\n" +
                         "Vui lòng nhập lại!");
     }
@@ -179,7 +179,7 @@ public class FacilityServiceImplement implements FacilityService {
 
     private String inputPeople() {
         System.out.println("Vui lòng nhập số lượng người tối đa: ");
-        return RegexData.regexStr(sc.nextLine(),REGEX_MAXIMUM_PEOPLE,
+        return RegexData.regexStr(sc.nextLine(), REGEX_MAXIMUM_PEOPLE,
                 "Sai định dạng, số lượng người tối đa phải lớn hơn 0 và nhỏ hơn 20 người.\n" +
                         "Vui lòng nhập lại!");
     }
