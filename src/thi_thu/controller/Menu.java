@@ -111,14 +111,14 @@ public class Menu {
     }
 
     public static void search() {
-        
         System.out.println("-------Tìm kiếm người cho thuê theo CCCD của người thuê------");
+        controller.search();
         menu();
     }
 
     public static void displayAndDelete() {
-        controller.deleteRenterAccount();
         System.out.println("------Hiển thị và xoá người thuê/người cho thuê nhà thành công------");
+        controller.deleteRenterAccount();
         menu();
     }
 

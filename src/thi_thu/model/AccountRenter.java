@@ -1,5 +1,8 @@
 package thi_thu.model;
 
+import java.text.ParseException;
+import java.util.Date;
+
 public class AccountRenter extends Account implements Comparable<AccountRenter>{
     private float minDienTich;
     private float maxDienTich;
@@ -7,7 +10,7 @@ public class AccountRenter extends Account implements Comparable<AccountRenter>{
     private int maxGiaTien;
 
     public AccountRenter(){}
-    public AccountRenter(String cccd, String hoTen, String ngaySinh,
+    public AccountRenter(String cccd, String hoTen, Date ngaySinh,
                          int gioiTinh, boolean trangThai, float minDienTich,
                          float maxDienTich, int minGiaTien, int maxGiaTien) {
         super(cccd, hoTen, ngaySinh, gioiTinh, trangThai);
@@ -20,7 +23,11 @@ public class AccountRenter extends Account implements Comparable<AccountRenter>{
         String[] data = string.split(",");
         setCccd(data[0]);
         setHoTen(data[1]);
-        setNgaySinh((data[2]));
+        try {
+            setNgaySinh(df.parse(data[2]));
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
         setGioiTinh(Integer.parseInt(data[3]));
         setMinDienTich(Float.parseFloat(data[5]));
         setMaxDienTich(Float.parseFloat(data[6]));
@@ -65,19 +72,16 @@ public class AccountRenter extends Account implements Comparable<AccountRenter>{
     }
 
     public String toString() {
-        return super.toString() + ", max diện tích: " + this.maxDienTich + "min diện tích: " + this.minDienTich
+        return super.toString() + ", max diện tích: " + this.maxDienTich + ", min diện tích: " + this.minDienTich
                 + ", min giá tiền: " + this.minGiaTien + ", max giá tiền: " + this.maxGiaTien;
     }
 
-    @Override
-    public int compareTo(AccountRenter o) {
-        return 0;
-    }
 
-    public int compareTo(Account account) {
+
+    public int compareTo(AccountRenter account) {
         if (this.hoTen.equals(account.hoTen)) {
-            return - this.ngaySinh.compareTo(account.ngaySinh);
+            return this.ngaySinh.compareTo(account.ngaySinh);
         }
-        return this.hoTen.compareTo(account.hoTen);
+        return this.getHoTen().compareTo(account.getHoTen());
     }
 }

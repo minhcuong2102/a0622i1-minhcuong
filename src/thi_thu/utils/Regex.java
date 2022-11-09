@@ -1,5 +1,7 @@
 package thi_thu.utils;
 
+import thi_thu.exception.IDInvalidException;
+
 import java.time.LocalDate;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
@@ -22,28 +24,30 @@ public class Regex {
         return input;
     }
 
-    public static String regexAge(String temp, String regex) {
-        boolean check = true;
-        while (check) {
+    public static String regexAge(String input) {
+        Boolean check = true;
+        do {
             try {
-                if (Pattern.matches(regex, temp)) {
+                if (Pattern.matches("^([0-2][0-9]||3[0-1])/(0[0-9]||1[0-2])/([0-9][0-9])?[0-9][0-9]$", input)) {
                     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-                    LocalDate age = LocalDate.parse(temp, formatter);
+                    LocalDate age = LocalDate.parse(input, formatter);
                     LocalDate now = LocalDate.now();
                     int current = Period.between(age, now).getYears();
-                    if (current < 100 && current > 18) {
+                    if (current >= 18) {
                         check = false;
                     } else {
-                        throw new AgeException("Tuổi phải lớn hơn 18 và bé hơn 100.");
+                        throw new IDInvalidException("Người cho thuê/ người thuê nhà phải đủ 18 tuổi!\n" +
+                                "Vui lòng nhập lại: ");
                     }
                 } else {
-                    throw new AgeException("Định dạng nhập vào không đúng, vui lòng nhập đúng định dạng : dd/MM/YYYY.");
+                    throw new IDInvalidException("Sai định dạng, định dạng đúng cho ngày sinh phải là dd/MM/yyyy.\n" +
+                            "Vui lòng nhập lại: ");
                 }
-            } catch (AgeException e) {
+            } catch (IDInvalidException e) {
                 System.out.println(e.getMessage());
-                temp = sc.nextLine();
+                input = sc.nextLine();
             }
-        }
-        return temp;
+        } while (check);
+        return input;
     }
 }

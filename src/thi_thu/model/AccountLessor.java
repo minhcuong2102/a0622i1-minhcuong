@@ -1,12 +1,14 @@
 package thi_thu.model;
 
+import java.util.Date;
+
 public class AccountLessor extends Account implements Comparable<AccountLessor>{
     private float dienTich;
     private String diaChi;
     private int soNguoi;
     private int giaTien;
 
-    public AccountLessor(String cccd, String hoTen, String ngaySinh,
+    public AccountLessor(String cccd, String hoTen, Date ngaySinh,
                          int gioiTinh, boolean trangThai, float dienTich,
                          String diaChi, int soNguoi, int giaTien) {
         super(cccd, hoTen, ngaySinh, gioiTinh, trangThai);
@@ -58,13 +60,10 @@ public class AccountLessor extends Account implements Comparable<AccountLessor>{
                 ", địa chỉ: " + this.diaChi + ", số người: " + this.soNguoi + ", giá tiền: " + this.giaTien;
     }
 
-    @Override
-    public int compareTo(AccountLessor o) {
-        return 0;
-    }
-    public int compareTo(Account account) {
+
+    public int compareTo(AccountLessor account) {
         if (this.hoTen.equals(account.hoTen)) {
-            return - this.ngaySinh.compareTo(account.ngaySinh);
+            return this.ngaySinh.compareTo(account.ngaySinh);
         }
         return this.hoTen.compareTo(account.hoTen);
     }

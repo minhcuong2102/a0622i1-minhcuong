@@ -1,16 +1,13 @@
 package thi_thu.service;
 
-import thi_thu.exception.IDInvalidException;
 import thi_thu.model.AccountLessor;
 import thi_thu.model.AccountRenter;
 import thi_thu.utils.ReadAndWriteFile;
 import thi_thu.utils.Regex;
-import thi_thu.utils.Validate;
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.Scanner;
+import java.util.*;
 
 import static thi_thu.controller.Menu.menu;
 
@@ -20,7 +17,7 @@ public class Controller {
 
     private static final Scanner sc = new Scanner(System.in);
     private static final String CCCD_REGEX = "^[0-9]{12}$";
-    final static String REGEX_BIRTHDAY = "(^(((0[1-9]|1[0-9]|2[0-8])[\\/](0[1-9]|1[012]))|((29|30|31)[\\/](0[13578]|1[02]))|((29|30)[\\/](0[4,6,9]|11)))[\\/](19|[2-9][0-9])\\d\\d$)|(^29[\\/]02[\\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$)";
+    private final SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
 
     private String inputCccd() {
@@ -51,22 +48,12 @@ public class Controller {
         System.out.print("Nhập tên: ");
         String hoTen = sc.nextLine();
         System.out.print("Nhập ngày sinh: ");
-        Date birthday = null;
-        while (birthday == null) {
-            System.out.println("Nhập ngày sinh: ");
-            String dateAsString = sc.nextLine();
-            try {
-                birthday = Validate.validateDate(dateAsString);
-            } catch (IDInvalidException e) {
-                System.out.println(e.getMessage());
-            }
-
-            if (birthday == null) {
-                System.out.println("Vui lòng nhập đúng định dạng dd/mm/YYYY: ");
-            }
+        Date ngaySinh = null;
+        try {
+            ngaySinh = df.parse(Regex.regexAge(sc.nextLine()));
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        String ngaySinh = simpleDateFormat.format(birthday);
         System.out.print("Nhập giới tính (0 - NỮ, 1 - Nam): ");
         int gioiTinh = 0;
         try {
@@ -109,7 +96,8 @@ public class Controller {
                 maxDienTich, minDienTich, minGiaTien, maxGiaTien);
         renterList.add(renter);
     }
-    public void addRenterToFile(){
+
+    public void addRenterToFile() {
         ReadAndWriteFile.writeRenter(renterList, "E:\\Codegym\\module_2\\src\\thi_thu\\data\\renter.csv");
     }
 
@@ -122,23 +110,13 @@ public class Controller {
         }
         System.out.print("Nhập tên: ");
         String hoTen = sc.nextLine();
-        System.out.print("Nhập ngày sinh: ");
-        Date birthday = null;
-        while (birthday == null) {
-            System.out.println("Nhập ngày sinh: ");
-            String dateAsString = sc.nextLine();
-            try {
-                birthday = Validate.validateDate(dateAsString);
-            } catch (IDInvalidException e) {
-                System.out.println(e.getMessage());
-            }
-
-            if (birthday == null) {
-                System.out.println("vui lòng nhập đúng định dạng dd/mm/YYYY: ");
-            }
+//        System.out.print("Nhập ngày sinh: ");
+        Date ngaySinh = null;
+        try {
+            ngaySinh = df.parse(Regex.regexAge(sc.nextLine()));
+        } catch (ParseException e) {
+            e.printStackTrace();
         }
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
-        String ngaySinh = simpleDateFormat.format(birthday);
         System.out.print("Nhập giới tính (0 - NỮ, 1 - Nam): ");
         int gioiTinh = 0;
         try {
@@ -166,11 +144,13 @@ public class Controller {
         lessorList.add(lessor);
     }
 
-    public void addLessorToFile(){
+    public void addLessorToFile() {
         ReadAndWriteFile.writeLessor(lessorList, "E:\\Codegym\\module_2\\src\\thi_thu\\data\\lessor.csv");
     }
 
     public void display() {
+        int gioiTinh;
+        boolean trangThai;
         System.out.println("1. Hiển thị renter.\n" +
                 "2. Hiển thị lessor.\n" +
                 "3. Thoát.\n" +
@@ -183,14 +163,56 @@ public class Controller {
         }
         switch (choice) {
             case 1:
+                System.out.println("-----------------------------------------Danh sách người thuê-------------------------------------------\n");
+                for (int i = 0; i < 178; i++) {
+                    System.out.print("-");
+                }
+                System.out.println();
+                System.out.printf("|%-15s|%-15s|%-20s|%-16s|%-22s|%-20s|%-20s|%-20s|%-20s|\n", "CCCD", "Họ và tên", "Ngày sinh",
+                        "Giới tính", "Trạng thái giao dịch", "Diện tích lớn nhất", "Diện tích nhỏ nhất",
+                        "Giá tiền nhỏ nhất", "Giá tiền lớn nhất");
+                for (int i = 0; i < 178; i++) {
+                    System.out.print("-");
+                }
+                System.out.println();
+                Collections.sort(renterList);
                 for (AccountRenter renter : renterList) {
-                    System.out.println(renter.toString());
+                    gioiTinh = renter.getGioiTinh();
+                    trangThai = renter.isTrangThai();
+                    System.out.printf("|%-15s|%-15s|%-20s|%-16s|%-22s|%-20s|%-20s|%-20s|%-20s|\n", renter.getCccd(), renter.getHoTen(),
+                            df.format(renter.getNgaySinh()), renter.gioiTinh(gioiTinh), renter.trangThai(trangThai), renter.getMaxDienTich(),
+                            renter.getMinDienTich(), renter.getMinGiaTien(), renter.getMaxGiaTien());
+                    for (int i = 1; i < 178; i++) {
+                        System.out.print("-");
+                    }
+                    System.out.println();
                 }
                 break;
 
             case 2:
+                System.out.println("--------------------------------------Danh sách người cho thuê----------------------------------------\n");
+                for (int i = 1; i < 156; i++) {
+                    System.out.print("-");
+                }
+                System.out.println();
+                System.out.printf("|%-15s|%-15s|%-20s|%-16s|%-22s|%-15s|%-12s|%-16s|%-15s|\n", "CCCD", "Họ và tên",
+                        "Ngày sinh", "Giới tính", "Trạng thái giao dịch", "Diện tích nhà",
+                        "Địa chỉ", "Số người tối đa", "Giá tiền");
+                for (int i = 0; i < 156; i++) {
+                    System.out.print("-");
+                }
+                System.out.println();
+                Collections.sort(lessorList);
                 for (AccountLessor lessor : lessorList) {
-                    System.out.println(lessor.toString());
+                    gioiTinh = lessor.getGioiTinh();
+                    trangThai = lessor.isTrangThai();
+                    System.out.printf("|%-15s|%-15s|%-20s|%-16s|%-22s|%-15s|%-12s|%-16s|%-15s|\n", lessor.getCccd(), lessor.getHoTen(),
+                            df.format(lessor.getNgaySinh()), lessor.gioiTinh(gioiTinh), lessor.trangThai(trangThai), lessor.getDienTich(),
+                            lessor.getDiaChi(), lessor.getSoNguoi(), lessor.getGiaTien());
+                    for (int i = 1; i < 156; i++) {
+                        System.out.print("-");
+                    }
+                    System.out.println();
                 }
                 break;
 
@@ -274,11 +296,68 @@ public class Controller {
         }
     }
 
-    public void readRenter(){
+    public void readRenter() {
         renterList = ReadAndWriteFile.readRenter("E:\\Codegym\\module_2\\src\\thi_thu\\data\\renter.csv");
     }
 
     public void readLessor() {
         lessorList = ReadAndWriteFile.readLessor("E:\\Codegym\\module_2\\src\\thi_thu\\data\\lessor.csv");
+    }
+
+    public void search() {
+        renterList = ReadAndWriteFile.readRenter("E:\\Codegym\\module_2\\src\\thi_thu\\data\\renter.csv");
+        System.out.print("Nhập CCCD: ");
+        String cccd = inputCccd();
+        boolean isEqual = false;
+        for (AccountRenter renter : renterList){
+            isEqual = renter.getCccd().equals(cccd);
+        }
+        while (!isEqual) {
+            System.out.print("Số CCCD này không tồn tại.\n" +
+                    "Nhập lại cccd: ");
+            cccd = inputCccd();
+        }
+        float minDienTich = 0f;
+        float maxDienTich = 0f;
+        int minGiaTien = 0;
+        int maxGiaTien = 0;
+        ArrayList<AccountLessor> temp = new ArrayList<>();
+        for (AccountRenter renter : renterList){
+            if (renter.getCccd().equals(cccd)){
+                minDienTich = renter.getMinDienTich();
+                maxDienTich = renter.getMaxDienTich();
+                minGiaTien = renter.getMinGiaTien();
+                maxGiaTien = renter.getMaxGiaTien();
+            }
+        }
+        for (AccountLessor lessor : lessorList){
+            boolean condition1 = lessor.getDienTich() > minDienTich && lessor.getDienTich() <= maxDienTich;
+            boolean condition2 = lessor.getGiaTien() > minGiaTien && lessor.getGiaTien() <= maxGiaTien;
+            if (condition1 && condition2){
+                temp.add(lessor);
+            }
+        }
+        System.out.println("Danh sách người cho thuê cần tìm\n");
+        for (int i = 0; i < 156; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+        System.out.printf("|%-15s|%-15s|%-20s|%-16s|%-22s|%-15s|%-12s|%-16s|%-15s|\n", "CCCD",
+                "Họ và tên", "Ngày sinh", "Giới tính", "Trạng thái giao dịch", "Diện tích nhà",
+                "Địa chỉ", "Số người tối đa", "Giá tiền");
+        for (int i = 0; i < 156; i++) {
+            System.out.print("-");
+        }
+        System.out.println();
+        for (AccountLessor account : temp) {
+            System.out.printf("|%-15s|%-15s|%-20s|%-16s|%-22s|%-15f|%-12s|%-16d|%-15d|\n", account.getCccd(),
+                    account.getHoTen(), df.format(account.getNgaySinh()), account.getGioiTinh(), account.isTrangThai(),
+                    account.getDienTich(), account.getDiaChi(), account.getSoNguoi(), account.getGiaTien());
+            for (int i = 0; i < 156; i++) {
+                System.out.print("-");
+            }
+            System.out.println();
+        }
+        System.out.println();
     }
 }
