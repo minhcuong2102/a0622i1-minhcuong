@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>đề thi module 1</title>
+</head>
+<body>
+<script>
+    function isPrime(n) {
+        if (n < 2) {
+            return 0;
+        }
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0) {
+                return 0;
+            }
+        }
+        return 1;
+    }
+
+    let a = [];
+    let b = [];
+    let n = +prompt("Nhập số phần tử: ");
+    while (n < 0 || n > 50) {
+        n = +prompt("Nhập lại số phần tử: ");
+    }
+    for (let i = 0; i < n; i++) {
+        a[i] = +prompt("Nhập phần tử thứ " + i);
+        if (isPrime(a[i])) {
+            b.push(a[i]);
+        }
+    }
+    console.log(a);
+    alert("Các số nguyên tố của mảng a là: " + b.join(", "));
+</script>
+</body>
+</html>

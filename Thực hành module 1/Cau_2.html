@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau_2</title>
+</head>
+<body>
+<script>
+    function areEqual(a, b, c, d) {
+        if (a * d === b * c) {
+            alert("Hai phân số bằng nhau!");
+        } else {
+            alert("Hai phân số không bằng nhau!");
+        }
+    }
+
+    let tu1 = +prompt("Nhập tử số thứ nhất: ");
+    let mau1 = +prompt("Nhập mẫu số thứ nhất: ");
+    let tu2 = +prompt("Nhập tử số thứ hai: ");
+    let mau2 = +prompt("Nhập mẫu số thứ hai: ");
+    areEqual(tu1, mau1, tu2, mau2);
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cau_3</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 50px;
+        }
+
+        th {
+            background-color: lightgray;
+        }
+
+        button {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="maSo" placeholder="Nhập mã sổ">
+<input type="text" id="type" placeholder="Nhập loại tiết kiệm">
+<input type="text" id="hoten" placeholder="Nhập họ tên">
+<input type="number" id="cmnd" placeholder="Nhập số CMND">
+<input type="text" id="date" placeholder="Nhập ngày mở sổ">
+<input type="number" id="money" placeholder="Nhập số tiền gửi">
+<button onclick="add()">Thêm</button>
+<table id="display" border="1" width="50%">
+</table>
+<script>
+    class SoTietKiem {
+        constructor(id, type, name, cmnd, date, money) {
+            this.maSo = id;
+            this.type = type;
+            this.name = name;
+            this.cmnd = cmnd;
+            this.date = date;
+            this.money = money;
+        }
+
+        getId() {
+            return this.maSo;
+        }
+
+        getType() {
+            return this.type;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        getCmnd() {
+            return this.cmnd;
+        }
+
+        getDate() {
+            return this.date;
+        }
+
+        getMoney() {
+            return this.money;
+        }
+
+        setId(id) {
+            this.maSo = id;
+        }
+
+        setType(type) {
+            this.type = type;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        setCmnd(cmnd) {
+            this.cmnd = cmnd;
+        }
+
+        setDate(date) {
+            this.date = date;
+        }
+
+        setMoney(money) {
+            this.money = money;
+        }
+    }
+
+    let list = [];
+
+    function display(list) {
+        let tableString = "<tr>\n" +
+            "<th width='40px'>Mã sổ</th>" +
+            "<th>Loại tiết kiệm</th>\n" +
+            "<th width='150px'>Họ tên khách hàng</th>\n" +
+            "<th>CMND</th>\n" +
+            "<th width='100px'>Ngày mở sổ</th>\n" +
+            "<th>Số tiền gửi</th>\n" +
+            "</tr>\n";
+
+        for (let i = 0; i < list.length; i++) {
+            tableString += "<tr>\n" +
+                "<td  style='text-align: center'>" + list[i].getId() + "</td>\n" +
+                "<td>" + list[i].getType() + "</td>\n" +
+                "<td>" + list[i].getName() + "</td>\n" +
+                "<td>" + list[i].getCmnd() + "</td>\n" +
+                "<td>" + list[i].getDate() + "</td>\n" +
+                "<td>" + list[i].getMoney() + "</td>\n" +
+                "<td><input type='button' onclick='editSTK(" + i + ")' value='Sửa'></td>" +
+                "<td><input type='button' onclick='deleteSTK(" + i + ")' value='Xoá'></td>" +
+                "</tr>";
+        }
+        document.getElementById("display").innerHTML = tableString;
+    }
+
+    function add() {
+        let id = document.getElementById("maSo").value;
+        let type = document.getElementById("type").value;
+        let name = document.getElementById("hoten").value;
+        let cmnd = document.getElementById("cmnd").value;
+        let date = document.getElementById("date").value;
+        let money = document.getElementById("money").value;
+        for (let i = 0; i < list.length; i++) {
+            while (id === list[i].maSo) {
+                id = prompt("Nhập lại mã số: ");
+            }
+        }
+        let newStk = new SoTietKiem(id, type, name, cmnd, date, money);
+        list.push(newStk);
+        display(list);
+
+        document.getElementById("maSo").value = "";
+        document.getElementById("type").value = "";
+        document.getElementById("hoten").value = "";
+        document.getElementById("cmnd").value = 0;
+        document.getElementById("date").value = "";
+        document.getElementById("money").value = 0;
+    }
+
+    function editSTK(index) {
+        let newId = prompt("Hãy nhập mã sổ mới: ");
+        let newType = prompt("Hãy nhập loại tiết kiệm mới: ");
+        let newName = prompt("Hãy nhập họ tên mới: ");
+        let newCmnd = +prompt("Hãy nhập số CMND mới: ");
+        let newDate = prompt("Hãy nhập ngày mở sổ mới: ");
+        let newMoney = +prompt("Hãy nhập số tiền mới: ");
+        list[index].setId(newId);
+        list[index].setType(newType);
+        list[index].setName(newName);
+        list[index].setCmnd(newCmnd);
+        list[index].setDate(newDate);
+        list[index].setMoney(newMoney);
+        display(list);
+    }
+
+    function deleteSTK(index) {
+        let xacNhan = confirm("Bạn có muốn xoá không?");
+        if (xacNhan) {
+            list.splice(index, 1);
+        }
+        display(list);
+    }
+</script>
+</body>
+</html>
