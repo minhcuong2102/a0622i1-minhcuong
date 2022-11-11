@@ -47,8 +47,6 @@ public class Service {
         nguoiDangKyArrayList = ReadAndWriteFile.readNguoiDangKy("E:\\Codegym\\module_2\\src\\thi_thuc_hanh\\data\\gdkpt.csv");
         trucks = ReadAndWriteFile.readTruck("E:\\Codegym\\module_2\\src\\thi_thuc_hanh\\data\\phuongTienTruck.csv");
         for (Truck truck : trucks){
-            System.out.println(truck.getId());
-            System.out.println(truck.getInfo());
             System.out.println(truck);
         }
         System.out.print("Nhập mã người dùng: ");
@@ -71,10 +69,11 @@ public class Service {
         String id = sc.nextLine();
         boolean check = true;
         for (Truck truck : trucks){
-            String maPhuongTien = truck.getId();
+            String maPhuongTien = truck.getMaPhuongTien();
             System.out.println(maPhuongTien);
             if (id.equals(maPhuongTien)){
                 nguoiDangKyArrayList.add(new NguoiDangKy(soDangKy, tenNguoiDangKy, ngayDangKy, id, truck));
+                System.out.println("Đã đăng ký thành công!");
                 check = false;
                 break;
             }
@@ -85,9 +84,10 @@ public class Service {
                     "Nhập lại: ");
             id = sc.nextLine();
             for (Truck truck : trucks){
-                System.out.println(truck.getId());
-                if (id.equals(truck.getId())){
+                System.out.println(truck.getMaPhuongTien());
+                if (id.equals(truck.getMaPhuongTien())){
                     nguoiDangKyArrayList.add(new NguoiDangKy(soDangKy, tenNguoiDangKy, ngayDangKy, id, truck));
+                    System.out.println("Đã đăng ký thành công!");
                     check = false;
                     break;
                 }
@@ -119,7 +119,7 @@ public class Service {
         String id = sc.nextLine();
         boolean check = true;
         for (Car car : cars){
-            if (car.getId().equals(id)){
+            if (car.getMaPhuongTien().equals(id)){
                 nguoiDangKyArrayList.add(new NguoiDangKy(soDangKy, tenNguoiDangKy, ngayDangKy, id, car));
                 check = false;
                 break;
@@ -130,7 +130,7 @@ public class Service {
                     "Nhập lại: ");
             id = sc.nextLine();
             for (Car car : cars){
-                if (car.getId().equals(id)){
+                if (car.getMaPhuongTien().equals(id)){
                     nguoiDangKyArrayList.add(new NguoiDangKy(soDangKy, tenNguoiDangKy, ngayDangKy, id, car));
                     check = false;
                     break;

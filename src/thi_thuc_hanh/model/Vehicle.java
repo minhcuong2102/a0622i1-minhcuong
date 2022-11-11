@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public abstract class Vehicle {
-    protected String id;
+    protected String maPhuongTien;
     protected String ten;
     protected String hangSanXuat;
     protected Date namSanXuat;
@@ -12,8 +12,8 @@ public abstract class Vehicle {
     protected int dungTich;
     SimpleDateFormat df = new SimpleDateFormat("dd/MM/yyyy");
 
-    public Vehicle(String id, String ten, String hangSanXuat, Date namSanXuat, int congSuat, int dungTich) {
-        this.id = id;
+    public Vehicle(String maPhuongTien, String ten, String hangSanXuat, Date namSanXuat, int congSuat, int dungTich) {
+        this.maPhuongTien = maPhuongTien;
         this.ten = ten;
         this.hangSanXuat = hangSanXuat;
         this.namSanXuat = namSanXuat;
@@ -21,12 +21,12 @@ public abstract class Vehicle {
         this.dungTich = dungTich;
     }
 
-    public String getId() {
-        return this.id;
+    public String getMaPhuongTien() {
+        return this.maPhuongTien;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setMaPhuongTien(String maPhuongTien) {
+        this.maPhuongTien = maPhuongTien;
     }
 
     public String getTen() {
@@ -78,7 +78,7 @@ public abstract class Vehicle {
 
     @Override
     public String toString() {
-        return "id=" + id + ", ten=" + ten +
+        return "id=" + maPhuongTien + ", ten=" + ten +
                 ", hangSanXuat=" + hangSanXuat+
                 ", namSanXuat=" + df.format(namSanXuat) +
                 ", congSuat=" + congSuat +
