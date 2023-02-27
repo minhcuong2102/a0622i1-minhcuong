@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4e06f5d-5fbf-42ec-b16d-d2e310e4abe0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/controller/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/data/mobiles1.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/exception/NotFoundProductException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/model/AuthenticPhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/model/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/model/PortablePhone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/thi_lai/utils/ReadAndWriteFile.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/thi_thuc_hanh/data/gdkpt.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/thi_thuc_hanh/data/gdkpt.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module_2/thi_thuc_hanh/service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module_2/thi_thuc_hanh/service/Service.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +188,10 @@
       <workItem from="1668124884036" duration="14480000" />
       <workItem from="1668162488804" duration="10049000" />
       <workItem from="1668175543969" duration="1120000" />
+      <workItem from="1668595077611" duration="24000" />
+      <workItem from="1668651682379" duration="39000" />
+      <workItem from="1670415372615" duration="902000" />
+      <workItem from="1670590022901" duration="666000" />
     </task>
     <servers />
   </component>
@@ -208,10 +202,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="655" y="244" key="#Notifications" timestamp="1667641328752">
+    <state x="655" y="244" key="#Notifications" timestamp="1670590039773">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="655" y="244" key="#Notifications/0.0.1536.816@0.0.1536.816" timestamp="1667641328752" />
+    <state x="655" y="244" key="#Notifications/0.0.1536.816@0.0.1536.816" timestamp="1670590039773" />
     <state x="499" y="163" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1667996493871">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -244,10 +238,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="554" y="167" key="#toString()_Generation_Settings/0.0.1536.816@0.0.1536.816" timestamp="1668050297314" />
-    <state x="548" y="149" key="FileChooserDialogImpl" timestamp="1667651146609">
+    <state x="548" y="149" key="FileChooserDialogImpl" timestamp="1670590658225">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1667651146609" />
+    <state x="548" y="149" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1670590658225" />
     <state width="1493" height="241" key="GridCell.Tab.0.bottom" timestamp="1668175210679">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -300,10 +294,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="349" y="63" key="editAsTableFormatDialogDimension/0.0.1536.816@0.0.1536.816" timestamp="1668134819043" />
-    <state x="213" y="0" key="new project wizard" timestamp="1664535731781">
+    <state x="213" y="0" key="new project wizard" timestamp="1670590695660">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="213" y="0" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1664535731781" />
+    <state x="213" y="0" key="new project wizard/0.0.1536.816@0.0.1536.816" timestamp="1670590695660" />
     <state x="481" y="181" key="refactoring.ChangeSignatureDialog" timestamp="1664971197236">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
